@@ -1,11 +1,12 @@
-import axios from 'axios';
 import { promises } from 'fs';
 import { join } from 'path';
+import axios from 'axios'; 
 
 let handler = async function (m, { conn, __dirname }) {
   const githubRepoURL = 'https://github.com/salmanytofficial/XLICON-V2-MD';
 
   try {
+  
     const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
 
     const response = await axios.get(`https://api.github.com/repos/${username}/${repoName}`);
@@ -13,21 +14,32 @@ let handler = async function (m, { conn, __dirname }) {
     if (response.status === 200) {
       const repoData = response.data;
 
-      const info_rep = `
-📂 *REPO IS UNDER DEVELOPMENT*
+      // Format the repository information with emojis
+      const formattedInfo = `
+📂 Repository Name: ${repoData.name}
+📝 Description: ${repoData.description}
+👤 Owner: ${repoData.owner.login}
+⭐ Stars: ${repoData.stargazers_count}
+🍴 Forks: ${repoData.forks_count}
+🌐 URL: ${repoData.html_url}
+      `.trim();
 
-- Stars: ${repoData.stargazers_count}
-- Forks: ${repoData.forks}
-- Author: ${repoData.owner.login}
-- Created at: ${repoData.created_at}
-- Last Updated: ${repoData.updated_at}
-- Repo: ${repoData.html_url}
-- [XLICON GC]: https://chat.whatsapp.com/C4ivwZKuh5bLJkqfYNPQsk
-`;
-
-      await conn.sendMessage(m.chat, info_rep 'text', { quoted: m });
+      // Send the formatted information as a message
+      await conn.relayMessage(m.chat,  {
+        requestPaymentMessage: {
+          currencyCodeIso4217: 'INR',
+          amount1000: 99999,
+          requestFrom: m.sender,
+          noteMessage: {
+          extendedTextMessage: {
+          text: formattedInfo,
+          contextInfo: {
+          externalAdReply: {
+          showAdAttribution: true
+          }}}}}}, {})
     } else {
-      await conn.reply(m.chat, 'Unable to fetch the XLICON-V2 repository information.', m);
+      // Handle the case where the API request fails
+      await conn.reply(m.chat, 'Unable to fetch repository information.', m);
     }
   } catch (error) {
     console.error(error);
@@ -40,4 +52,3 @@ handler.tags = ['main'];
 handler.command = ['sc', 'repo', 'script'];
 
 export default handler;
-  
