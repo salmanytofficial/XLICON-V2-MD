@@ -32,10 +32,6 @@
 
 ***
 
-## `Notice`
-
-Dont't Forget To ***SYNC FORK*** The Respository Before ***Deploy*** 
----
 
 
 
