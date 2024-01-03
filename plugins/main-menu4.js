@@ -534,58 +534,61 @@ import {
    
     global.fcontact = { key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     const infoText = `
-    ${botname} あ⁩ 」\n
-    Hii ${name} Senpai
-    
-    *${ucpn}* 
-   
-    乂───『 *U S E R*』───乂
-    ⛥ *Name:* ${name}
-    ⛥ *Gold:* ${credit}
-    ⛥ *Role:* ${role}
-    ⛥ *Level:* ${level}
-    ⛥ *Xp:* ${exp}
-    ╰──────────⳹
-   
-    🌟───『 *I N F O*』───🌟
-    ➫ *Bot Name:* ${botname}
-    ➫ *Mode:* ${mode}
-    ➫ *Platform:* ${platform}
-    ➫ *Type:* NodeJs
-    ➫ *Baileys:* Multi Device
-    ➫ *Prefix:* [ *${usedPrefix}* ]
-    ➫ *Uptime:* ${muptime}
-    ➫ *Database:*  ${totalreg}
-    ╰──────────⳹
-    
-    🌟───『 *I N F O  C M D*』───🌟 
-    │ *${totalfeatures}* Commands
-    ╰──────────⳹
-     ${readMore}
-
-  🌟───『 *INFO*』───🌟 
-  │*Reply with the number*
-  │ to get respected Menu*
-  ╰───────⳹
-  ╭───────⳹
-  │ *1.* Bot Menu
-  │ *2.* Owner Menu
-  │ *3.* Group Menu
-  │ *4.* Fun Menu
-  │ *5.* Reaction Menu
-  │ *6.* Downloader Menu
-  │ *7.* Game Menu
-  │ *8.* Logo Menu
-  │ *9.* Sticker Menu
-  │ *10.* Audio Menu
-  │ *11.* News Menu
-  │ *12.* Economy Menu
-  │ *13.* Anime Menu
-  │ *💻.* WAIT
-  │ *15.* Tools Menu
-  │ *16.* AI Menu
-  │ *17.* Plugin Menu
-  ╰───────⳹
+「 ${botname} 🎁XMD 」\n
+┌─❖
+│ Hi 👋 
+└┬❖  ${name} Senpai
+┌┤✑ *${greeting}* 😄
+│└────────────┈ ⳹
+│
+└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊      
+│𝗕𝗼𝘁 : ${botname}
+│𝗠𝗼𝗱𝗲 : %mode
+│𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠 : ${platform}
+│𝗛𝗢𝗦𝗧 : Kali linux
+│𝗧𝗬𝗣𝗘 : NodeJs
+│𝗕𝗔𝗜𝗟𝗘𝗬𝗦 : Multi Device
+│𝗣𝗿𝗲𝗳𝗶𝘅 : [ *%_p* ]
+│𝗦𝗽𝗲𝗲𝗱 : 0.00001 miliseconds
+│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : %muptime
+│𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 : ${totalreg}
+│*${ucpn}* 
+└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
+│𝗡𝗮𝗺𝗲 : ${name}
+│𝗚𝗢𝗟𝗗 : ${credit}
+│𝗥𝗢𝗟𝗘 : ${role}
+│𝗟𝗘𝗩𝗘𝗟 : ${level}
+│𝗫𝗣 : ${exp}
+│
+└─ 𝗜𝗡𝗙𝗢 𝗖𝗠𝗗
+│ *${totalfeatures}* Commands
+│
+└─ 𝗜𝗡𝗙𝗢 
+│ *_Reply With the Number_*
+│ *_To Get Respected Menu*
+│${readMore}
+┬────────────┈ ⳹
+   │✑  Please Type The *MENU Number*
+   │✑  Given *BELOW*
+┌└─────────────┈ ⳹
+│*1.* ❏ Bot Menu
+│*2.* ❏ Owner Menu
+│*3.* ❏ Group Menu
+│*4.* ❏ Fun Menu
+│*5.* ❏ Reaction Menu
+│*6.* ❏ Downloader Menu
+│*7.* ❏ Game Menu
+│*8.* ❏ Logo Menu
+│*9.* ❏ Sticker Menu
+│*10.* ❏ Audio Menu
+│*11.* ❏ News Menu
+│*12.* ❏ Economy Menu 
+│*13.* ❏ Anime Menu 
+│*14.* ❏ Coming Soon
+│*15.* ❏ Tools Menu 
+│*16.* ❏ Ai Menu 
+│*17.* ❏ Plugin Menu 
+└─────────────────⳹
  ${readMore}` 
 ;
 
