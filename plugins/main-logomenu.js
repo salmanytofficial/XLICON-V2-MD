@@ -36,30 +36,29 @@ let greeting = ucapan()
 let quote = quotes[Math.floor(Math.random() * quotes.length)];
 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
-let str = ` *☑️ XLICON -V2 BOT☑️*
+let str = ` *☑️ XLICON-V2 ☑️*
 
 
-╭━⊱ *WELCOME TO LOGO1* 
-_________________________🔰
-⬡▸ - 「${usedPrefix}deepsea
-⬡▸ - 「${usedPrefix}glue
-⬡▸ - 「${usedPrefix} horror 
-⬡▸ - 「${usedPrefix}candy
-⬡▸ - 「${usedPrefix}Christmas 
-⬡▸ - 「${usedPrefix}sky
-⬡▸ - 「${usedPrefix}luxury 
-⬡▸ - 「${usedPrefix}neon
-⬡▸ - 「${usedPrefix}toxic
-⬡▸ - 「${usedPrefix}transformer
-⬡▸ - 「${usedPrefix}thunder 
-⬡▸ - 「${usedPrefix}ancient
-⬡▸ - 「${usedPrefix}steel
-⬡▸ *${usedPrefix}logo ғᴏʀ logo ᴄᴏᴍᴍᴀɴᴅs 
-__________________________🔰
-⬡▸ Please *${greeting}* 
-|_________________________🔰
-   *MADE BY XLICON TEAM*
-╰━━━━━━━━━━━━━━━━━━━━━━━━╯
+╭⭑⭑⭑★✪ *LOGO 1* ✪★⭑⭑⭑ 
+│⬡▸
+│⬡▸ - 「${usedPrefix}deepsea
+│⬡▸ - 「${usedPrefix}glue
+│⬡▸ - 「${usedPrefix} horror 
+│⬡▸ - 「${usedPrefix}candy
+│⬡▸ - 「${usedPrefix}Christmas 
+│⬡▸ - 「${usedPrefix}sky
+│⬡▸ - 「${usedPrefix}luxury 
+│⬡▸ - 「${usedPrefix}neon
+│⬡▸ - 「${usedPrefix}toxic
+│⬡▸ - 「${usedPrefix}transformer
+│⬡▸ - 「${usedPrefix}thunder 
+│⬡▸ - 「${usedPrefix}ancient
+│⬡▸ - 「${usedPrefix}steel
+│⬡▸
+│ *${usedPrefix}logo ғᴏʀ logo ᴄᴏᴍᴍᴀɴᴅs*
+│ Please *${greeting}*
+│  *MADE BY XLICON TEAM*
+╰━━━━━━━━━━━━━━━━━━╯
 📚 *_Quote of the day: ${quote}_* 📚
 `
 
