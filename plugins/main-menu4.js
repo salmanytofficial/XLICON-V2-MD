@@ -534,52 +534,52 @@ import {
    
     global.fcontact = { key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     const infoText = `
- 「 ${botname} 🎁XMD 」\n
- ┌─❖
- │ *_Hi_* 👋 
- └┬❖ *_${name}_* Senpai
- ┌┤✑ *${ucpn}* 😄
- │└────────────┈ ⳹
- │
- └─ 𝞑𝞗𝙏 𝞘𝞜𝙁𝞗
- │𝐁𝐎𝐓 : ${botname}
- │𝐌𝐨𝐝𝐞 : ${mode}
- │𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${platform}
- │𝐇𝐨𝐬𝐭 : Kali linux
- │𝐓𝐲𝐩𝐞 : NodeJs
- │𝐁𝐚𝐢𝐥𝐞𝐲𝐬 : Multi Device
- │𝐏𝐫𝐞𝐟𝐢𝐱 : [ *${usedPrefix}* ]
- │𝐒𝐩𝐞𝐞𝐝 : 0.00001 miliseconds
- │𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${muptime}
- │𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 : ${totalreg}
- │ 
- └─ 𝙐𝙎𝞢𝞒 𝞘𝞜𝙁𝞗
- │𝐍𝐚𝐦𝐞 : ${name}
- │𝐆𝐨𝐥𝐝 : ${credit}
- │𝐑𝐨𝐥𝐞 : ${role}
- │𝐋𝐞𝐯𝐞𝐥 : ${level}
- │𝐗𝐩 : ${exp}
- │
- └─ 𝞘𝞜𝙁𝞗 𝘾𝞛𝘿
- │ *${totalfeatures}* Commands
- │
- └─ 𝞘𝞜𝙁𝞗 
- │ *_Reply With the Number_*
- │ *_To Get Respected Menu_*
- │${readMore}
- ┬────────────┈ ⳹
- │✑  Please Reply *MENU Number*
- │✑  Given *BELOW*
-┌└─────────────┈ ⳹
-│ *1.* ❏ Bot Menu
-│ *2.* ❏ Owner Menu
-│ *3.* ❏ Group Menu
-│ *4.* ❏ Fun Menu
-│ *5.* ❏ Reaction Menu
-│ *6.* ❏ Downloader Menu
-│ *7.* ❏ Game Menu
-│ *8.* ❏ Logo Menu
-│ *9.* ❏ Sticker Menu
+  「 ${botname} 🎁XMD 」\n
+  ┌─❖
+  │ *_Hi_* 👋 
+  └┬❖ *_${name}_* Senpai
+  ┌┤✑ *${ucpn}* 😄
+  │└────────────┈ ⳹
+  │
+  └─ 𝞑𝞗𝙏 𝞘𝞜𝙁𝞗
+  │𝐁𝐎𝐓 : ${botname}
+  │𝐌𝐨𝐝𝐞 : ${mode}
+  │𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${platform}
+  │𝐇𝐨𝐬𝐭 : Kali linux
+  │𝐓𝐲𝐩𝐞 : NodeJs
+  │𝐁𝐚𝐢𝐥𝐞𝐲𝐬 : Multi Device
+  │𝐏𝐫𝐞𝐟𝐢𝐱 : [ *${usedPrefix}* ]
+  │𝐒𝐩𝐞𝐞𝐝 : 0.00001 miliseconds
+  │𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${muptime}
+  │𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 : ${totalreg}
+  │  ${readMore}
+  └─ 𝙐𝙎𝞢𝞒 𝞘𝞜𝙁𝞗
+  │𝐍𝐚𝐦𝐞 : ${name}
+  │𝐆𝐨𝐥𝐝 : ${credit}
+  │𝐑𝐨𝐥𝐞 : ${role}
+  │𝐋𝐞𝐯𝐞𝐥 : ${level}
+  │𝐗𝐩 : ${exp}
+  │
+  └─ 𝞘𝞜𝙁𝞗 𝘾𝞛𝘿
+  │ *${totalfeatures}* Commands
+  │
+  └─ 𝞘𝞜𝙁𝞗 
+  │ *_Reply With the Number_*
+  │ *_To Get Respected Menu_*
+  │${readMore}
+  ┬────────────┈ ⳹
+  │✑  Please Reply *MENU Number*
+  │✑  Given *BELOW*
+┌──────────────┈ ⳹
+│ *1.*  ❏ Bot Menu
+│ *2.*  ❏ Owner Menu
+│ *3.*  ❏ Group Menu
+│ *4.*  ❏ Fun Menu
+│ *5.*  ❏ Reaction Menu
+│ *6.*  ❏ Downloader Menu
+│ *7.*  ❏ Game Menu
+│ *8.*  ❏ Logo Menu
+│ *9.*  ❏ Sticker Menu
 │ *10.* ❏ Audio Menu
 │ *11.* ❏ News Menu
 │ *12.* ❏ Economy Menu 
@@ -588,7 +588,7 @@ import {
 │ *15.* ❏ Tools Menu 
 │ *16.* ❏ Ai Menu 
 │ *17.* ❏ Plugin Menu 
-└─────────────────⳹
+└─────────────────┈⳹
  ${readMore}` 
 ;
 

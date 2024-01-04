@@ -59,22 +59,21 @@ let handler = async (m, { conn }) => {
     let infobt = `
 🔰 *I'm XLICON-V2.* *A WhatsApp chuddy buddy bot with rich features* *Created By SALMAN AMAD and Abraham Dwamena*. 🔰
 
-  *❲❒❳ Stars:* 💻${stargazers_count} stars
-  *❲❒❳ Forks:* 🔰${forks} forks
-  *❲❒❳ Author:* ${owner.login}
-  *❲❒❳ Create:* ${created_at}
-  *❲❒❳ Repo:* [GitHub Repo](${html_url})
-  *❲❒❳ Scan:* _wait
-
-  *❲❒❳ Visit For Tutorial* _
-  Wait
+ *❲❒❳ Stars:* ${stargazers_count} Stars ⭐
+ *❲❒❳ Forks:* ${forks} Forks 🍴
+ *❲❒❳ Author:* *Salman Ahmad* 😎
+ *❲❒❳ Create:* ${created_at} 
+ *❲❒❳ Repo:* ${html_url}
+ *❲❒❳ Scan:* https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING
+ *❲❒❳ Visit For Tutorial:* www.youtube.com/@s4salmanyt
+  
 🔰 *Created ʙʏ XLICON TEAM* 🔰
 
- *🕣 S E R V E R*
+*🕣 S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
 
-*≡  NodeJS memory *
+*≡  NodeJS memory*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `;
 
