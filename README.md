@@ -106,7 +106,7 @@
 
  - Fork and star this repo.
 - Now head towards Lunch Dev Environment
-- Now select the forked GURU BOT repository.
+- Now select the forked XLICON-V2 BOT repository.
 - Now go to <b>Variables</b> and add variable listed below.
    - DATABASE_URL, SESSION_ID, REMOVEBG_KEY, PREFIX
 - Then Click Lunch and wait for deplyment to complete.
