@@ -1,1 +1,41 @@
-const _0x1d35ea=_0x6faf;(function(_0x3c4009,_0x2ea421){const _0x3aa9b3=_0x6faf,_0x1fb013=_0x3c4009();while(!![]){try{const _0x1c962d=parseInt(_0x3aa9b3(0x10e))/0x1*(-parseInt(_0x3aa9b3(0xff))/0x2)+-parseInt(_0x3aa9b3(0x114))/0x3*(parseInt(_0x3aa9b3(0x10b))/0x4)+parseInt(_0x3aa9b3(0x117))/0x5+parseInt(_0x3aa9b3(0x122))/0x6*(parseInt(_0x3aa9b3(0x11a))/0x7)+-parseInt(_0x3aa9b3(0x10a))/0x8*(-parseInt(_0x3aa9b3(0x107))/0x9)+-parseInt(_0x3aa9b3(0x118))/0xa+parseInt(_0x3aa9b3(0x102))/0xb;if(_0x1c962d===_0x2ea421)break;else _0x1fb013['push'](_0x1fb013['shift']());}catch(_0x55c47a){_0x1fb013['push'](_0x1fb013['shift']());}}}(_0x5e20,0x61b2d));import _0xdf777d from'node-fetch';function _0x6faf(_0x48fbf5,_0x2cb061){const _0x5e208b=_0x5e20();return _0x6faf=function(_0x6fafba,_0x2e1519){_0x6fafba=_0x6fafba-0xf9;let _0xb839a0=_0x5e208b[_0x6fafba];return _0xb839a0;},_0x6faf(_0x48fbf5,_0x2cb061);}function _0x5e20(){const _0x30522f=['https://textpro.me/create-3d-neon-light-text-effect-online-1028.html','597RFlNFq','graphy','https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html','textpro','christmas','https://textpro.me/create-christmas-candy-cane-text-effect-1056.html','75567iPwONi','tags','Use\x20','2172400IEYzAw','6788600ojNBaw','transformer','145558UKfzpc','https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html','toxic','sendMessage','luxury','ancient','chat','steel','228BJDLdR','\x20https://textpro.me/create-realistic-3d-text-effect-frozen-winter-1099.html','sky','https://textpro.me/3d-luxury-gold-text-effect-online-1003.html','horror','https://textpro.me/toxic-text-effect-online-901.html','fabric','https://textpro.me/steel-text-effect-online-921.html','https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html','pink','\x20Ab\x20Dev.','https://textpro.me/fabric-text-effect-online-964.html','442LZVdbA','https://textpro.me/horror-blood-text-effect-online-883.html','help','3383743FaYUiP','thunder','logo','https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html','https://textpro.me/online-thunder-text-effect-generator-1031.html','9SlRdoK','command','https://textpro.me/christmas-tree-text-effect-online-free-1057.html','1862904ZtQVeb','88SCxrCO','https://textpro.me/create-blackpink-logo-style-online-1001.html'];_0x5e20=function(){return _0x30522f;};return _0x5e20();}import _0x57b94f from'axios';import _0xf4f63b from'mumaker';let logos={'deepsea':_0x1d35ea(0xfb),'horror':_0x1d35ea(0x100),'pink':_0x1d35ea(0x10c),'candy':_0x1d35ea(0x113),'christmas':_0x1d35ea(0x109),'luxury':_0x1d35ea(0x125),'sky':'https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html','steel':_0x1d35ea(0xfa),'glue':_0x1d35ea(0x11b),'fabric':_0x1d35ea(0xfe),'transformer':'https://textpro.me/create-a-transformer-text-effect-online-1035.html','toxic':_0x1d35ea(0x127),'ancient':_0x1d35ea(0x110),'thunder':_0x1d35ea(0x106),'graphy':_0x1d35ea(0x105),'neon':_0x1d35ea(0x10d),'frozen':_0x1d35ea(0x123)},handler=async(_0x1e65e5,{conn:_0x21e87a,usedPrefix:_0x5f27ed,command:_0xecb16b,text:_0x10db8b})=>{const _0x14d22a=_0x1d35ea;if(!_0x10db8b)return await _0x21e87a[_0x14d22a(0x11d)](_0x1e65e5['chat'],{'text':_0x14d22a(0x116)+(_0x5f27ed+_0xecb16b)+_0x14d22a(0xfd)});let _0x50a27c=await _0xf4f63b[_0x14d22a(0x111)](logos[_0xecb16b],_0x10db8b);_0x21e87a[_0x14d22a(0x11d)](_0x1e65e5[_0x14d22a(0x120)],{'image':{'url':_0x50a27c['image']}});};handler[_0x1d35ea(0x101)]=['deepsea',_0x1d35ea(0x126),_0x1d35ea(0xfc),'candy',_0x1d35ea(0x112),_0x1d35ea(0x11e),_0x1d35ea(0x124),_0x1d35ea(0x121),'glue',_0x1d35ea(0xf9),_0x1d35ea(0x119),_0x1d35ea(0x11c),_0x1d35ea(0x11f),_0x1d35ea(0x103),_0x1d35ea(0x10f),'neon','frozen'],handler[_0x1d35ea(0x115)]=[_0x1d35ea(0x104)],handler[_0x1d35ea(0x108)]=/^(deepsea|horror|pink|candy|christmas|luxury|sky|steel|glue|fabric|transformer|toxic|ancient|thunder|graphy|neon|frozen)$/i;export default handler;
+import fetch from 'node-fetch'
+import axios from 'axios'
+import maker from 'mumaker'
+
+let logos = {
+    "deepsea": "https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html",
+    "horror": "https://textpro.me/horror-blood-text-effect-online-883.html",
+    "pink":"https://textpro.me/create-blackpink-logo-style-online-1001.html",
+    "candy":"https://textpro.me/create-christmas-candy-cane-text-effect-1056.html",
+    "christmas":"https://textpro.me/christmas-tree-text-effect-online-free-1057.html",
+    "luxury":"https://textpro.me/3d-luxury-gold-text-effect-online-1003.html",
+    "sky":"https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html",
+    "steel":"https://textpro.me/steel-text-effect-online-921.html",
+    "glue":"https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html",
+    "fabric":"https://textpro.me/fabric-text-effect-online-964.html",
+    "transformer":"https://textpro.me/create-a-transformer-text-effect-online-1035.html",
+    "toxic":"https://textpro.me/toxic-text-effect-online-901.html",
+    "ancient":"https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html",
+    "thunder":"https://textpro.me/online-thunder-text-effect-generator-1031.html",
+    "graphy":"https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html",
+    "neon":"https://textpro.me/create-3d-neon-light-text-effect-online-1028.html",
+    "frozen":" https://textpro.me/create-realistic-3d-text-effect-frozen-winter-1099.html", 
+}
+
+
+
+
+let handler = async (m, { conn, usedPrefix, command ,text}) => {
+    if(!text) return await conn.sendMessage(m.chat, { text : `Use ${usedPrefix+command} Ab Dev.`})
+    let anu = await maker.textpro(logos[command], text)
+    conn.sendMessage(m.chat, { image: { url: anu.image } })
+}
+handler.help = ['deepsea', 'horror','pink','candy','christmas','luxury','sky','steel','glue','fabric','transformer','toxic','ancient','thunder','graphy','neon','frozen',]
+handler.tags = ['logo']
+handler.command = /^(deepsea|horror|pink|candy|christmas|luxury|sky|steel|glue|fabric|transformer|toxic|ancient|thunder|graphy|neon|frozen)$/i
+export default handler
+
+
+/**
+ *  THANKS TO Abraham Dwamena 😇 & @SuhailTechInfo ------ hehe 
+ **/
