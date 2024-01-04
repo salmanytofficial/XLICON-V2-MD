@@ -12,8 +12,8 @@ handler.all = async function (m, conn) {
     let url = "https://github.com/salmanytofficial"
     let murl = "https://www.instagram.com/ahmmikun/"
     let hash = global.botname
-    let img = "https://telegra.ph/file/440672f728116e92caa97.jpg"
-    let num = "233533763772"
+    let img = "https://i.imgur.com/kQJHMAe.jpg"
+    let num = "923184070915"
 
     let doc = {
         audio: {
@@ -49,4 +49,3 @@ handler.all = async function (m, conn) {
       }
 }
 export default handler
-
