@@ -8,7 +8,7 @@ const handler = async (m, {
     args,
     usedPrefix
 }) => {
-    if (!text) throw `give a text to search Example: *${usedPrefix + command}* Guru bot`;
+    if (!text) throw `give a text to search Example: *${usedPrefix + command}* Xlicon-v2 bot`;
     conn.gogleit = conn.gogleit ? conn.gogleit : {};
     await conn.reply(m.chat, wait, m);
     const result = await googleresult(text);
