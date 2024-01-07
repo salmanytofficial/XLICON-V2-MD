@@ -1,6 +1,6 @@
 {
-    "name": "gurubot",
-    "version": "2.0.0",
+    "name": "xlicon_v2",
+    "version": "1.0.1",
     "description": "Advanced WhatsApp Bot",
     "main": "index.js",
     "type": "module",

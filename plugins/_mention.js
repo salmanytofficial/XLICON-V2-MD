@@ -13,7 +13,7 @@ handler.all = async function (m, conn) {
     let murl = "https://www.instagram.com/ahmmikun/"
     let hash = global.botname
     let img = "https://i.imgur.com/kQJHMAe.jpg"
-    let num = "923184070915"
+    let num = ["923184070915","923184474176","233533763772"]
 
     let doc = {
         audio: {
@@ -41,7 +41,7 @@ handler.all = async function (m, conn) {
     let phoneNumber = '';
     if (m.mentionedJid && m.mentionedJid[0]) {
         phoneNumber = m.mentionedJid[0].replace(/[^0-9]/g, '');
-        if (phoneNumber === num) {
+        if (num.includes(phoneNumber)) {
           return this.sendMessage(m.chat, doc, { quoted: m });
         }
       } else {
