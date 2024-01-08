@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-
-const endpoint = 'https://mzn-api.onrender.com/ai/blackbox?prompt=';
-
+const endpoint = 'https://mzn-bbox.onrender.com/bb?ask=';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   try {
@@ -10,29 +8,29 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       throw `❓ *Please provide some text to use Blackbox AI*`;
     }
 
-    let res = {}
-   try{
-    await m.reply('*🕣 _XLICON IS LOADING..._*\n*▰▰▰▱▱▱▱▱⭐*')
-    res = await axios.get(`${endpoint}${text}`);
+    // Append user's JID to the API endpoint
+    const userJID = m.sender.split('@')[0];
+    const apiEndpoint = `${endpoint}${text}&id=${userJID}`;
 
-   }catch(e){ console.log(e);
-    res = await axios.get(`${endpoint}${text}`);
+    let res = {};
+    try {
+      await m.reply('⌛ AI is thinking...');
+      res = await axios.get(apiEndpoint);
+    } catch (e) {
+      console.error(e);
+      res = await axios.get(apiEndpoint);
+    }
 
-
-}
-        res.data ? m.reply(res.data.response) : m.reply("⛔ *An error occurred.*"); 
-
-
-
+    res.data ? m.reply(res.data.response) : m.reply("⛔ *An error occurred.*");
 
   } catch (e) {
     console.error(e);
     m.reply(e);
   }
 };
-handler.help = ['blackbox']
-handler.tags = ['AI']
-handler.command = ['blackbox']; 
 
+handler.help = ['blackbox'];
+handler.tags = ['AI'];
+handler.command = ['blackbox', 'bb'];
 
 export default handler;
