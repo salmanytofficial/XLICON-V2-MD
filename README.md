@@ -46,7 +46,7 @@
 
 2. Get Session ID (Server 1)
     <br>
-<a href='https://xlicon-1-7fd6f45ebdc3.herokuapp.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 # ***Xlicon-V2 Features***
 - ***300+ Commands In XLICON-V2***
