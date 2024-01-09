@@ -1,202 +1,81 @@
-<h1 align="center"> XLICON-V2-MD </h1>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=ff0000&center=true&width=900&height=100&lines=Its XLICON-V2-MD;Multi+Device+Whatsapp+Bot;Developed+By+SALMAN AHMAD" alt="Typing SVG" /></a>
-  
-<p align="center">  
-  <a href="https://youtu.be/WcA7GZuaN0A">
-    <img alt="XLICON" height="300" src="https://i.imgur.com/bWfDDEU.jpg">
-    <h1 align="center">XLICON-V2</h1>
-  </a>
-</p>
-<p align="center">
-<a href="https://github.com/salmanytofficial"><img title="Author" src="https://img.shields.io/badge/XLICON-V2-black?style=for-the-badge&logo=telegram"></a>
-<p/>
-  
-<p align="center">
-<a href="https://github.com/salmanytofficial?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/salmanytofficial?label=Followers&style=social"></a>
-<a href="https://github.com/salmanytofficial/XLICON-V2-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/salmanytofficial/XLICON-V2-MD?&style=social"></a>
-<a href="https://github.com/salmanytofficial/XLICON-V2-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/salmanytofficial/XLICON-V2-MD?style=social"></a>
-<a href="https://github.com/salmanytofficial/XLICON-V2-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/salmanytofficial/XLICON-V2-MD?label=Watching&style=social"></a>
-</p>
+# XLICON-V2-MD
 
-<p align="center"><img src="https://profile-counter.glitch.me/{XLICON-V2}/count.svg" alt="SALMAN AHMAD :: Visitor's Count" /></p>
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=ff0000&center=true&width=900&height=100&lines=Its%20XLICON-V2-MD;%20Multi-Device%20WhatsApp%20Bot;%20Developed%20By%20SALMAN%20AHMAD)
 
-</br>
+## 🌟 **Bot Intro and Features**
+[![XLICON](https://i.imgur.com/bWfDDEU.jpg)](https://youtu.be/WcA7GZuaN0A)
 
-<h2 align="center"> Star the repo if u like it🌟
-</h2>
+### ℹ️ **About XLICON-V2**
+XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](https://github.com/salmanytofficial). It offers a wide range of features, making it an advanced and user-friendly bot for various purposes.
 
+### **Bot Statistics**
+![Bot Repository Size](https://img.shields.io/github/repo-size/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository Issues](https://img.shields.io/github/issues/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository Stars](https://img.shields.io/github/stars/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository Forks](https://img.shields.io/github/forks/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository Watchers](https://img.shields.io/github/watchers/salmanytofficial/XLICON-V2-MD?label=Watchers&style=for-the-badge)
+![Bot Repository Contributors](https://img.shields.io/github/contributors/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository Pull Requests](https://img.shields.io/github/issues-pr/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
+![Bot Repository License](https://img.shields.io/github/license/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
 
+### 🚀 **Bot Features**
+| Feature                          | Description                                             | Available    | Version    |
+| ---------------------------------| ------------------------------------------------------- | ------------ | ---------- |
+| Multi-Device Support             | Operate the bot on multiple devices simultaneously     | ✅           | 2.0        |
+| AI Photo Enhancement             | Enhance photos using advanced AI algorithms            | ✅           | 2.0        |
+| Downloader Commands              | Download various types of content from the internet     | ✅           | 2.0        |
+| Hidden NSFW Commands             | Access a range of NSFW commands hidden in the bot       | ✅           | 2.0        |
+| Logo Commands                    | Generate logos using specialized commands               | ✅           | 2.0        |
+| Anime Commands                   | Explore anime-related commands and features              | ✅           | 2.0        |
+| Economy Menu                     | Engage in economic activities within the bot            | ✅           | 2.0        |
+| Various Games                    | Enjoy a variety of games within the bot                 | ✅           | 2.0        |
+| Audio/Video Editor Commands      | Edit audio and video files with bot commands            | ✅           | 2.0        |
 
-####  
-*XLICON-V2* - A Advanced Multi Device whatsapp bot Based on *GURU-BOT*
+### 🛠️ **Installation Methods**
+1. **Fork the Repo**
+[![Fork Repo](https://img.shields.io/badge/Fork%20Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://github.com/salmanytofficial/XLICON-V2-MD/fork)
 
-***
+3. **Get Session ID (Server 1)** [![SESSION ID](https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING)
 
+### 🚀 **Deployments**
+#### **Deploy to Heroku**
+1. Create a [Heroku account](https://signup.heroku.com)
+2. Copy the Heroku Deploy Link and replace my username with yours. Then deploy. [![Heroku Deploy](https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/salmanytofficial/XLICON-V2-MD)
 
+#### **Deploy to Railway**
+1. Create a [Railway account](https://railway.app)
+2. Fork and star this repo, then follow the deployment steps. [![Railway Deploy](https://img.shields.io/badge/RailWay%20Deploy-blue?style=for-the-badge&logo=Railway)](https://railway.app)
 
+#### **Deploy to Okteto**
+1. Create an [Okteto account](https://www.okteto.com/pricing/?plan=SaaS)
+2. Fork and star this repo, then follow the deployment steps. [![Okteto Deploy](https://img.shields.io/badge/Okteto%20Deploy-blue?style=for-the-badge&logo=okteto)](https://okteto.com)
 
+#### **Deploy to Replit**
+1. Create a [Replit account](https://replit.com/signup)
+2. Deploy using Replit. [![Replit Deploy](https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit)](https://repl.it/github/salmanytofficial/XLICON-V2-MD)
 
-## `Installation` 📲
+### 🌈 **Support Us**
+- **Mail Us:** [salmansheikh2500@gmail.com](mailto:salmansheikh2500@gmail.com)
+- **Join Our Support Group:** [WhatsApp Group](https://chat.whatsapp.com/Kchd5WS2UmILfGEP523DqL)
+- **Buy Me a Coffee:** [Support on Buy Me a Coffee](https://www.buymeacoffee.com/ahmmikun)
 
-1. Fork the repo
-    <br>
-<a href='https://github.com/salmanytofficial/XLICON-V2-MD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+### 🔒 **Reminder**
+Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 
+### 🙌 **Bot Developers and Contributors**
+| ![SALMAN AHMAD](https://github.com/salmanytofficial.png) | ![Abraham Dwamena](https://i.imgur.com/100UXHy.jpg) | ![Suhail Tech Info](https://github.com/SuhailTechInfo.png) | ![Mzn King](https://github.com/mznking.png) | ![Mehar Zubair](https://github.com/Maher-Zubair.png) |
+| -------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
+| **Salman Ahmad**<br>Owner<br>Bot Development<br>Bot Maintenance | **Abraham Dwamena**<br>Main Development<br>Bot Development<br>Feature Enhancement | **Suhail Tech Info**<br>Contributor<br>Feature Testing | **Mzn King**<br>Contributor<br>Bot Development<br>Bot Testing | **Mehar Zubair**<br>Contributor<br>Bot Testing |
 
-
-2. Get Session ID (Server 1)
-    <br>
-<a href='https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
-
-# ***Xlicon-V2 Features***
-- ***300+ Commands In XLICON-V2***
-- ***4 Different Menus***
-- ***5+ Different Types Of AI***
-- ***AI Photo Enhancement***
-- ***10+ Downloader Commands***
-- ***50+ Hidden NSFW Commands***
-- ***30+ Logo Commands***
-- ***30+ Anime Commands***
-- ***Economy Menu***
-- ***10+ Different Games***
-- ***Audio And Video Editor Commands***
-#
-
-## `DEPLOYMENTS`
-
-#### DEPLOY TO HEROKU
-
-1. If You don't have an account in Heroku. Create a account.
-    <br>
-<p align="center"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-2. TURORIAL SOON
-   Copy The Heroku Deploy Link Paste In Browser Search Bar Remove My  Username salmanytofficial and replace with ur GitHub username and then search Then Put All required Values in Heroku Vars Then Deploy...
-
-4. Now Deploy
-    <br>
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/salmanytofficial/XLICON-V2-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
----
+### 📊 **GitHub Stats of Bot Contributors**
+[![Salman Ahmad's GitHub stats](https://github-readme-stats.vercel.app/api?username=salmanytofficial&show_icons=true&theme=radical)](https://github.com/salmanytofficial)
+[![Abraham Dwamena's GitHub stats](https://github-readme-stats.vercel.app/api?username=abrahamdw882&show_icons=true&theme=radical)](https://github.com/abrahamdw882)
+[![Suhail Tech Info's GitHub stats](https://github-readme-stats.vercel.app/api?username=SuhailTechInfo&show_icons=true&theme=radical)](https://github.com/SuhailTechInfo)
+[![Mzn King's GitHub stats](https://github-readme-stats.vercel.app/api?username=mznking&show_icons=true&theme=radical)](https://github.com/mznking)
+[![Mehar Zubair's GitHub stats](https://github-readme-stats.vercel.app/api?username=Maher-Zubair&show_icons=true&theme=radical)](https://github.com/Maher-Zubair)
 
 
-#### DEPLOY TO RAILWAY
+### ⭐ **Star This Repo**
+If you find XLICON-V2-MD helpful, consider giving it a star ⭐ to show your appreciation.
 
-1. If You don't have an account On Railway. Create a account.
-<p align="center"><a href="https://railway.app"> <img src="https://img.shields.io/badge/RailWay%20Account-blue?style=for-the-badge&logo=Railway" width="220" height="38.45"/></a></p>
-2. Now Deploy.
-<p align="center"><a href="https://railway.app"> <img src="https://img.shields.io/badge/RailWay%20Deploy-blue?style=for-the-badge&logo=Railway" width="220" height="38.45"/></a></p>
-
- - Fork and star this repo.
-- Now head towards https://railway.app/new, select Deploy from repo.
-- Now select the forked repository, select branch.
-- Now go to <b>Variables</b> and add variable listed below.
-   - DATABASE_URL, SESSION_ID, REMOVEBG_KEY, PREFIX
-- Go to <b>Deployments</b> and wait for deplyment to complete.
-- and you're good to go.
-  
-2. TUTORIAL (SOON)
----
-
-#### DEPLOY TO OKTETO 
-
-1. If You don't have an account On Okteto. Create a account.
-    <br>
-<p align="center"><a href="https://www.okteto.com/pricing/?plan=SaaS"> <img src="https://img.shields.io/badge/Okteto%20Account-blue?style=for-the-badge&logo=okteto" width="220" height="38.45"/></a></p>
-
- - Fork and star this repo.
-- Now head towards Lunch Dev Environment
-- Now select the forked XLICON-V2 BOT repository.
-- Now go to <b>Variables</b> and add variable listed below.
-   - DATABASE_URL, SESSION_ID, REMOVEBG_KEY, PREFIX
-- Then Click Lunch and wait for deplyment to complete.
-- and you're good to go.
-
-2. TUTORIAL (SOON)
----
-
-#### DEPLOY TO Replit 
-
-1. If You don't have an account in Replit. Create a account.
-    <br>
-<p align="center"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
-
-2. Now Deploy
-    <br>
-<p align="center"><a href="https://repl.it/github/salmanytofficial/XLICON-V2-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
-
----
- 
- 
-
-- Star ⭐ the repo if you like XLICON-V2.
-
-## `CREDITS` 
-<div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
-<a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
-
-<div><button id="boton" type="button">Base  - By GURU-BOT</button></div>
-<a href="https://github.com/Guru322"><img src="https://github.com/Guru322.png" width="150" height="150" alt="Guru"/></a>
-
-
-
-## `OWNER` 
-<a href="https://github.com/salmanytofficial"><img src="https://github.com/salmanytofficial.png" width="250" height="250" alt="Salman Ahmad"/></a>
-  
-`XLICON-V2 - By salmanytofficial`
-
-## `Main Dev` 
-<a href="https://github.com/abrahamdw882"><img src="https://i.imgur.com/100UXHy.jpg" width="250" height="250" alt="Abraham Dwamena"/></a>
-  
-`XLICON-V2 - By abrahamdw882`
-
-### `CONTRIBUTORS`
-<a href="https://github.com/SuhailTechInfo"><img src="https://github.com/SuhailTechInfo.png" width="200" height="200" alt="Suhail Tech Info"/></a>
-<a href="https://github.com/mznking"><img src="https://github.com/mznking.png" width="200" height="200" alt="Mzn King"/></a>
-<a href="https://github.com/Maher-Zubair"><img src="https://github.com/Maher-Zubair.png" width="200" height="200" alt="Mehar Zubair"/></a>
-
- ## 🔰 `Support Us`
-1. ***For Support [Mail-Us](mailto:salmansheikh2500@gmail.com) Or Join Our [Support Group](https://chat.whatsapp.com/Kchd5WS2UmILfGEP523DqL)***
-
-<p align="center">
-  <a aria-label="Join our chats" href="https://chat.whatsapp.com/C4ivwZKuh5bLJkqfYNPQsk" target="_blank">
-    <img alt="whatsapp" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  </a>
-<a aria-label="Join our chats" href="https://wa.me/923184070915?text=Hi!! SalmanAhmad Sir, I need Your Help" target="_blank">
-    <img alt="whatsapp" src="https://img.shields.io/badge/Owner%20Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-</p>
-
-**Buy Me a Coffee**: Your support will help me stay motivated and continue working on exciting projects like this one.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.buymeacoffee.com/ahmmikun">
-  <img src="https://i.ibb.co/KNnhcvX/bmc-button.png" alt="Buy Me Coffee" height="40" width="150" style="margin-left: 60px;">
-</a>
-
-
-</br>
-
----
-
-## `Reminder`
-<h2 align="center">  Reminder
-</h2>
-   
-## 
-- This bot is not made by `WhatsApp Inc.` So misusing the bot might `ban` your `WhatsApp account!`(Though your WhatsApp account can be unbanned only once.)
-- I am not responsible for banning your account.
-- Use at your own risk by keeping this warning in mind.
-
-## `NOTICE`
-<h2 align="center">  NOTICE
-</h2>
-   
-## 
-- Not For Sale
-- Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
-- Have A Good Day Ahead
-
----
-<h1 align="center"> Thanks To  GURU322
-</h1>
-
- <br><br>
+Thanks to all contributors! 🚀
