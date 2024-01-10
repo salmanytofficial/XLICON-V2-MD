@@ -24,7 +24,8 @@
     },
     "PREFIX": {
       "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
-      "value": "."
+      "required": false,
+      "value": ""
     },
      "HKEY": {
       "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
@@ -39,12 +40,12 @@
     "statusview": {
       "description": "make it true if you want bot to view status",
       "required": false,
-      "value": "false"
+      "value": ""
     },
     "autoRead": {
       "description": "make it true if you want bot to read messages",
       "required": false,
-      "value": "false"
+      "value": ""
     },
     "antidelete": {
       "description": "bot will forward deleted messages if you make it true",
