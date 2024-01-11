@@ -1,8 +1,8 @@
-# XLICON-V2-MD
+# `XLICON-V2-MD`
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=ff0000&center=true&width=900&height=100&lines=Its%20XLICON-V2-MD;%20Multi-Device%20WhatsApp%20Bot;%20Developed%20By%20SALMAN%20AHMAD)
 
-## 🌟 **Bot Intro and Features**
+## 🌟 `Bot Intro and Features`
 [![XLICON](https://i.imgur.com/bWfDDEU.jpg)](https://youtu.be/WcA7GZuaN0A)
 
 ### ℹ️ **About XLICON-V2**
@@ -20,7 +20,7 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 ![Bot Repository Pull Requests](https://img.shields.io/github/issues-pr/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
 ![Bot Repository License](https://img.shields.io/github/license/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
 
-### 🚀 **Bot Features**
+## 🚀 `Bot Features`
 | Feature                          | Description                                             | Available    | Version    |
 | ---------------------------------| ------------------------------------------------------- | ------------ | ---------- |
 | Multi-Device Support             | Operate the bot on multiple devices simultaneously     | ✅           | 2.0        |
@@ -33,13 +33,13 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 | Various Games                    | Enjoy a variety of games within the bot                 | ✅           | 2.0        |
 | Audio/Video Editor Commands      | Edit audio and video files with bot commands            | ✅           | 2.0        |
 
-### 🛠️ **Installation Methods**
+## 🛠️ `Installation Methods`
 1. **Fork the Repo**
 [![Fork Repo](https://img.shields.io/badge/Fork%20Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://github.com/salmanytofficial/XLICON-V2-MD/fork)
 
 3. **Get Session ID (Server 1)** [![SESSION ID](https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING)
 
-### 🚀 **Deployments**
+## 🚀 `Deployments`
 #### **Deploy to Heroku**
 1. Create a [Heroku account](https://signup.heroku.com)
 2. Copy the Heroku Deploy Link and replace my username with yours. Then deploy. [![Heroku Deploy](https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/salmanytofficial/XLICON-V2-MD)
@@ -56,20 +56,26 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 1. Create a [Replit account](https://replit.com/signup)
 2. Deploy using Replit. [![Replit Deploy](https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit)](https://repl.it/github/salmanytofficial/XLICON-V2-MD)
 
-### 🌈 **Support Us**
+## `CREDITS` 
+<div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
+<a href="https://github.com/WhiskeySockets/Baileys"><img src="https://github.com/WhiskeySockets.png" width="150" height="150" alt="adiwajshing"/></a>
+<div><button id="boton" type="button">Base  - By GURU-BOT</button></div>
+<a href="https://github.com/Guru322"><img src="https://github.com/Guru322.png" width="150" height="150" alt="Guru"/></a>
+
+## 🌈 `Support Us`
 - **Mail Us:** [salmansheikh2500@gmail.com](mailto:salmansheikh2500@gmail.com)
 - **Join Our Support Group:** [WhatsApp Group](https://chat.whatsapp.com/Kchd5WS2UmILfGEP523DqL)
 - **Buy Me a Coffee:** [Support on Buy Me a Coffee](https://www.buymeacoffee.com/ahmmikun)
 
-### 🔒 **Reminder**
+## 🔒 `Reminder`
 Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 
-### 🙌 **Bot Developers and Contributors**
+## 🙌 `Bot Developers and Contributors`
 | ![SALMAN AHMAD](https://github.com/salmanytofficial.png) | ![Abraham Dwamena](https://i.imgur.com/100UXHy.jpg) | ![Suhail Tech Info](https://github.com/SuhailTechInfo.png) | ![Mzn King](https://github.com/mznking.png) | ![Mehar Zubair](https://github.com/Maher-Zubair.png) |
 | -------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
 | **Salman Ahmad**<br>Owner<br>Bot Development<br>Bot Maintenance | **Abraham Dwamena**<br>Main Development<br>Bot Development<br>Feature Enhancement | **Suhail Tech Info**<br>Contributor<br>Feature Testing | **Mzn King**<br>Contributor<br>Bot Development<br>Bot Testing | **Mehar Zubair**<br>Contributor<br>Bot Testing |
 
-### 📊 **GitHub Stats of Bot Contributors**
+## 📊 `GitHub Stats of Bot Contributors`
 [![Salman Ahmad's GitHub stats](https://github-readme-stats.vercel.app/api?username=salmanytofficial&show_icons=true&theme=radical)](https://github.com/salmanytofficial)
 [![Abraham Dwamena's GitHub stats](https://github-readme-stats.vercel.app/api?username=abrahamdw882&show_icons=true&theme=radical)](https://github.com/abrahamdw882)
 [![Suhail Tech Info's GitHub stats](https://github-readme-stats.vercel.app/api?username=SuhailTechInfo&show_icons=true&theme=radical)](https://github.com/SuhailTechInfo)
@@ -77,7 +83,7 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 [![Mehar Zubair's GitHub stats](https://github-readme-stats.vercel.app/api?username=Maher-Zubair&show_icons=true&theme=radical)](https://github.com/Maher-Zubair)
 
 
-### ⭐ **Star This Repo**
+## ⭐ `Star This Repo`
 If you find XLICON-V2-MD helpful, consider giving it a star ⭐ to show your appreciation.
 
 Thanks to all contributors! 🚀
