@@ -20,6 +20,17 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 ![Bot Repository Pull Requests](https://img.shields.io/github/issues-pr/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
 ![Bot Repository License](https://img.shields.io/github/license/salmanytofficial/XLICON-V2-MD?style=for-the-badge)
 
+####  
+*XLICON-V2* - A Advanced Multi Device whatsapp bot Based on *GURU-BOT*
+
+***
+
+## ⭐ `Star This Repo`
+If you find XLICON-V2-MD helpful, consider giving it a star ⭐ to show your appreciation.
+
+Thanks to all contributors! 🚀
+
+
 ## 🚀 `Bot Features`
 | Feature                          | Description                                             | Available    | Version    |
 | ---------------------------------| ------------------------------------------------------- | ------------ | ---------- |
@@ -34,27 +45,99 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 | Audio/Video Editor Commands      | Edit audio and video files with bot commands            | ✅           | 2.0        |
 
 ## 🛠️ `Installation Methods`
-1. **Fork the Repo**
-[![Fork Repo](https://img.shields.io/badge/Fork%20Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://github.com/salmanytofficial/XLICON-V2-MD/fork)
+1. Fork the repo
+    <br>
+<a href='https://github.com/salmanytofficial/XLICON-V2-MD/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
-3. **Get Session ID (Server 1)** [![SESSION ID](https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black)](https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING)
+
+
+2. Get Session ID (REPLIT PAIRING)
+    <br>
+<a href='https://xlicon-1-7fd6f45ebdc3.herokuapp.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ## 🚀 `Deployments`
-#### **Deploy to Heroku**
-1. Create a [Heroku account](https://signup.heroku.com)
-2. Copy the Heroku Deploy Link and replace my username with yours. Then deploy. [![Heroku Deploy](https://img.shields.io/badge/Heroku%20Deploy-blue?style=for-the-badge&logo=heroku)](https://dashboard.heroku.com/new?template=https://github.com/salmanytofficial/XLICON-V2-MD)
+#### DEPLOY TO HEROKU 
 
-#### **Deploy to Railway**
-1. Create a [Railway account](https://railway.app)
-2. Fork and star this repo, then follow the deployment steps. [![Railway Deploy](https://img.shields.io/badge/RailWay%20Deploy-blue?style=for-the-badge&logo=Railway)](https://railway.app)
+1. If You don't have a account in Heroku. Create a account.
+    <br>
+<a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-#### **Deploy to Okteto**
-1. Create an [Okteto account](https://www.okteto.com/pricing/?plan=SaaS)
-2. Fork and star this repo, then follow the deployment steps. [![Okteto Deploy](https://img.shields.io/badge/Okteto%20Deploy-blue?style=for-the-badge&logo=okteto)](https://okteto.com)
+2. Now Deploy
+    <br>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/salmanytofficial/XLICON-V2-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
-#### **Deploy to Replit**
-1. Create a [Replit account](https://replit.com/signup)
-2. Deploy using Replit. [![Replit Deploy](https://img.shields.io/badge/replit%20Deploy-blue?style=for-the-badge&logo=replit)](https://repl.it/github/salmanytofficial/XLICON-V2-MD)
+#### DEPLOY TO REPLIT
+
+1. If You don't have an account in Replit. Create a account.
+    <br>
+<a href='https://replit.com/signup' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+
+
+2. Now Deploy
+    <br>
+    <a href='https://repl.it/github/salmanytofficial/XLICON-V2-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+
+
+
+#### DEPLOY TO CODESPACE
+
+3. If You don't have a account in Codespace. Create a account.
+    <br>
+<a href='https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces' target="_blank"><img alt='Codespaces' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
+
+4. Now Deploy
+    <br>
+<a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO OKTETO
+
+5. If You don't have a account in Okteto. Create a account.
+    <br>
+<a href='https://www.okteto.com/pricing/?plan=SaaS' target="_blank"><img alt='Okteto' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
+
+6. Now Deploy
+    <br>
+<a href='https://cloud.okteto.com/login' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=opera' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO RAILWAY
+
+7. If You don't have a account in Railway. Create a account.
+    <br>
+<a href='https://railway.app/login' target="_blank"><img alt='Railway' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
+
+8. Now Deploy
+    <br>
+<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO MONGENIUS
+
+9. If You don't have a account in Mongenius. Create a account.
+    <br>
+<a href='https://studio.mogenius.com/user/registration' target="_blank"><img alt='Mongenius' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
+
+10. Now Deploy
+    <br>
+<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO COOLIFY
+
+11. If You don't have a account in Coolify. Create a account.
+    <br>
+<a href='https://app.coolify.io/register' target="_blank"><img alt='Coolify' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=C' width="96.35" height="28"/></a></p>
+
+12. Now Deploy
+    <br>
+<a href='https://coolify.io/' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=C' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO RENDER
+
+13. If You don't have a account in Render. Create a account.
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='Render' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
+
+14. Now Deploy
+    <br>
+<a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
 
 ## `CREDITS` 
 <div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
@@ -62,18 +145,44 @@ XLICON-V2 is a versatile Multi-Device WhatsApp bot developed by [Salman Ahamed](
 <div><button id="boton" type="button">Base  - By GURU-BOT</button></div>
 <a href="https://github.com/Guru322"><img src="https://github.com/Guru322.png" width="150" height="150" alt="Guru"/></a>
 
+## `OWNER` 
+<a href="https://github.com/salmanytofficial"><img src="https://github.com/salmanytofficial.png" width="250" height="250" alt="Salman Ahmad"/></a>
+  
+**XLICON-V2** - By `salmanytofficial`
+<br>
+`Development , Maintainence , Bot Updates`
+
+## `Main Dev` 
+<a href="https://github.com/abrahamdw882"><img src="https://i.imgur.com/100UXHy.jpg" width="250" height="250" alt="Abraham Dwamena"/></a>
+  
+**XLICON-V2** - By `abrahamdw882`
+<br>
+`Development , Features Enhancement , Plugin Debbuging`
+
 ## 🌈 `Support Us`
 - **Mail Us:** [salmansheikh2500@gmail.com](mailto:salmansheikh2500@gmail.com)
-- **Join Our Support Group:** [WhatsApp Group](https://chat.whatsapp.com/Kchd5WS2UmILfGEP523DqL)
-- **Buy Me a Coffee:** [Support on Buy Me a Coffee](https://www.buymeacoffee.com/ahmmikun)
+- **Join Our Support Group:**
+ <p align="center">
+  <a aria-label="Join our chats" href="https://chat.whatsapp.com/Kchd5WS2UmILfGEP523DqL" target="_blank">
+    <img alt="whatsapp" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+  </a>
+<a aria-label="Join our chats" href="https://wa.me/923184070915?text=Hi!! SalmanAhmad Sir, I need Your Help" target="_blank">
+    <img alt="whatsapp" src="https://img.shields.io/badge/Owner%20Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</p>
+
+- **Buy Me a Coffee:** `Your support will help me stay motivated and continue working on exciting projects like this one.`
+
+<a href="https://www.buymeacoffee.com/ahmmikun">
+<img src="https://i.ibb.co/KNnhcvX/bmc-button.png" alt="Buy Me Coffee" height="40" width="150" style="margin-left: 60px;">
+</a>
 
 ## 🔒 `Reminder`
 Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 
 ## 🙌 `Bot Developers and Contributors`
-| ![SALMAN AHMAD](https://github.com/salmanytofficial.png) | ![Abraham Dwamena](https://i.imgur.com/100UXHy.jpg) | ![Suhail Tech Info](https://github.com/SuhailTechInfo.png) | ![Mzn King](https://github.com/mznking.png) | ![Mehar Zubair](https://github.com/Maher-Zubair.png) |
+| [![Mzn King](https://github.com/mznking.png)](https://github.com/mznking) | [![Suhail Tech Info](https://github.com/SuhailTechInfo.png)](https://github.com/SuhailTechInfo.) | [![Mehar Zubair](https://github.com/Maher-Zubair.png)](https://github.com/Maher-Zubair) | [![VENOX](https://github.com/V-E-N-O-X.png)](https://github.com/V-E-N-O-X) | [![Syntax-king](https://github.com/syntax-king.png)](https://github.com/syntax-king) |
 | -------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
-| **Salman Ahmad**<br>Owner<br>Bot Development<br>Bot Maintenance | **Abraham Dwamena**<br>Main Development<br>Bot Development<br>Feature Enhancement | **Suhail Tech Info**<br>Contributor<br>Feature Testing | **Mzn King**<br>Contributor<br>Bot Development<br>Bot Testing | **Mehar Zubair**<br>Contributor<br>Bot Testing |
+| **Mzn King**<br>`Contributor`<br>`Bot Development`<br>`Bot Testing` | **Suhail Tech Info**<br>`Contributor`<br>`Feature Testing` |**Mehar Zubair**<br>`Contributor`<br>`Bot Testing` | **VENOX**<br>`Menu Designs`<br>`Xlicon Web`<br>`Bot Testing` | **Syntax king**<br>`Contributor`<br>`Bot Testing` |
 
 ## 📊 `GitHub Stats of Bot Contributors`
 [![Salman Ahmad's GitHub stats](https://github-readme-stats.vercel.app/api?username=salmanytofficial&show_icons=true&theme=radical)](https://github.com/salmanytofficial)
@@ -83,7 +192,22 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 [![Mehar Zubair's GitHub stats](https://github-readme-stats.vercel.app/api?username=Maher-Zubair&show_icons=true&theme=radical)](https://github.com/Maher-Zubair)
 
 
-## ⭐ `Star This Repo`
-If you find XLICON-V2-MD helpful, consider giving it a star ⭐ to show your appreciation.
+## `Reminder`
+   
+## 
+- This bot is not made by `WhatsApp Inc.` So misusing the bot might `ban` your `WhatsApp account!`(Though your WhatsApp account can be unbanned only once.)
+- I am not responsible for banning your account.
+- Use at your own risk by keeping this warning in mind.
 
-Thanks to all contributors! 🚀
+## `NOTICE`
+   
+## 
+- Not For Sale
+- Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
+- Have A Good Day Ahead
+
+---
+<h1 align="center"> Thanks To  GURU322
+</h1>
+
+ <br><br>
