@@ -53,7 +53,7 @@ Thanks to all contributors! 🚀
 
 2. Get Session ID (REPLIT PAIRING)
     <br>
-<a href='https://xlicon-1-7fd6f45ebdc3.herokuapp.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@mznking04/XLICON-PAIR-CODE?v=1' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ## 🚀 `Deployments`
 #### DEPLOY TO HEROKU 
