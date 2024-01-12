@@ -2,6 +2,17 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=ff0000&center=true&width=900&height=100&lines=Its%20XLICON-V2-MD;%20Multi-Device%20WhatsApp%20Bot;%20Developed%20By%20SALMAN%20AHMAD)
 
+<h1 align="center"> Thanks To  GURU322
+</h1>
+<p align="center">
+  
+>XLICON-V2-MD is based on :
+>- [GURU BOT](https://github.com/Guru322/GURU-BOT) by [Guru](https://github.com/Guru322) (License: Apache License 2.0)
+>
+> :octocat: Don't forget to check out! :point_right: [GURU BOT](https://github.com/Guru322/GURU-BOT)
+
+</p>
+
 ## 🌟 `Bot Intro and Features`
 [![XLICON](https://i.imgur.com/bWfDDEU.jpg)](https://youtu.be/WcA7GZuaN0A)
 
@@ -207,15 +218,5 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 - Have A Good Day Ahead
 
 ---
-<h1 align="center"> Thanks To  GURU322
-</h1>
-<p align="center">
-  
->XLICON-V2-MD is based on :
->- [GURU BOT](https://github.com/Guru322/GURU-BOT) by [Guru](https://github.com/Guru322) (License: Apache License 2.0)
->
-> :octocat: Don't forget to check out! :point_right: [GURU BOT](https://github.com/Guru322/GURU-BOT)
-
-</p>
 
  <br><br>
