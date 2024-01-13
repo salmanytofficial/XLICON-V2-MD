@@ -64,7 +64,7 @@ Thanks to all contributors! 🚀
 
 2. Get Session ID (REPLIT PAIRING)
     <br>
-<a href='https://replit.com/@mznking04/XLICON-PAIR-CODE?v=1' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 ## 🚀 `Deployments`
 #### DEPLOY TO HEROKU 
@@ -216,7 +216,7 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 - Not For Sale
 - Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
 - Have A Good Day Ahead
-
+- Don't Use This Script As Your Bot Base 
 ---
 
  <br><br>
