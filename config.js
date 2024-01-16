@@ -7,8 +7,8 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['231775928537', 'CBRISTIAN', true], 
-  ['2318885280591', 'CHRIS', true],
+  ['231775928537', 'CHRISTIAN', true], 
+  ['231888528059', 'CHRIS', true],
   ['', '', ], 
   ['', '', ],
   ['', '', ],
