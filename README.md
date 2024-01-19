@@ -151,6 +151,8 @@ Thanks to all contributors! 🚀
     <br>
 <a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=render' width="96.35" height="28"/></a></p>
 
+## `NEW DEPLOYMENT`
+NOW Deploy👇
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
 
 ## `CREDITS` 
