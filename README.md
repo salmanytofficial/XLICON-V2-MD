@@ -154,7 +154,8 @@ Thanks to all contributors! 🚀
 ## `NEW DEPLOYMENT`
 NOW Deploy👇
 <br>
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+## DEPLOY IN KOYEB    
+[![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/auth/signup)  
 
 ## `CREDITS` 
 <div><button id="boton" type="button">Baileys - By WhiskeySockets & adiwajshing</button></div>
