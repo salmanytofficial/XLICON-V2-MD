@@ -51,6 +51,7 @@
         "aptoide-scraper": "^1.0.1",
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.4.0",
+        "mumaker": "latest",
         "canvacord": "^5.4.8",
         "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
