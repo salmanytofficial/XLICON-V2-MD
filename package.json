@@ -1,15 +1,4 @@
 {
-    "name": "xlicon_v2",
-    "version": "1.0.1",
-    "description": "Advanced WhatsApp Bot",
-    "main": "index.js",
-    "type": "module",
-    "directories": {
-        "lib": "lib",
-        "src": "src",
-        "plugins": "plugins"
-    },
-    "scripts": {
         "start": "node index.js",
         "test": "node test.js"
     },
