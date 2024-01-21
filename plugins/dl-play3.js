@@ -100,7 +100,7 @@ handler.before = async (m, {
     }
 };
 
-handler.help = ["play"3];
+handler.help = ["play3"];
 handler.tags = ["downloader"];
 handler.command = /^(play3)$/i;
 handler.limit = true;
