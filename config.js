@@ -7,8 +7,8 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['231775928537', 'CHRISTIAN', true], 
-  ['231888528059', 'CHRIS', true],
+  ['231775928537', '𝘾𝞖𝞒𝞘𝙎𝙏𝞘𝞓𝞜🤡', true], 
+  ['231888528059', '¢няιѕ', true],
   ['', '', ], 
   ['', '', ],
   ['', '', ],
@@ -54,13 +54,13 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'CHRISTIAN'
+global.botname = ''XLICON-V2'
 global.premium = 'true'
 global.packname = 'Chris' 
 global.author = '@XLICON-V2' 
 global.menuvid = 'https://i.imgur.com/vhKqPj9.mp4'
 global.igfg = '▢✓ Follow My channel\nhttps://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e\n' 
-global.dygp = 'https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW'
+global.dygp = 'https://chat.whatsapp.com/DltVVODKSGEBnIrTRfsbGf'
 global.fgsc = 'https://github.com/Guru322/GURU-BOT' 
 global.fgyt = 'https://youtube.com/@s4salmanyt'
 global.fgpyp = 'https://youtube.com/@s4salmanyt'
