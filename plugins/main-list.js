@@ -256,6 +256,64 @@ break;
 ┃➣👾 _${usedPrefix}attp2_
 ┃➣👾 _${usedPrefix}attp3_
 ┗━━━ʕ•㉨•ʔ━━━┛`; 
+
+       break;
+        case 'animemenu2':
+          lkr = `
+┌─⦿『 *_anime_* 』⦿
+┃⬡▸ .anime
+┃⬡▸ .akira
+┃⬡▸ .akiyama
+┃⬡▸ .anna
+┃⬡▸ .asuna
+┃⬡▸ .ayuzawa
+┃⬡▸ .boruto
+┃⬡▸ .chiho
+┃⬡▸ .chitoge
+┃⬡▸ .deidara
+┃⬡▸ .erza
+┃⬡▸ .elaina
+┃⬡▸ .eba
+┃⬡▸ .emilia
+┃⬡▸ .hestia
+┃⬡▸ .hinata
+┃⬡▸ .inori
+┃⬡▸ .isuzu
+┃⬡▸ .itachi
+┃⬡▸ .itori
+┃⬡▸ .kaga
+┃⬡▸ .kagura
+┃⬡▸ .kaori
+┃⬡▸ .keneki
+┃⬡▸ .kotori
+┃⬡▸ .kurumi
+┃⬡▸ .madara
+┃⬡▸ .mikasa
+┃⬡▸ .miku
+┃⬡▸ .minato
+┃⬡▸ .naruto
+┃⬡▸ .nezuko
+┃⬡▸ .sagiri
+┃⬡▸ .sasuke
+┃⬡▸ .sakura
+┃⬡▸ .akira
+┃⬡▸ .amv  Ⓛ
+┃⬡▸ .waifu
+┃⬡▸ .neko
+┃⬡▸ .zerotwo
+┃⬡▸ .loli
+┃⬡▸ .jjanime  Ⓛ
+┃⬡▸ .pokedex <pokemon>
+┃⬡▸ .trace
+>-----------------------<
+┃ -MADE BY XLICON -TEAM
+>-----------------------<
+╰─────────────────⦿
+`; 
+
+
+
+                  
           break;
           case 'toolmenu':
           lkr = `
@@ -312,9 +370,9 @@ break;
       m.react(done);
     };
     
-    handler.help = ['list', 'botmenu', 'ownermenu', 'groupmenu', 'dlmenu', 'downloadermenu', 'economymenu', 'funmenu', 'gamemenu', 'stickermenu', 'nsfwmenu', 'logomenu', 'toolmenu'];
+    handler.help = ['list', 'botmenu', 'ownermenu', 'groupmenu', 'dlmenu', 'downloadermenu', 'economymenu', 'funmenu', 'gamemenu', 'stickermenu', 'nsfwmenu', 'logomenu', 'toolmenu','animemenu2','animemenu'];
     handler.tags = ['main'];
-    handler.command = ['list', 'botmenu', 'ownermenu', 'groupmenu', 'dlmenu', 'downloadermenu', 'economymenu', 'funmenu', 'gamemenu', 'stickermenu', 'nsfwmenu', 'logomenu', 'toolmenu'];
+    handler.command = ['list', 'botmenu', 'ownermenu', 'groupmenu', 'dlmenu', 'downloadermenu', 'economymenu', 'funmenu', 'gamemenu', 'stickermenu', 'nsfwmenu', 'logomenu', 'toolmenu','animemenu2','animemenu'];
     
     export default handler
     
