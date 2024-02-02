@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, usedPrefix, participants }) => {
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   let user = global.db.data.users[who];
   if (!(who in global.db.data.users)) throw '✳️ The user is not found in my database';
-  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg');
+  let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './XLICON.jpg');
   let about = (await conn.fetchStatus(who).catch(console.error))?.status || '';
   let { name, exp, credit, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who];
   let { min, xp, max } = xpRange(user.level, global.multiplier);
