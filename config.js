@@ -8,11 +8,11 @@ import axios from 'axios'
 
 global.owner = [
   ['923419793187', 'WHITE', true], 
-  ['923419793187', 'Mr king 773', true],
-  ['923419793187', 'M.Husnain', true], 
-  ['923419793187', 'Mr king 773', true],
-  ['923419793187', 'Mr king 773', true],
-  ['923419793187', 'Mr king 773', true],
+  ['923419793187', '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*', true],
+  ['923419793187', '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*', true], 
+  ['923419793187', '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*', true],
+  ['923419793187', '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*', true],
+  ['923419793187', '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*', true],
   
 ] //Number of owners
 
@@ -55,10 +55,10 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'X mr king'
+global.botname = '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*'
 global.premium = 'true'
 global.packname = 'Tiger King 773 TEAM' 
-global.author = '@Mr Husnain' 
+global.author = '*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝*' 
 global.menuvid = 'https://i.imgur.com/mEKX0U9.mp4'
 global.igfg = '' 
 global.dygp = ''
@@ -69,7 +69,7 @@ global.fglog = 'XLICON.jpg'
 global.thumb = fs.readFileSync('./XLICON.jpg')
 
 
-global.wait = '*🕣 _XLICON IS LODIND..._*\n*▰▰▰▱▱▱▱▱⭐*'
+global.wait = '*🕣 _*𓈸 𓅋⃟ 🅼︎🅡︎᭄𝐊ɪɴɢ𝄟 ≛⃝* IS LODIND..._*\n*▰▰▰▱▱▱▱▱⭐*'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✔️'
