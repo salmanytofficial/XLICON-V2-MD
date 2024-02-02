@@ -12,8 +12,8 @@
 
  Run the following commands to clone the repo (Use your fork)
  ```SH
-> git clone https://github.com/Guru322/GURU-BOT
-> cd GURU-BOT
+> git clone https://github.com/salmanytofficial/XLICON-V2-MD
+> cd XLICON-V2-MD
  ```
 
  Run this following command to install the dependencies 
@@ -29,4 +29,4 @@
  Running the above command will start the bot. To authenticate scan the QR which shows up in the terminal using the WA-Web Scanner on your WhatsApp . Good Luck!
 
 
- [Set it up on Heroku](https://github.com/Guru322/GURU-BOT/blob/master/Heroku-Hosting-Guide.md)
+ [Set it up on Heroku](https://github.com/salmanytofficial/XLICON-V2-MD/blob/master/Heroku-Hosting-Guide.md)
