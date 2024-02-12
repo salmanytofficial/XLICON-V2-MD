@@ -16,7 +16,7 @@ const cat = `*_XLICON-V2_*
 
 await conn.sendFile(m.chat, pp, 'menuvid', cat, fkontak)
 }
-handler.help = [devr', 'maindev']
+handler.help = ['devi','maindev']
 handler.tags = ['info']
 handler.command = /^(maindev|devi)$/i
 
