@@ -15,17 +15,10 @@ import {
  
  const defaultMenu = {
   before: `
-  「 ${botname} 🎁XMD 」\n
+  「 ${botname} \n
   *%ucpn*
 ⍟────────────────⍟
-*REMEMBER THIS BOT IS FOR*
-*EDUCATIONAL PERPOSES*
-⍟────────────────⍟
-*©Salman Ahmand*
-⍟────────────────⍟
-*_Konnichiwa! Its XLICON-MD A_* 
-*_Multi-Device Whatsapp BOT_*
-*_Recoded By Salman Ahmad And Abraham Dwamena_*
+*_Konnichiwa! Its XLICON-MD A_*
 ⍟────────────────⍟
                                     
  ▀▄▀ █░░ █ █▀▀ █▀█ █▄░█  
@@ -35,14 +28,14 @@ import {
  █░▀░█ █▄▀
  
 ╭─────────────────⦿
-┃    🔰〘 𝙄𝙉𝙁𝙊 〙🔰
+┃   〘 𝙄𝙉𝙁𝙊 〙⛓️
 ╰┬────────────────⦿
 ┌┤
 ┃
 ┃ *_Founder_*: Salman Ahmad 
 ┃ *_Bot Name_*: ${botname}
 ┃ *_Mode_*: %mode
-┃ *_HOST_*: kali Linix
+┃ *_HOST_*: kali Linux
 ┃ *_Type_*: NodeJs
 ┃ *_Baileys_*: Multi Device
 ┃ *_Prefix_*: [ *%_p* ]
@@ -51,7 +44,7 @@ import {
 ┃
 ╰──────────────────⦿
 ╭──────────────────⦿
-┃    🔰〘 𝙐𝙎𝙀𝙍 〙🔰
+┃    ⚙️〘 𝙐𝙎𝙀𝙍 〙⚙️
 ╰┬─────────────────⦿
 ┌┤     
 ┃
@@ -64,7 +57,7 @@ import {
 ┃
 ╰──────────────────⦿
 ╭──────────────────⦿
-┃   🔰〘 𝑰𝑵𝑭𝑶 𝑪𝑴𝑫 〙🔰
+┃   ⚙️〘 𝑰𝑵𝑭𝑶 𝑪𝑴𝑫 〙⚙️
 ╰┬─────────────────⦿
 ┌┤ 
 ┃ *_%totalfeatures_* Commands
