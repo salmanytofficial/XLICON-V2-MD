@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
     m.reply('*Please wait, generating images...*');
 
-    const endpoint = `https://www.bing.com/images/create?q=${encodeURIComponent(text)}`;
+    const endpoint = `https://vihangayt.me/tools/lexicaart?q=${encodeURIComponent(text)}`;
     const response = await fetch(endpoint);
     
     if (response.ok) {
