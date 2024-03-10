@@ -193,6 +193,13 @@ NOW Deploy👇
     <img alt="whatsapp" src="https://img.shields.io/badge/Owner%20Whatsapp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
 
+- **Patron Support:** [`Support Me On Patreon ☕ `](https://www.patreon.com/ahmmikun/membership)
+
+<p align="left">
+Click On The Link To Donate ME...
+</p>
+
+
 - **Buy Me a Coffee:** `Your support will help me stay motivated and continue working on exciting projects like this one.`
 
 <a href="https://www.buymeacoffee.com/ahmmikun">
