@@ -8,15 +8,15 @@ import axios from 'axios'
 
 global.owner = [
   ['918127875972', 'Felix', true],
-  ['918127875972', 'Բᥱȴιꪎ -(Բᥱȴιꪎ)', true], 
+  ['254113676760', 'neuville juma', true], 
   ['923184070915', 'Salman Ahmad', true], 
 ] //Number of owners
 
 //global.pairingNumber = "" //put your bot number here
 
 global.mods = ['233533763772','923184070915'] 
-global.prems = ['923184070915', '918127875972', '918360234087']
-global.allowed = ['923184070915', '233533763772', '918127875972']
+global.prems = ['923184070915', '918127875972', '254113676760']
+global.allowed = ['923184070915', '233533763772', '254113676760']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -51,7 +51,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'Բᥱȴιꪎ'
+global.botname = 'Neuville'
 global.premium = 'true'
 global.packname = 'Բᥱȴιꪎ' 
 global.author = 'ƚαƙҽ ƙαɾɳҽ ɯαʅҽ ƙι ɱσɱ ɯԋσɾҽ' 
