@@ -23,7 +23,7 @@ stiker = await createSticker(false, args[0], '', author, 20)
 } catch {
 stiker = '*ايزومي عمك🐦‍⬛*'	
 } finally {
-m.reply(سرقة)}}
+m.reply(sticker)}}
 handler.help = ['sfull']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
