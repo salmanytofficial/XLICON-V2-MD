@@ -15,7 +15,7 @@ import {
  
  const defaultMenu = {
   before: `
-  「 ${botname} 🎁XMD 」\n
+  「 IZUMI BOT🎁XMD 」\n
   *%ucpn*
 ⍟────────────────⍟
 *REMEMBER THIS BOT IS FOR*
