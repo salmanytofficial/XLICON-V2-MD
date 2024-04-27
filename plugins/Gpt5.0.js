@@ -16,7 +16,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     conn.sendPresenceUpdate('composing', m.chat);
     
 
-    const API_URL = `https://vihangayt.me/tools/chatgpt5?q=Hi${encodeURIComponent(text)}`;
+    const API_URL = `https://api.maher-zubair.tech/ai/bard?q=${encodeURIComponent(text)}`;
     const response = await fetch(API_URL);
     const data = await response.json();
 
