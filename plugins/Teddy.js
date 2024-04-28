@@ -18,6 +18,6 @@ let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
 };
 
 teddy.help = ['teddy'];
-teddy.tags = ['main', 'fun', 'animation'];
+teddy.tags = ['fun'];
 teddy.command = /^(teddy)$/i;
 export default teddy;
