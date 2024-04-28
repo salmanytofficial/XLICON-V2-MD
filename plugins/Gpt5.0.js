@@ -10,14 +10,14 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       text = m.quoted.text;
     }
 
-    m.react('⚡');
+    await m.react('⚡');
 
-    const API_URL = `https://api.maher-zubair.tech/ai/bard?q=${encodeURIComponent(text)}`;
+    const API_URL = `https://api.maher-zubair.tech/ai/youai?q=${encodeURIComponent(text)}`;
 
     const response = await fetch(API_URL);
     const data = await response.json();
 
-    m.react('✅');
+    await m.react('✅');
 
     if (data.status && data.data) {
       const respuestaAPI = data.data;
