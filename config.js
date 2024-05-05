@@ -6,7 +6,7 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 
 
-global.owner = [234 915 281 6289','Necromancer', true] //Number of owners
+global.owner = [2348168689993','Emmy_Nuel', true] //Number of owners
 
 //global.pairingNumber = "234 915 281 6289" //put your bot number here
 
@@ -47,7 +47,7 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'Necromancer'
+global.botname = 'Emmy_Nuel'
 global.premium = 'true'
 global.packname = 'Nuel' 
 global.author = '@XLICON-V2' 
