@@ -12,7 +12,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 
     await m.react('⚡');
 
-    const API_URL = `https://api.maher-zubair.tech/ai/youai?q=${encodeURIComponent(text)}`;
+    const API_URL = `https://api.maher-zubair.tech/ai/youai?q=${text}`;
 
     const response = await fetch(API_URL);
     const data = await response.json();
