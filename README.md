@@ -216,6 +216,7 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 [![Salman Ahmad's GitHub stats](https://github-readme-stats.vercel.app/api?username=salmanytofficial&show_icons=true&theme=radical)](https://github.com/salmanytofficial)
 [![Abraham Dwamena's GitHub stats](https://github-readme-stats.vercel.app/api?username=abrahamdw882&show_icons=true&theme=radical)](https://github.com/abrahamdw882)
 [![Suhail Tech Info's GitHub stats](https://github-readme-stats.vercel.app/api?username=SuhailTechInfo&show_icons=true&theme=radical)](https://github.com/SuhailTechInfo)
+[![VenoxSenpai's GitHub stats](https://github-readme-stats.vercel.app/api?username=V-E-N-O-X&show_icons=true&theme=radical)](https://github.com/V-E-N-O-X)
 [![Mzn King's GitHub stats](https://github-readme-stats.vercel.app/api?username=mznking&show_icons=true&theme=radical)](https://github.com/mznking)
 [![Maher Zubair's GitHub stats](https://github-readme-stats.vercel.app/api?username=Maher-Zubair&show_icons=true&theme=radical)](https://github.com/Maher-Zubair)
 
