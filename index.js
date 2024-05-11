@@ -4,9 +4,7 @@ import os from 'os';
 import express from 'express';
 import { spawn } from 'child_process';
 import path from 'path';
-import module from 'module';
 import fs from 'fs';
-import fsModule from 'fs';
 import chalk from 'chalk';
 import cfonts from 'cfonts';
 
@@ -57,8 +55,8 @@ async function start(scriptName) {
   }
   isRunning = true;
   const currentScriptPath = new URL(import.meta.url).pathname;
-  const scriptArgs = [path.join(path.dirname(currentScriptPath), scriptName), ...process.argv.slice(0x2)];
-  const childProcess = spawn(process.argv[0x0], scriptArgs, {
+  const scriptArgs = [path.join(path.dirname(currentScriptPath), scriptName), ...process.argv.slice(2)];
+  const childProcess = spawn(process.argv[0], scriptArgs, {
     'stdio': ["inherit", "inherit", "inherit", "ipc"]
   });
 
@@ -79,11 +77,10 @@ async function start(scriptName) {
   childProcess.on("exit", exitCode => {
     isRunning = false;
     console.error(chalk.red("❌Exited with code: " + exitCode));
-    if (exitCode === 0x0) {
+    if (exitCode === 0) {
       return;
     }
-    fs.watchFile(scriptArgs[0x0], () => {
-      fs.unwatchFile(scriptArgs[0x0]);
+    fs.unwatchFile(scriptArgs[0], () => {
       start("Guru.js");
     });
   });
