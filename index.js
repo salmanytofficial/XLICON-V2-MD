@@ -84,7 +84,7 @@ async function start(scriptName) {
     }
     fs.watchFile(scriptArgs[0x0], () => {
       fs.unwatchFile(scriptArgs[0x0]);
-      start("Guru.js");
+      start("XLICON.js");
     });
   });
 
@@ -92,7 +92,7 @@ async function start(scriptName) {
     console.error(chalk.red("Error: " + err));
     childProcess.kill();
     isRunning = false;
-    start('Guru.js');
+    start('XLICON.js');
   });
 
   const pluginsDir = path.join(path.dirname(currentScriptPath), "plugins");
@@ -113,11 +113,11 @@ async function start(scriptName) {
   });
 }
 
-start('Guru.js');
+start('XLICON.js');
 
 process.on("unhandledRejection", () => {
   console.error(chalk.red("Unhandled promise rejection. Bot will restart..."));
-  start("Guru.js");
+  start("XLICON.js");
 });
 
 process.on("exit", exitCode => {
