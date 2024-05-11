@@ -41,7 +41,7 @@ const sendHtml = (res, req, page) => {
   req.sendFile(path.join(htmlDir, page + ".html"));
 };
 
-app.get('/', (req, res) => sendHtml(res, req, "guru"));
+app.get('/', (req, res) => sendHtml(res, req, "xlicon"));
 
 app.listen(port, () => {
   console.log(chalk.green("Port " + port + " is open"));
