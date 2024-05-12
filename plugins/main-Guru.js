@@ -8,12 +8,12 @@ let handler = async m => m.reply(`
 
 Group1:
 _____________________
-https://chat.whatsapp.com/C4ivwZKuh5bLJkqfYNPQsk
+https://chat.whatsapp.com/KIdMzyvnjju4GIuJhATpm4
 _______________________
 
 Group2:
 _______________________
-https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW
+https://chat.whatsapp.com/BhKaFpy9YYRIwtrZUDZMNY
 _________________________
 
 *DEVELOPERS*/
