@@ -19,5 +19,4 @@ let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
 
 teddy.help = ['teddy'];
 teddy.tags = ['fun'];
-teddy.command = new RegExp(/^teddy$/i); // changed from string to RegExp
 export default teddy;
