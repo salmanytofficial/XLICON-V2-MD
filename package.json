@@ -41,6 +41,8 @@
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper": "^4.0.22-alpha.0",
         "@google/generative-ai": "0.1.3",
+        "@brandond/findthelyrics": "^2.0.5",
+        "@green-code/music-track-data": "^2.0.3", 
         "@shineiichijo/marika": "^2.0.6",
         "@vitalets/google-translate-api": "^9.2.0",
         "@whiskeysockets/baileys": "npm:@whiskeysockets/baileys",
