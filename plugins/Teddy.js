@@ -2,7 +2,7 @@ import { delay } from '@whiskeysockets/baileys';
 
 let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
-    if (text.toLowerCase().includes("teddy")) {
+    if (text.toLowerCase() === 'teddy') { 
       let teddyBear = ['🧸', '🐻', '❤️', '🧸', '🐻', '❤️', '🧸', '🐻', '❤️'];
       for (let i = 0; i < teddyBear.length; i++) {
         await conn.sendMessage(m.chat, `Here's a teddy bear for you: ${teddyBear[i]}`, { quoted: m });
@@ -19,5 +19,5 @@ let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
 
 teddy.help = ['teddy'];
 teddy.tags = ['fun'];
-teddy.command = /^(teddy)$/i;
+teddy.command = new RegExp(/^teddy$/i); // changed from string to RegExp
 export default teddy;
