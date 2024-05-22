@@ -1,24 +1,18 @@
-import { exec } from 'child_process';
-import now from 'performance-now';
-import cheerio from 'cheerio';
-import fetch from 'node-fetch';
-
-let handler = async (m, { conn, args, usedPrefix, text, command }) => {
-	try {
-		const start = now();
-		await conn.sendMessage(m.chat, { url: 'https://cataas.com/cat' }, 'image', { caption: "*meyaoooooooooooooon!*" });
-		const end = now();
-		const executionTime = (end - start).toFixed(3);
-		console.log(`Execution time: ${executionTime} milliseconds`);
-	} catch (e) {
-		console.error(`${e}\n\nCommand: cat`);
-		const errorMessage = e.toString().includes('text') ? e : 'An error occurred while processing the command.';
-		await conn.sendMessage(m.chat, errorMessage, 'text', { quoted: m });
-	}
-};
-
-handler.help = ['cat'];
-handler.tags = ['logo'];
-handler.command = ['cat'];
-
-export default handler;
+import fetch from 'node-fetch'
+let handler  = async (m, { conn, text }) => {
+try {
+let res = await fetch('https://cataas.com/cat')
+let img = await res.buffer()
+let caption = `
+*XLICON MD-V2*
+`.trim()
+conn.sendFile(m.chat, img, 'cat.jpg', caption, m)
+} catch (e) {
+console.log(e)
+throw '*Error!*'
+}}
+handler.help = ['cat']
+handler.tags = ['random']
+handler.command = /^cat$/i
+handler.fail = null
+export default handler
