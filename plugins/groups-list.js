@@ -7,6 +7,6 @@ ${txt}
 }
 handler.help = ['xglist', 'grouplists']
 handler.tags = ['info']
-handler.command = /^(group(s|list))$/i
+handler.command = /^(groupx(s|list))$/i
 
 export default handler
