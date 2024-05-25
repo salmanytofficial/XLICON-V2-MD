@@ -26,7 +26,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API')
       }
 
-      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `.sc`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
+      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `${usedPrefix}script`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
       m.react(done)
     } catch (error) {
       console.error('Error from the first API:', error)
