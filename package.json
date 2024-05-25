@@ -45,7 +45,6 @@
         "@green-code/music-track-data": "^2.0.3", 
         "@shineiichijo/marika": "^2.0.6",
         "@vitalets/google-translate-api": "^9.2.0",
-          "@whiskeysockets/baileys": "^6.6.0",
         "@whiskeysockets/baileys": "npm:@whiskeysockets/baileys",
        "@xct007/frieren-scraper": "*",
         "@xct007/tiktok-scraper": "*",
@@ -115,9 +114,7 @@
     },
     "overrides": {
         "cache-manager": "5.2.2"
-    },
-    "devDependencies": {
-        "prettier": "^3.2.5"
+        
     }
 }
    
