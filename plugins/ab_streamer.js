@@ -4,14 +4,14 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 
 let url = 'https://telegra.ph/file/81199f8c1cdc906cf04d0.jpg'
 
-conn.sendButton(m.chat, "XLICON-V2", author, url, [['AUDIO', ${usedPrefix}ytmp3 ${text}], ['VIDEO', ${usedPrefix}ytmp4 ${text}]], null, [['AB stream', 'https://ab-streamer.vercel.app']], m)
+ await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/81199f8c1cdc906cf04d0.jpg', [['GROUPS', `${usedPrefix}groups`]], null, [['STREAM ANIME', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
 
   }
 
-handler.help = ['bot']
+handler.help = ['stream']
 
-handler.tags = ['img']
+handler.tags = ['main']
 
-handler.command = /^(stream)$/i
+handler.command = ['stream']
 
 export default handler
