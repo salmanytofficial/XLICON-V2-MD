@@ -10,7 +10,7 @@ if (!args[0] && !m.quoted) throw `Give the link of the video Tiktok or quote a t
  if (!args[0].match(/tiktok/gi)) throw `Verify that the link is from TikTok`;
 
 
-  let txt = '*STAR-TT-DOWNLOADER*';
+  let txt = '*XLICON-TT-DOWNLOADER*';
 
   try {
     const { author: { nickname }, video, description } = await tiktokdl(args[0]);
