@@ -1,3 +1,4 @@
+import fetch from 'node-fetch'
 import uploadImage from '../lib/uploadImage.js'
 
 let handler = async m => {
@@ -12,13 +13,10 @@ let handler = async m => {
   │ 🌐 *Channel:* https://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e
   ╰━━━━━━━━━━━━━━━━╯
   `.trim()
-  await conn.sendButton(m.chat, messageContent, 'XLICON-V2-MD', imgurl, [
-    ['Channel', `${usedPrefix}channel`]
-  ], null, [
-    ['FORK REPO', 'https://github.com/salmanytofficial/XLICON-V2-MD']
-  ], m)
+  const imageBuffer = await response.buffer()
+      let imgurl = await uploadImage(imageBuffer)
+      await conn.sendButton(m.chat,'Here is your Result', author, imgurl, [['MENU', `${usedPrefix}menu`]], null, [['WATCH ANIME', `https://ab-streamer.vercel.app`]], m)
 }
-
 handler.help = ['bchannel']
 handler.tags = ['main']
 handler.command = ['xlchannel', 'bchannel']
