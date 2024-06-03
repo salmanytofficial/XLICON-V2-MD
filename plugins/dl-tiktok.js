@@ -6,21 +6,21 @@ import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import {tiktokdl} from '@bochilteam/scraper';
 const CFROSAPI = global.APIs.CFROSAPI;
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
-  if (!text) throw `_*XLICON TIKTOK DL*_\n\n*_Paste a tiktok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
-  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `_*XLICON TIKTOK DL*_\n\n*_Enter a TikTok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
+  if (!text) throw `_*Xlicon TIKTOK DL*_\n\n*_Paste a tiktok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
+  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) throw `_*xlicon TIKTOK DL*_\n\n*_Enter a TikTok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
 
   // let buttons = [{ buttonText: { displayText: '♫ 𝙰𝚄𝙳𝙸𝙾 ♫' }, buttonId: `${usedPrefix}tomp3` }]
   try {
     m.react(rwait)
     const dataFn = await conn.getFile(`${CFROSAPI}/api/tiktokv2?url=${args[0]}`);
-    const desc1n = `*_|©XLICON-MD-V2|_*`;
+    const desc1n = `*_|©Xlicon-MD-V2|_*`;
     await conn.sendMessage(m.chat, {video: dataFn.data, caption: desc1n}, {quoted: m});
  m.react(done)
   } catch (ee1) {
 
   try {
     //const aa = {quoted: m, userJid: conn.user.jid};
-    //const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: 'XLICON-𝘉𝘖𝘛-𝘔𝘋', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/salmanytofficial/XLICON-V2-MD'}, mentionedJid: [m.sender]}}}, aa);
+    //const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: '𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/PRINCE-GDS/THE-PRINCE-BOT'}, mentionedJid: [m.sender]}}}, aa);
     //await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
     const dataF = await tiktok.v1(args[0]);
     // let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
@@ -62,7 +62,7 @@ handler.tags = ['downloader'];
 export default handler;
 
 async function tiktokdlF(url) {
-  if (!/tiktok/.test(url)) return `_*XLICON TIKTOK DL*_\n\n*_Paste a tiktok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
+  if (!/tiktok/.test(url)) return `_*Xlicon TIKTOK DL*_\n\n*_Paste a tiktok link._*\n\n*_Example:_* _${usedPrefix + command} Url here_`;
   const gettoken = await axios.get('https://tikdown.org/id');
   const $ = cheerio.load(gettoken.data);
   const token = $('#download-form > input[type=hidden]:nth-child(2)').attr( 'value' );
