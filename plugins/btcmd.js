@@ -10,7 +10,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         result,
         author,
         'https://telegra.ph/file/325630f66abc968eda8e2.mp4',
-        [['Meny', `${usedPrefix}menu`]],
+        [['Menu', `${usedPrefix}menu`]],
         null,
         [['Fork repo', 'https://github.com/salmanytofficial/XLICON-V2-MD']],
         m
