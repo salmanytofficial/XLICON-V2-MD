@@ -1,11 +1,11 @@
 import { delay } from '@whiskeysockets/baileys';
 
-let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
+let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
     if (text.toLowerCase() === 'teddy') { 
       let teddyBear = ['🧸', '🐻', '❤️', '🧸', '🐻', '❤️', '🧸', '🐻', '❤️'];
       for (let i = 0; i < teddyBear.length; i++) {
-        await conn.sendMessage(m.chat, `Here's a teddy bear for you: ${teddyBear[i]}`, { quoted: m });
+        await conn.sendMessage(m.chat, { text: `Here's a teddy bear for you: ${teddyBear[i]}` }, { quoted: m });
         await delay(500);
       }
     }
@@ -13,10 +13,10 @@ let teddy = async (m, { conn, text, args, usedPrefix, command }) => {
     await m.reply('✅');
   } catch (error) {
     console.error(error);
-    m.reply('Oops! Something went wrong.');
+    await m.reply('Oops! Something went wrong.');
   }
 };
 
-teddy.help = ['teddy'];
-teddy.tags = ['fun'];
-export default teddy;
+handler.help = ['teddy'];
+handler.tags = ['fun'];
+export default handler;
