@@ -5,7 +5,10 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
      let botname = 'XLICON-V2'; // Replace with your bot's name or fetch dynamically
     let mode = 'Multi-Device'; // Replace with your bot's mode or fetch dynamically
     let muptime = '10h 30m'; // Replace with your bot's uptime or fetch dynamically
-    let totalreg = 500; // Replace with total registrations or fetch dynamically
+    let more = String.fromCharCode(8206);
+    let readMore = more.repeat(850); 
+    let who = m.sender;
+    let user = global.db.data.users[who];
     let result = ' 「 ${botname} 🎁XMD 」\n
   *%ucpn*
 ⍟────────────────⍟
@@ -50,8 +53,6 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 ┃ *_Gold_*: %credit
 ┃ *_Role_*: XLICON-MD-TESTER
 ┃ *_Level_*: %level [ %xp4levelup Xp For Levelup]
-┃ *_Xp_*: %exp / %maxexp
-┃ *_Total Xp_*: %totalexp
 ┃
 ╰──────────────────⦿
 ╭──────────────────⦿
@@ -65,22 +66,12 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 | 💻  *Host:* Linux 🟩
 | 📣  *Prefix:* ${usedPrefix} 
 | 🕓  *Uptime:* ${uptime}
-| 💌  *Database:* ${rtotalreg} of ${totaluser} 
-| 📚  *Total Users:* ${totaluser} 
-╰┬─────────────────⦿
-
-┌─☠︎︎「⏰ *_Today's Sauce!_* ⏰」
-| 📆  *Today's Date:* ${date} 
-| ⏲️  *Current Time:* ${wib} 
 ╰┬─────────────────⦿
 
 ┌─𐂅「 *👤USER* 」
-| 👾  *User Tag:* ${taguser} 
 | 😇  *Name:* ${name} 
 | ✰  *Master Mind:* AB&SALMAN
 | 💎  *Diamonds:* -9999
-| 🏆  *Rank:* ${role}
-| 🎮  *XP:* ${exp} 
 ╰┬─────────────────⦿
 
  
