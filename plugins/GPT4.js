@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 
 
     const prompt = encodeURIComponent(text);
-    let apiurl = `https://ultimetron.guruapi.tech/gpt4?prompt=${prompt}`
+    let apiurl = `https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`
 
     const result = await fetch(apiurl);
     const response = await result.json();
