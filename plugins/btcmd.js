@@ -2,6 +2,10 @@ import axios from 'axios';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
     // Define 'result' and 'author' with static values
+     let botname = 'XLICON-V2'; // Replace with your bot's name or fetch dynamically
+    let mode = 'Multi-Device'; // Replace with your bot's mode or fetch dynamically
+    let muptime = '10h 30m'; // Replace with your bot's uptime or fetch dynamically
+    let totalreg = 500; // Replace with total registrations or fetch dynamically
     let result = ' 「 ${botname} 🎁XMD 」\n
   *%ucpn*
 ⍟────────────────⍟
