@@ -15,33 +15,33 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 *REMEMBER THIS BOT IS FOR*
 *EDUCATIONAL PERPOSES*
 ⍟────────────────⍟
-*©Salman Ahmand*
+*©Salman Ahmad*
 ⍟────────────────⍟
-*_Konnichiwa! Its XLICON-MD A_* 
+*_Konnichiwa! Its XLICON-MD A_*
 *_Multi-Device Whatsapp BOT_*
 *_Recoded By Salman Ahmad And Abraham Dwamena_*
 ⍟────────────────⍟
                                     
- ▀▄▀ █░░ █ █▀▀ █▀█ █▄░█  
- █░█ █▄▄ █ █▄▄ █▄█ █░▀█  
+▀▄▀ █░░ █ █▀▀ █▀█ █▄░█  
+█░█ █▄▄ █ █▄▄ █▄█ █░▀█  
           
- █▀▄▀█ █▀▄
- █░▀░█ █▄▀
- 
+█▀▄▀█ █▀▄
+█░▀░█ █▄▀
+
 ╭─────────────────⦿
-┃    🔰〘 𝙄𝙉𝙁𝙊 〙🔰
+┃    🔰〘 𝙄𝙉𝙁𝙊 〙🔰
 ╰┬────────────────⦿
 ┌┤
 ┃
 ┃ *_Founder_*: Salman Ahmad 
 ┃ *_Bot Name_*: ${botname}
-┃ *_Mode_*: %mode
+┃ *_Mode_*: ${mode}
 ┃ *_HOST_*: kali Linix
 ┃ *_Type_*: NodeJs
 ┃ *_Baileys_*: Multi Device
-┃ *_Prefix_*: [ *%_p* ]
-┃ *_Uptime_*: %muptime
-┃ *_Database_*:  %totalreg
+┃ *_Prefix_*: [ *${usedPrefix}* ]
+┃ *_Uptime_*: ${muptime}
+┃ *_Database_*: ${user.totalreg}
 ┃
 ╰──────────────────⦿
 ╭──────────────────⦿
@@ -49,10 +49,10 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 ╰┬─────────────────⦿
 ┌┤     
 ┃
-┃ *_Name_*: %name
-┃ *_Gold_*: %credit
+┃ *_Name_*: ${user.name}
+┃ *_Gold_*: ${user.credit}
 ┃ *_Role_*: XLICON-MD-TESTER
-┃ *_Level_*: %level [ %xp4levelup Xp For Levelup]
+┃ *_Level_*: ${user.level} [ ${user.xp4levelup} Xp For Levelup]
 ┃
 ╰──────────────────⦿
 ╭──────────────────⦿
@@ -65,11 +65,11 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 | 🤖  *Bot Name:* XLICON-V2
 | 💻  *Host:* Linux 🟩
 | 📣  *Prefix:* ${usedPrefix} 
-| 🕓  *Uptime:* ${uptime}
+| 🕓  *Uptime:* ${muptime}
 ╰┬─────────────────⦿
 
 ┌─𐂅「 *👤USER* 」
-| 😇  *Name:* ${name} 
+| 😇  *Name:* ${user.name}
 | ✰  *Master Mind:* AB&SALMAN
 | 💎  *Diamonds:* -9999
 ╰┬─────────────────⦿
@@ -212,356 +212,56 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 ┃❏*pokedex <pokemon>
 ┃❏*trace
 ╰┬─────────────────⦿
-┌─☛『 *_img_* 』☚
-┃❏*messi
-┃❏*cristianoronaldo
-┃❏*cr7
-┃❏*ppcouple
-┃❏*ppcp
-┃❏*pinterest
-╰┬─────────────────⦿
 ┌─☛『 *_owner_* 』☚
-┃❏*leavegc
-┃❏*out
-┃❏*deletechat
-┃❏*pin
-┃❏*unpin
-┃❏*deletechat
-┃❏*addprem <@tag>
-┃❏*addowner @user
-┃❏*allow <@tag>
-┃❏*HEROKU
-┃❏*ban @user
-┃❏*banchat
-┃❏*tx
-┃❏*broadcastgroup <text>
-┃❏*bcgc <text>
-┃❏*cleartmp
-┃❏*delexpired
-┃❏*delprem @user
-┃❏*removeowner @user
-┃❏*setppbotfull
-┃❏*getplugin <name file>
-┃❏*getfile <name file>
-┃❏*join <chat.whatsapp.com> <dias>
-┃❏*reset <54xxx>
-┃❏*resetprefix
-┃❏*restart
-┃❏*.setprefix
-┃❏*.setprefix [symbol]
-┃❏*unban @user
-┃❏*unbanchat
-┃❏*update
-┃❏*update now
-┃❏*config
-┃❏*listban
-┃❏*deleteplugin <name>
-╰┬─────────────────⦿
-┌─☛『 *_fun_* 』☚
-┃❏*afk <reason>
-┃❏*tomp3
-┃❏*toav
-┃❏*toxicity
-┃❏*bot
-┃❏*character @tag
-┃❏*dare
-┃❏*flirt
-┃❏*gay @user
-┃❏*joke
-┃❏*pickupline
-┃❏*question
-┃❏*shayari
-┃❏*ship
-┃❏*yomamajoke
-┃❏*truth
-┃❏*waste @user
-┃❏*perv
-┃❏*handsome
-┃❏*hot
-┃❏*sexy
-┃❏*ugly
-┃❏*cute
-┃❏*playboy
-┃❏*playgirl
-┃❏*beautiful
-┃❏*lesbian
-┃❏*whore
-┃❏*motherfucker
-┃❏*sucker
-┃❏*horny
-┃❏*foolish
-┃❏*nibba
-┃❏*nibbi
-┃❏*bitch
-┃❏*waifu
-┃❏*crackhead
-┃❏*rascal
-┃❏*idiot
-┃❏*girlyboy
-┃❏*tomboy
-┃❏*gigachad
-┃❏*mf
-┃❏*introvert
-┃❏*extrovert
-┃❏*sigma
-┃❏*psycho
-┃❏*brainless
-┃❏*useless
-┃❏*singer
-┃❏*image
-┃❏*meme
-┃❏*quote
-╰┬─────────────────⦿
-┌─☛『 *_reaction_* 』☚
-┃❏*bully @tag
-┃❏*cuddle @tag
-┃❏*cry @tag
-┃❏*hug @tag
-┃❏*awoo @tag
-┃❏*kiss @tag
-┃❏*lick @tag
-┃❏*pat @tag
-┃❏*smug @tag
-┃❏*bonk @tag
-┃❏*yeet @tag
-┃❏*blush @tag
-┃❏*smile @tag
-┃❏*wave @tag
-┃❏*highfive @tag
-┃❏*handhold @tag
-┃❏*nom @tag
-┃❏*bite @tag
-┃❏*glomp @tag
-┃❏*slap @tag
-┃❏*kill @tag
-┃❏*happy @tag
-┃❏*wink @tag
-┃❏*poke @tag
-┃❏*dance @tag
-┃❏*cringe @tag
-╰┬─────────────────⦿
-┌─☛『 *_utility_* 』☚
-┃❏*bmi
-┃❏*crypto
-┃❏*currency
-┃❏*countdown
-┃❏*prayertime
-┃❏*convert
-╰┬─────────────────⦿
-┌─☛『 *_main_* 』☚
-┃❏*channel
-┃❏*database
-┃❏*user
-┃❏*gpguru
-┃❏*alive
-┃❏*blocklist
-┃❏*info
 ┃❏*owner
-┃❏*totalfeature
-┃❏*hack
-┃❏*list
-┃❏*botmenu
-┃❏*ownermenu
-┃❏*groupmenu
-┃❏*dlmenu
-┃❏*downloadermenu
-┃❏*economymenu
-┃❏*funmenu
-┃❏*gamemenu
-┃❏*stickermenu
-┃❏*nsfwmenu
-┃❏*logomenu
-┃❏*toolmenu
-┃❏*animemenu2
-┃❏*animemenu
-┃❏*listprem
-┃❏*logomenu2
-┃❏*ping
-┃❏*ping2
-┃❏*runtime
-┃❏*script
-┃❏*server
-┃❏*system
-┃❏*blocklist
-┃❏*setprivacy
-┃❏*allmenu
+┃❏*shutdown
+┃❏*xlicon [auto]
+┃❏*sendmsg
+┃❏*ban @user
+┃❏*block @user
+┃❏*broadcast [text]
+┃❏*delcase @user
+┃❏*disable @user
+┃❏*enable @user
+┃❏*eval <code>
+┃❏*join <link>
+┃❏*leave
+┃❏*ban@user
+┃❏*bc
+┃❏*bcgc <text>
+┃❏*resetcase @user
+┃❏*restart
+┃❏*spam [text] <amount>
+┃❏*sudo <text>
+┃❏*tg <code>
+┃❏*user @user
+┃❏*usercmd @user
+┃❏*youtube @user
+┃❏*logout
 ╰┬─────────────────⦿
-┌─☛『 *_cmd_* 』☚
-┃❏*delcmd <text>
-┃❏*listcmd
-┃❏*setcmd <txt>
+┌─☛『 *_downloads_* 』☚
+┃❏*fb <link>
+┃❏*igdl <link>
+┃❏*mediafire <link>
+┃❏*shortlink <link>
+┃❏*ytmp4 <link>
+┃❏*ytdl <link>
+┃❏*tiktok <link>
+┃❏*tiktokdl <link>
+┃❏*vimeodl <link>
+┃❏*ytmp3 <link>
+┃❏*ytmp4 <link>
+┃❏*ytplaylist <link>
+┃❏*xvideos <link>
+┃❏*ytvideo <link>
+┃❏*ytdl <link>
+┃❏*mediafire <link>
+┃❏*twitter <link>
+┃❏*twittermp3 <link>
+┃❏*tiktokaudio <link>
+┃❏*soundcloud <link>
+┃❏*igstory <link>
 ╰┬─────────────────⦿
-┌─☛『 *_information_* 』☚
-┃❏*cninfo
-┃❏*fact
-╰┬─────────────────⦿
-┌─☛『 *_finance_* 』☚
-┃❏*crypto
-╰┬─────────────────⦿
-┌─☛『 *_cryptocurrency_* 』☚
-┃❏*crypto
-╰┬─────────────────⦿
-┌─☛『 *_time_* 』☚
-┃❏*countdown
-╰┬─────────────────⦿
-┌─☛『 *_downloader_* 』☚
-┃❏*facebook <url>
-┃❏*gdrive 🅟
-┃❏*gitclone <url>
-┃❏*igstalk
-┃❏*instagram
-┃❏*mediafire <url>
-┃❏*mega
-┃❏*modapk
-┃❏*play <query>
-┃❏*play2 <text>
-┃❏*playvid <text>
-┃❏*play3  Ⓛ
-┃❏*tiktok <url>
-┃❏*tiktokstalk
-┃❏*twitter <url>
-┃❏*ytmp3 <url>
-┃❏*ytsearch
-┃❏*ytmp4 <yt-link>
-┃❏*wallpaper <query>
-┃❏*play  Ⓛ
-┃❏*play  Ⓛ
-╰┬─────────────────⦿
-┌─☛『 *_premium_* 』☚
-┃❏*gdrive 🅟
-┃❏*mediafire <url>
-╰┬─────────────────⦿
-┌─☛『 *_economy_* 』☚
-┃❏*addgold <@user>
-┃❏*addxp <@user>
-┃❏*bank
-┃❏*buych
-┃❏*cock-fight <amount>
-┃❏*buy
-┃❏*buyall
-┃❏*daily
-┃❏*deposit
-┃❏*gamble <amount> <color(red/black)>
-┃❏*give credit [amount] [@tag]
-┃❏*levelup
-┃❏*rank
-┃❏*rob
-┃❏*roulette <amount> <color(red/black)>
-┃❏*wallet
-┃❏*withdraw
-┃❏*work
-╰┬─────────────────⦿
-┌─❖『 *_core_* 』❖
-┃❏*leaderboard
-╰┬─────────────────⦿
-┌─☛『 *_game_* 』☚
-┃❏*slot <amount>
-┃❏*chess [from to]
-┃❏*chess delete
-┃❏*chess join
-┃❏*chess start
-┃❏*delttt
-┃❏*guessflag
-┃❏*Maths <modes>
-┃❏*ppt <rock/paper/scissors>
-┃❏*tictactoe <tag number>
-╰┬─────────────────⦿
-┌─☛『 *_config_* 』☚
-┃❏*enable <option>
-┃❏*disable <option>
-╰┬─────────────────⦿
-┌─☛『 *_internet_* 』☚
-┃❏*google <search>
-┃❏*s <search>
-╰┬─────────────────⦿
-┌─☛『 *_maker_* 』☚
-┃❏*blur
-┃❏*difuminar2
-┃❏*hornycard
-┃❏*hornylicense
-┃❏*gfx1
-┃❏*gfx2
-┃❏*gfx3
-┃❏*gfx4
-┃❏*gfx5
-┃❏*gfx6
-┃❏*gfx7
-┃❏*gfx8
-┃❏*gfx9
-┃❏*gfx10
-┃❏*gfx11
-┃❏*gfx12
-┃❏*simpcard
-┃❏*itssostupid
-┃❏*iss
-┃❏*stupid
-┃❏*tweet <comment>
-┃❏*lolicon
-┃❏*quozio
-┃❏*qmkr
-┃❏*ytcomment <comment>
-╰┬─────────────────⦿
-┌─☛『 *_nsfw_* 』☚
-┃❏*nsfw
-╰┬─────────────────⦿
-┌─☛『 *_advanced_* 』☚
-┃❏$
-╰┬─────────────────⦿
-┌─☛『 *_plugin_* 』☚
-┃❏*plugins
-┃❏*install <Gist URL>
-╰┬─────────────────⦿
-┌─☛『 *_rg_* 』☚
-┃❏*reg <name.age>
-┃❏*mysn
-┃❏*unreg <Num Serie>
-╰┬─────────────────⦿
-┌─☛『 *_sticker_* 』☚
-┃❏*emojimix <emoji+emoji>
-┃❏*getsticker
-┃❏*smaker
-┃❏*stickerwithmeme (caption|reply media)
-┃❏*swmeme <url>
-┃❏*swm(caption|reply media)
-┃❏*sfull
-┃❏*toimg <sticker>
-┃❏*tovid
-┃❏*trigger <@user>
-┃❏*ttp
-┃❏*ttp2
-┃❏*ttp3
-┃❏*ttp4
-┃❏*ttp5
-┃❏*attp
-┃❏*attp2
-┃❏*attp3
-┃❏*take <name>|<author>
-╰┬─────────────────⦿
-┌─↘☛『 *_audio_* 』☚
-┃❏*bass [vn]
-┃❏*blown [vn]
-┃❏*deep [vn]
-┃❏*earrape [vn]
-┃❏*fast [vn]
-┃❏*fat [vn]
-┃❏*nightcore [vn]
-┃❏*reverse [vn]
-┃❏*robot [vn]
-┃❏*slow [vn]
-┃❏*smooth [vn]
-┃❏*tupai [vn]
-╰┬─────────────────⦿
-┌─☛『 *_news_* 』☚
-┃❏*news
-┃❏*technews
-╰┬─────────────────⦿
-┌─➢『 *_conversion_* 』❖
-┃❏*convert
-╰┬─────────────────⦿
-XLICON-𝙼𝙳-𝚅𝟸 𝙱𝚈 AB AND SALMAN
-
-╰──────────────────⦿
-
 '; // Replace with your actual static message
     let author = 'XLICON-V2'; // Replace with the actual author name or relevant string
 
