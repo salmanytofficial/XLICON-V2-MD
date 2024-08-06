@@ -2,15 +2,7 @@ import axios from 'axios';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
     // Define 'result' and 'author' with static values
-     let botname = 'XLICON-V2'; // Replace with your bot's name or fetch dynamically
-    let mode = 'Multi-Device'; // Replace with your bot's mode or fetch dynamically
-    let muptime = '10h 30m'; // Replace with your bot's uptime or fetch dynamically
-    let more = String.fromCharCode(8206);
-    let readMore = more.repeat(850); 
-    let who = m.sender;
-    let user = global.db.data.users[who];
-    let result = ' 「 ${botname} 🎁XMD 」\n
-  *%ucpn*
+     
 ⍟────────────────⍟
 *REMEMBER THIS BOT IS FOR*
 *EDUCATIONAL PERPOSES*
@@ -33,48 +25,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 ╰┬────────────────⦿
 ┌┤
 ┃
-┃ *_Founder_*: Salman Ahmad 
-┃ *_Bot Name_*: ${botname}
-┃ *_Mode_*: ${mode}
-┃ *_HOST_*: kali Linix
-┃ *_Type_*: NodeJs
-┃ *_Baileys_*: Multi Device
-┃ *_Prefix_*: [ *${usedPrefix}* ]
-┃ *_Uptime_*: ${muptime}
-┃ *_Database_*: ${user.totalreg}
-┃
-╰──────────────────⦿
-╭──────────────────⦿
-┃    🔰〘 𝙐𝙎𝙀𝙍 〙🔰
-╰┬─────────────────⦿
-┌┤     
-┃
-┃ *_Name_*: ${user.name}
-┃ *_Gold_*: ${user.credit}
-┃ *_Role_*: XLICON-MD-TESTER
-┃ *_Level_*: ${user.level} [ ${user.xp4levelup} Xp For Levelup]
-┃
-╰──────────────────⦿
-╭──────────────────⦿
-┃   🔰〘 𝑰𝑵𝑭𝑶 𝑪𝑴𝑫 〙🔰
-╰┬─────────────────⦿
-┌┤ 
-┃   ཌ|━━🤖 _BOT STATUS:_🤖━━|ད
-┌─𐂅  *MADE BY XLICON*  𐂅
-| ❁✓  *Creator:* XLICON-TEAM
-| 🤖  *Bot Name:* XLICON-V2
-| 💻  *Host:* Linux 🟩
-| 📣  *Prefix:* ${usedPrefix} 
-| 🕓  *Uptime:* ${muptime}
-╰┬─────────────────⦿
-
-┌─𐂅「 *👤USER* 」
-| 😇  *Name:* ${user.name}
-| ✰  *Master Mind:* AB&SALMAN
-| 💎  *Diamonds:* -9999
-╰┬─────────────────⦿
-
- 
+┃ 
 ┌─☛『 *_Fellowship_* 』☚
 ┃❏*bible [chapter_number|chapter_name]
 ❏*quran [surah_number|surah_name]
