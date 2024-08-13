@@ -42,8 +42,8 @@ let handler = async (m) => {
   fs.unlinkSync(mediaPath);
 };
 
-handler.help = ['tourl'];
+handler.help = ['turl'];
 handler.tags = ['tools'];
-handler.command = ['url', 'tourl'];
+handler.command = ['url', 'turl'];
 
 export default handler;
