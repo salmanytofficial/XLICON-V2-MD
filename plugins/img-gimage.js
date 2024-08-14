@@ -1,43 +1,24 @@
-import fetch from 'node-fetch'
+import { googleImage } from '@bochilteam/scraper'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text , Example usage ${usedPrefix}img sunnyleone`
-  }
-  if (!text && m.quoted && m.quoted.text) {
-    text = m.quoted.text
-  }
+  if (!text) throw `*Example:* *${usedPrefix + command} ${mssg.reply}*`
+  
+  const prohibited = ['fuck', 'porn', 'pussy', 'hentai', 'pornhub', 'xnxx', 'xvideos', 'vagina', 'horny', 'ass', 'nude', 'nsfw', 'sex', 'blowjob', 'anal', '+18', 'hot', 'xxx']
+  if (prohibited.some(word => m.text.toLowerCase().includes(word))) return m.reply('*⚠️OHY , BOT WONT SEND BECAUSE ABRAHAM HAS CODED ME TO NOT ALLOW +18 CONTENTS:(*')      
 
-  const match = text.match(/(\d+)/)
-  const numberOfImages = match ? parseInt(match[1]) : 1
+  const match = text.match(/(\d+)/);
+  const numberOfImages = match ? parseInt(match[3]) : 3;
 
-  try {
-    m.reply('*Please wait*')
-
-    const images = []
-
-    for (let i = 0; i < numberOfImages; i++) {
-      const endpoint = `https://api.guruapi.tech/api/googleimage?text=${encodeURIComponent(text)}`
-      const response = await fetch(endpoint)
-
-      if (response.ok) {
-        const imageBuffer = await response.buffer()
-        images.push(imageBuffer)
-      } else {
-        throw '*Image generation failed*'
-      }
-    }
-
-    for (let i = 0; i < images.length; i++) {
-      await conn.sendFile(m.chat, images[i], `image_${i + 1}.png`, null, m)
-    }
-  } catch {
-    throw '*Oops! Something went wrong while generating images. Please try again later.*'
+  for (let i = 0; i < numberOfImages; i++) { 
+    const res = await googleImage(text)
+    let image = res.getRandom()
+    let link = image
+    conn.sendFile(m.chat, link, 'error.jpg', `*💞𝙍𝙚𝙨𝙪𝙡𝙩: ${text}*`, m)
   }
 }
 
-handler.help = ['image']
-handler.tags = ['fun']
-handler.command = ['img', 'gimage']
+handler.help = ['gimage <query>', 'imagen <query>']
+handler.tags = ['internet', 'Downloader']
+handler.command = /^(gimage|image|imagen|img)$/i
 
 export default handler
