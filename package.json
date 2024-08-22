@@ -88,6 +88,7 @@
         "moment-timezone": "^0.5.37",
         "mongoose": "^7.4.1",
         "node-fetch": "^3.3.1",
+        "formdata-node": "^5.0.1",
         "node-gtts": "^2.0.2",
         "node-webpmux": "^3.1.3",
         "object-query-string": "^1.2.0",
