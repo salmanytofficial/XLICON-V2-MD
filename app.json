@@ -4,7 +4,7 @@
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/salmanytofficial/XLICON-V2-Md2/main",
+  "repository": "https://github.com/salmanytofficial/XLICON-V2-MD/main",
   "stack": "container",
   "env": {
     "DATABASE_URL": {
