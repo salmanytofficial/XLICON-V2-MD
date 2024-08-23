@@ -31,10 +31,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Xcelsama/STAR-BOT.git"
+        "url": "git+https://github.com/salmanytofficial/XLICON-V2-MD.git"
     },
     "bugs": {
-        "url": "https://github.com/Xcelsama/STAR-BOT/issues"
+        "url": "https://github.com/salmanytofficial/XLICON-V2-MD/issues"
     },
     "license": "Apache License 2.0",
     "dependencies": {
