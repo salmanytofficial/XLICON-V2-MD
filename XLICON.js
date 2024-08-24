@@ -257,7 +257,7 @@ const connectionOptions = {
           },
         },
       }
-    return message;
+    return message
 },
   msgRetryCounterCache,
   defaultQueryTimeoutMs: undefined,
