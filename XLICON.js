@@ -239,26 +239,28 @@ const connectionOptions = {
     let msg = await store.loadMessage(jid, key.id)
     return msg?.message || ''
   },
- patchMessageBeforeSending: message => {
+patchMessageBeforeSending: message => {
     const requiresPatch = !!(
-      message.buttonsMessage ||
-      message.templateMessage ||
-      message.listMessage
-    )
+        message.buttonsMessage ||
+        message.templateMessage ||
+        message.listMessage
+    );
     if (requiresPatch) {
-      message = {
-        viewOnceMessage: {
-          message: {
-            messageContextInfo: {
-              deviceListMetadataVersion: 2,
-              deviceListMetadata: {},
+        message = {
+            viewOnceMessage: {
+                message: {
+                    messageContextInfo: {
+                        deviceListMetadataVersion: 2,
+                        deviceListMetadata: {},
+                    },
+                    ...message,
+                },
             },
-            ...message,
-          },
-        },
-      }
-    return message
+        };
+    }
+    return message; // Ensure return is outside the if block
 },
+
   msgRetryCounterCache,
   defaultQueryTimeoutMs: undefined,
   syncFullHistory: false,
