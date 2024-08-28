@@ -569,9 +569,9 @@ async function _quickTest() {
 }
 
 async function saafsafai() {
-  if (stopped === 'close' || !conn || !conn.user) return
-  clearsession()
-  console.log(chalk.cyanBright('\nStored Sessions Cleared'))
+  if (connection === 'close') {
+    conn.logger.error(chalk.yellow(`\nConnection closed... Get a new session`))
+  }
 }
 
 setInterval(saafsafai, 10 * 60 * 1000)
