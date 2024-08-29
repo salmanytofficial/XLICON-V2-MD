@@ -54,7 +54,7 @@ let str = ` *☑️ XLICON -V2 BOT☑️*
 │🎩 ◦➛✫ - 「${usedPrefix}𝘓𝘰𝘨𝘰𝘮𝘦𝘯𝘶
 │ *${usedPrefix}list ғᴏʀ ᴄᴏᴍᴍᴀɴᴅs ʟɪsᴛ*
 │ *${greeting}*
-│ *MADE BY XLICON TEAM*
+│ *MADE BY IZUMI BOT*
 ╰━━━━━━━━━━━━━━━━━━╯
 📚 *_Quote of the day: ${quote}_* 📚
 `

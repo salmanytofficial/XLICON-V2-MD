@@ -15,17 +15,17 @@ import {
  
  const defaultMenu = {
   before: `
-  「 ${botname} 🎁XMD 」\n
+  「 IZUMI BOT🎁XMD 」\n
   *%ucpn*
 ⍟────────────────⍟
 *REMEMBER THIS BOT IS FOR*
 *EDUCATIONAL PERPOSES*
 ⍟────────────────⍟
-*©Salman Ahmand*
+*IZUMI BOT*
 ⍟────────────────⍟
-*_Konnichiwa! Its XLICON-MD A_* 
+*_Konnichiwa! Its IZUMI BOT* 
 *_Multi-Device Whatsapp BOT_*
-*_Recoded By Salman Ahmad And Abraham Dwamena_*
+*_Recoded By IZUMI*
 ⍟────────────────⍟
                                     
  ▀▄▀ █░░ █ █▀▀ █▀█ █▄░█  
@@ -39,8 +39,8 @@ import {
 ╰┬────────────────⦿
 ┌┤
 ┃
-┃ *_Founder_*: Salman Ahmad 
-┃ *_Bot Name_*: ${botname}
+┃ *_Founder_*: IZUMI BOT
+┃ *_Bot Name_*: IZUMI BOT
 ┃ *_Mode_*: %mode
 ┃ *_HOST_*: kali Linix
 ┃ *_Type_*: NodeJs
@@ -57,7 +57,7 @@ import {
 ┃
 ┃ *_Name_*: %name
 ┃ *_Gold_*: %credit
-┃ *_Role_*: XLICON-MD-TESTER
+┃ *_Role_*: IZUMI-MD-TESTER
 ┃ *_Level_*: %level [ %xp4levelup Xp For Levelup]
 ┃ *_Xp_*: %exp / %maxexp
 ┃ *_Total Xp_*: %totalexp
