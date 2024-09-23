@@ -94,7 +94,6 @@
         "object-query-string": "^1.2.0",
         "openai": "^3.2.1",
         "pdfkit": "^0.13.0",
-         "pastebin-js": "^1.0.6",
         "perf_hooks": "^0.0.1",
         "pino": "^8.6.1",
         "pino-pretty": "^9.1.1",
