@@ -61,11 +61,11 @@ Thanks to all contributors! 🚀
     <br>
 2. Get Session ID (SERVER 1) NOT WORKING USE THE SECOND ONE
     <br>
-<a href='https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://express-pairing-code2.onrender.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
     <br>
 2. Get Session ID (SERVER 2)
     <br>
-<a href='https://replit.com/@mznking04/XLICON-PAIR-CODE' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id_2-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://express-pairing-code2.onrender.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id_2-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
     <br>
 
 ## 🚀 `Deployments`
