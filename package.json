@@ -97,7 +97,7 @@
         "pastebin-js": "^1.0.6",
         "pdfkit": "^0.13.0",
         "perf_hooks": "^0.0.1",
-        "pino": "^7.8.0",,
+        "pino": "^7.8.0",
         "pino-pretty": "^9.1.1",
         "qrcode": "^1.5.1",
         "qrcode-terminal": "^0.12.0",
