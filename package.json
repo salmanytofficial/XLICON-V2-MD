@@ -63,7 +63,7 @@
         "colors": "1.4.0",
         "didyoumean": "^1.2.2",
         "dotenv": "^16.1.4",
-        "express": "^4.18.1"
+        "express": "^4.18.1",
         "emoji-api": "^2.0.1",
         "express": "^4.18.1",
         "fb-downloader-scrapper": "^1.0.1",
