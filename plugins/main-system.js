@@ -43,12 +43,15 @@ let handler = async (m, { conn }) => {
   });
 
   let old = performance.now();
+  await new Promise(resolve => setTimeout(resolve, 100));  
   let neww = performance.now();
   let speed = neww - old;
 
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
 
-  if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`;
+  if (!(who in global.db.data.users)) {
+    return conn.sendMessage(m.chat, '✳️ The user is not found in my database', { quoted: m });
+  }
 
   let user = global.db.data.users[who];
 
@@ -59,14 +62,14 @@ let handler = async (m, { conn }) => {
     let infobt = `
 🔰 *I'm XLICON-V2.* *A WhatsApp chuddy buddy bot with rich features* *Created By SALMAN AMAD and Abraham Dwamena*. 🔰
 
- *❲❒❳ Stars:* ${stargazers_count} Stars ⭐
- *❲❒❳ Forks:* ${forks} Forks 🍴
- *❲❒❳ Author:* *Salman Ahmad* 😎
- *❲❒❳ Create:* ${created_at} 
- *❲❒❳ Repo:* ${html_url}
- *❲❒❳ Scan:* https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING
- *❲❒❳ Visit For Tutorial:* www.youtube.com/@s4salmanyt
-  
+*❲❒❳ Stars:* ${stargazers_count} Stars ⭐
+*❲❒❳ Forks:* ${forks} Forks 🍴
+*❲❒❳ Author:* *Salman Ahmad* 😎
+*❲❒❳ Create:* ${created_at} 
+*❲❒❳ Repo:* ${html_url}
+*❲❒❳ Scan:* https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING
+*❲❒❳ Visit For Tutorial:* www.youtube.com/@s4salmanyt
+
 🔰 *Created ʙʏ XLICON TEAM* 🔰
 
 *🕣 S E R V E R*
@@ -77,7 +80,7 @@ let handler = async (m, { conn }) => {
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `;
 
-    conn.sendMessage(m.chat, { video: { url: "https://i.imgur.com/JbMJS4T.mp4" }, caption: infobt, gifPlayback: true }, { quoted: m });
+    await conn.sendMessage(m.chat, { video: { url: "https://i.imgur.com/JbMJS4T.mp4" }, caption: infobt, gifPlayback: true }, { quoted: m });
   } catch (error) {
     console.error(error);
     throw 'Error fetching data from GitHub';
@@ -89,4 +92,3 @@ handler.tags = ['main'];
 handler.command = ['system', 'status'];
 
 export default handler;
-                                                    
