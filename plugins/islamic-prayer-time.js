@@ -1,2 +1,47 @@
-// by mznking (https://github.com/mznking)
-function _0x2e6d(){const _0x466c3d=['🌌\x20*Midnight:*\x20','year','11272806NLsdHI','Maghrib','5355840zrJFtn','4FnqyeA','prayertime','Fajr','Sunset','command','Fajr:\x20','https://api.aladhan.com/v1/timingsByCity','readable','data','345370gHqCPW','Dhuhr:\x20','date','67566JatQBr','📅\x20*Islamic\x20Date:*\x20','290fYcIHS','492DxZbFC','Asr','hijri','📆\x20*Islamic\x20Year:*\x20','error','2443074eneTDj','60182PqRqQH','🌅\x20*Sunset:*\x20','get','Dhuhr','3497EAJNPK','187qAKFRN','❓\x20*Please\x20provide\x20a\x20city\x20name\x20for\x20the\x20prayer\x20time\x20information.*','timings','Asr:\x20','Maghrib:\x20','Isha','reply','27KVwsLf','8NRwKZH','YOUR_COUNTRY_CODE','Isha:\x20'];_0x2e6d=function(){return _0x466c3d;};return _0x2e6d();}const _0x29a537=_0x1dac;(function(_0x237363,_0x134bee){const _0xe3ce0f=_0x1dac,_0x5d7e5c=_0x237363();while(!![]){try{const _0x17e374=parseInt(_0xe3ce0f(0x129))/0x1*(-parseInt(_0xe3ce0f(0x11d))/0x2)+parseInt(_0xe3ce0f(0x11c))/0x3*(parseInt(_0xe3ce0f(0x132))/0x4)+-parseInt(_0xe3ce0f(0x140))/0x5*(parseInt(_0xe3ce0f(0x13e))/0x6)+parseInt(_0xe3ce0f(0x131))/0x7+parseInt(_0xe3ce0f(0x12a))/0x8*(parseInt(_0xe3ce0f(0x12f))/0x9)+-parseInt(_0xe3ce0f(0x13b))/0xa*(parseInt(_0xe3ce0f(0x122))/0xb)+-parseInt(_0xe3ce0f(0x117))/0xc*(parseInt(_0xe3ce0f(0x121))/0xd);if(_0x17e374===_0x134bee)break;else _0x5d7e5c['push'](_0x5d7e5c['shift']());}catch(_0x12f0f4){_0x5d7e5c['push'](_0x5d7e5c['shift']());}}}(_0x2e6d,0xbb903));import _0x13860f from'axios';const prayerTimeApi=_0x29a537(0x138);let handler=async(_0x37aad2,{text:_0x140f07,conn:_0x21f53e})=>{const _0x72ce2b=_0x29a537;try{if(!_0x140f07)throw _0x72ce2b(0x123);const _0x5e8ef1=await _0x13860f[_0x72ce2b(0x11f)](prayerTimeApi,{'params':{'city':_0x140f07,'country':_0x72ce2b(0x12b)}}),_0x339f23=_0x5e8ef1[_0x72ce2b(0x13a)]['data'][_0x72ce2b(0x124)],_0x31d23b=_0x5e8ef1[_0x72ce2b(0x13a)][_0x72ce2b(0x13a)][_0x72ce2b(0x13d)][_0x72ce2b(0x139)],_0x27cbb0=_0x5e8ef1['data'][_0x72ce2b(0x13a)][_0x72ce2b(0x13d)][_0x72ce2b(0x119)]['month']['en'],_0x351f21=_0x5e8ef1[_0x72ce2b(0x13a)][_0x72ce2b(0x13a)][_0x72ce2b(0x13d)][_0x72ce2b(0x119)][_0x72ce2b(0x12e)],_0x5e60aa=_0x72ce2b(0x13f)+_0x31d23b+'\x0a'+('🌙\x20*Islamic\x20Month:*\x20'+_0x27cbb0+'\x0a')+(_0x72ce2b(0x11a)+_0x351f21+'\x0a\x0a')+('🤲\x20*Prayer\x20Times\x20for\x20'+_0x140f07+'*\x0a')+(_0x72ce2b(0x137)+_0x339f23[_0x72ce2b(0x134)]+'\x0a')+(_0x72ce2b(0x13c)+_0x339f23[_0x72ce2b(0x120)]+'\x0a')+(_0x72ce2b(0x125)+_0x339f23[_0x72ce2b(0x118)]+'\x0a')+(_0x72ce2b(0x126)+_0x339f23[_0x72ce2b(0x130)]+'\x0a')+(_0x72ce2b(0x12c)+_0x339f23[_0x72ce2b(0x127)]+'\x0a\x0a')+('🌄\x20*Sunrise:*\x20'+_0x339f23['Sunrise']+'\x0a')+(_0x72ce2b(0x11e)+_0x339f23[_0x72ce2b(0x135)]+'\x0a')+(_0x72ce2b(0x12d)+_0x339f23['Midnight']);_0x21f53e['reply'](_0x37aad2['chat'],_0x5e60aa,_0x37aad2);}catch(_0x205eed){console[_0x72ce2b(0x11b)](_0x205eed),_0x37aad2[_0x72ce2b(0x128)]('⛔\x20*An\x20error\x20occurred\x20while\x20fetching\x20the\x20prayer\x20time\x20information.*');}};handler['help']=[_0x29a537(0x133)],handler['tags']=['utility'],handler[_0x29a537(0x136)]=['prayertime'];function _0x1dac(_0x18d438,_0x424ccc){const _0x2e6d86=_0x2e6d();return _0x1dac=function(_0x1dac4d,_0x2221e7){_0x1dac4d=_0x1dac4d-0x117;let _0xbaca38=_0x2e6d86[_0x1dac4d];return _0xbaca38;},_0x1dac(_0x18d438,_0x424ccc);}export default handler;
+import axios from 'axios';
+
+let handler = async (message, { text, conn }) => {
+  try {
+    if (!text) {
+      throw "❓ *Please provide a city name for the prayer time information.*";
+    }
+
+    const response = await axios.get("https://api.aladhan.com/v1/timingsByCity", {
+      'params': {
+        'city': text,
+        'country': "YOUR_COUNTRY_CODE"
+      }
+    });
+
+    const timings = response.data.data.timings;
+    const readableDate = response.data.data.date.readable;
+    const hijriMonth = response.data.data.date.hijri.month.en;
+    const hijriYear = response.data.data.date.hijri.year;
+
+    const messageContent = 
+      `📅 *Islamic Date:* ${readableDate}\n` +
+      `🌙 *Islamic Month:* ${hijriMonth}\n` +
+      `📆 *Islamic Year:* ${hijriYear}\n\n` +
+      `🤲 *Prayer Times for ${text}*\n` +
+      `Fajr: ${timings.Fajr}\n` +
+      `Dhuhr: ${timings.Dhuhr}\n` +
+      `Asr: ${timings.Asr}\n` +
+      `Maghrib: ${timings.Maghrib}\n` +
+      `Isha: ${timings.Isha}\n\n` +
+      `🌄 *Sunrise:* ${timings.Sunrise}\n` +
+      `🌅 *Sunset:* ${timings.Sunset}\n` +
+      `🌌 *Midnight:* ${timings.Midnight}`;
+
+    conn.reply(message.chat, messageContent, message);
+
+  } catch (error) {
+    console.error(error);
+    message.reply("⛔ *An error occurred while fetching the prayer time information.*");
+  }
+};
+
+handler.help = ["prayertime"];
+handler.tags = ['utility'];
+handler.command = ['prayertime'];
+
+export default handler;
