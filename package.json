@@ -1,5 +1,5 @@
 {
-    "name": "xliconv2",
+    "name": "Xlicon-v2",
     "version": "2.0.0",
     "description": "Advanced WhatsApp Bot",
     "main": "index.js",
@@ -52,18 +52,15 @@
         "aptoide-scraper": "^1.0.1",
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.4.0",
-        "buffer":"*",
         "brainly-scraper-v2": "^2.0.9",
-        "mumaker": "latest",
         "canvacord": "^5.4.8",
         "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
-        "cheerio": "npm:cheerio@1.0.0-rc.12",
+        "cheerio": "^1.0.0-rc.12",
         "chess.js": "*",
         "colors": "1.4.0",
         "didyoumean": "^1.2.2",
         "dotenv": "^16.1.4",
-        "express": "^4.18.1",
         "emoji-api": "^2.0.1",
         "express": "^4.18.1",
         "fb-downloader-scrapper": "^1.0.1",
@@ -81,6 +78,7 @@
         "imagemaker.js": "*",
         "imgur": "2.3.0",
         "instagram-url-direct": "^1.0.12",
+        "ironman-api": "^2.0.1",
         "jimp": "^0.16.1",
         "jsdom": "^20.0.1",
         "knights-canvas": "^1.3.7-a",
@@ -90,15 +88,15 @@
         "megajs": "^1.3.1",
         "moment-timezone": "^0.5.37",
         "mongoose": "^7.4.1",
+        "mumaker": "latest",
         "node-fetch": "^3.3.1",
         "node-gtts": "^2.0.2",
         "node-webpmux": "^3.1.3",
         "object-query-string": "^1.2.0",
         "openai": "^3.2.1",
-        "pastebin-js": "^1.0.6",
         "pdfkit": "^0.13.0",
         "perf_hooks": "^0.0.1",
-        "pino": "^7.8.0",
+        "pino": "^8.6.1",
         "pino-pretty": "^9.1.1",
         "qrcode": "^1.5.1",
         "qrcode-terminal": "^0.12.0",
@@ -121,4 +119,4 @@
     "overrides": {
         "cache-manager": "5.2.2"
     }
-    }
+}
