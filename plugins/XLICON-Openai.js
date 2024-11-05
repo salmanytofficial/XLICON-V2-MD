@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw Please provide some text or quote a message to get a response.
+    throw  `Please provide some text or quote a message to get a response.`
   }
 
   if (!text && m.quoted && m.quoted.text) {
@@ -26,7 +26,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API')
       }
 
-      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', ${usedPrefix}script]], null, [['Fork Repo', 'https://github.com/salmanytofficial/XLICON-V2-MD']], m)
+      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `${usedPrefix}script`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
       m.react(done)
     } catch (error) {
       console.error('Error from the first API:', error)
@@ -40,12 +40,12 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let data = await response.json()
       let result = data.completion
 
-     await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', .sc]], null, [['Fork Repo', https://github.com/salmanytofficial/XLICON-V2-MD]], m)
+     await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `.sc`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
       m.react(done)
     }
   } catch (error) {
     console.error('Error:', error)
-    throw *ERROR*
+    throw `*ERROR*`
   }
 }
 handler.help = ['chatgpt']
