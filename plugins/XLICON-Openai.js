@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`
+    throw Please provide some text or quote a message to get a response.
   }
 
   if (!text && m.quoted && m.quoted.text) {
@@ -15,7 +15,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
     conn.sendPresenceUpdate('composing', m.chat)
     const prompt = encodeURIComponent(text)
 
-    const guru1 = `https://api.gurusensei.workers.dev/llama?prompt=${prompt}`
+    const guru1 = https://api.gurusensei.workers.dev/llama?prompt=${prompt}
 
     try {
       let response = await fetch(guru1)
@@ -26,26 +26,26 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API')
       }
 
-      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `${usedPrefix}script`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
+      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', ${usedPrefix}script]], null, [['Fork Repo', https://github.com/salmanytofficial/XLICON-V2-MD]], m)
       m.react(done)
     } catch (error) {
       console.error('Error from the first API:', error)
 
       //const model = 'llama'
      // const senderNumber = m.sender.replace(/[^0-9]/g, '')
-      //const session = `xlicon_bot_${senderNumber}`
-      const guru2 = `https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`
+      //const session = xlicon_bot_${senderNumber}
+      const guru2 = https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}
 
       let response = await fetch(guru2)
       let data = await response.json()
       let result = data.completion
 
-     await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', `.sc`]], null, [['Fork Repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], m)
+     await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/403a47e628ef49dee27a3.jpg', [['Script', .sc]], null, [['Fork Repo', https://github.com/salmanytofficial/XLICON-V2-MD]], m)
       m.react(done)
     }
   } catch (error) {
     console.error('Error:', error)
-    throw `*ERROR*`
+    throw *ERROR*
   }
 }
 handler.help = ['chatgpt']
