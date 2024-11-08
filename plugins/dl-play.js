@@ -1,76 +1,88 @@
-import fg from 'api-dylux';
-import yts from 'yt-search';
-import fetch from 'node-fetch';
+import youtubedl from 'youtubedl-core';
+import 'youtube-yts';
+import fs from 'fs';
+import { pipeline } from 'stream';
+import { promisify } from 'util';
+import os from 'os';
 import axios from 'axios';
 
-const imgUrl = 'https://telegra.ph/file/81199f8c1cdc906cf04d0.jpg';
+const streamPipeline = promisify(pipeline);
 
-let handler = async (m, { conn, args, usedPrefix, text, command }) => {
-    let formats = ["mp3", "yta", "audio", "ytv", "video", "mp4", "mp3doc", "ytadoc", "audiodoc", "mp4doc", "ytvdoc", "videodoc"];
+let handler = async (message, { conn, command, text, usedPrefix }) => {
+  if (!text) {
+    throw `Use example ${usedPrefix}${command} Jesus take the wheel`;
+  }
+  
+  await message.react('⏳');
 
-    let [format, ...keywords] = text.split(" ");
-    let searchQuery = keywords.join(" ");
+  try {
+    const query = encodeURIComponent(text);
+    const searchResponse = await axios.get(`https://api.gurubot.com/ytsearch?text=${query}`);
+    const video = searchResponse.data.results[0];
     
-    if (!formats.includes(format)) {
-        return conn.reply(m.chat, `*💙 Please enter the format you wish to download and the title of a video or music from YouTube.*\n\nExample: ${usedPrefix + command} *mp3* Connor RK800 - I Am Machine\n\nAvailable formats:\n${formats.map(f => `${usedPrefix + command} *${f}*`).join('\n')}`, m);
+    if (!video) {
+      throw "Video Not Found, Try Another Title";
     }
+
+    const { title, thumbnail, duration, views, uploaded, url } = video;
+    const caption = `⬡▸  ••๑⋯ ⬡▸  Y O U T U B E ⬡▸  ⋯⋅๑•• ✼\n\n  ⬡▸  Title: ${title}\n\n  ⬡▸  Duration: ${duration}\n\n  ⬡▸  Views: ${views}\n\n  ⬡▸  Upload: ${uploaded}\n\n  ⬡▸  Link: ${url}\n\n⊱─━━━━⊱༻XLICON●v2༺⊰━━━━─⬡▸ `;
     
-    if (!searchQuery) {
-        return conn.reply(m.chat, `*💙 Please enter the title of a video or music from YouTube.*`, m);
-    }
-    
-    try {
-        await m.react('⏳');
-        
-        const responseImg = await axios.get(imgUrl, { responseType: 'arraybuffer' });
+    await conn.sendMessage(message.chat, {
+      image: { url: thumbnail },
+      caption: caption,
+      footer: 'Your Bot Name',
+    }, {
+      quoted: message
+    });
 
-        let res = await yts(searchQuery);
-        let vid = res.videos[0];
-        let q = '128kbps';
-        
-        let txt = `❏ TITLE: ${vid.title}\n`;
-        txt += `❏ DURATION: ${vid.timestamp}\n`;
-        txt += `❏ VIEWS: ${vid.views}\n`;
-        txt += `❏ AUTHOR: ${vid.author.name}\n`;
-        txt += `❏ PUBLISHED: ${vid.ago}\n`;
-        txt += `❏ URL: https://youtu.be/${vid.videoId}\n\n`;
-        txt += `❄ REMEMBER @${m.sender.split('@')[0]}, give credit to ABRAHAM, if you’re going to use these plugins.❄`;
+    const audioStream = youtubedl(url, {
+      filter: 'audioonly',
+      quality: 'highestaudio',
+    });
 
-        await conn.sendFile(m.chat, responseImg.data, "thumbnail.jpg", txt, m, null, rcanal);
+    const tempDir = os.tmpdir();
+    const filePath = `${tempDir}/${title}.mp3`;
+    const fileStream = fs.createWriteStream(filePath);
 
-        if (format == "mp3" || format == "yta" || format == "audio" || format == "mp3doc" || format == "ytadoc" || format == "audiodoc") {
-            let yt = await fg.yta(vid.url, q);
-            let { title, dl_url, size } = yt;
-            let limit = 100;
-            
-            if (parseFloat(size.split('MB')[0]) >= limit) {
-                return conn.reply(m.chat, `The file is larger than ${limit} MB, so the download was canceled.`, m);
-            }
-            
-            await conn.sendFile(m.chat, dl_url, 'yt.mp3', `${vid.title}.mp3`, m);
-            await m.react('✅');
-        } else if (format == "mp4" || format == "ytv" || format == "video" || format == "mp4doc" || format == "ytvdoc" || format == "videodoc") {
-            let q = '720p';
-            let yt = await fg.ytv(vid.url, q);
-            let { title, dl_url, size } = yt;
-            let limit = 500;
-            
-            if (parseFloat(size.split('MB')[0]) >= limit) {
-                return conn.reply(m.chat, `The file is larger than ${limit} MB, so the download was canceled.`, m);
-            }
-            
-            await conn.sendFile(m.chat, dl_url, 'yt.mp4', `${vid.title}.mp4`, m);
-            await m.react('✅');
-        }
-    } catch (error) {
-        await conn.reply(m.chat, `FFmpeg is not installed. Return to the repository to check how to install it.`, m);
-        console.error(error);
-    }
+    await streamPipeline(audioStream, fileStream);
+
+    const audioMessage = {
+      audio: { url: filePath },
+      mimetype: 'audio/mpeg',
+      ptt: false,
+      waveform: [100, 0, 0, 0, 0, 0, 100],
+      fileName: `${title}.mp3`,
+      contextInfo: {
+        externalAdReply: {
+          showAdAttribution: true,
+          mediaType: 2,
+          mediaUrl: url,
+          title: title,
+          body: 'HERE IS YOUR SONG MADE BY XLICON-v2',
+          sourceUrl: url,
+          thumbnail: await (await conn.getFile(thumbnail)).data,
+        },
+      },
+    };
+
+    await conn.sendMessage(message.chat, audioMessage, { quoted: message });
+
+    fs.unlink(filePath, err => {
+      if (err) {
+        console.error(`Failed to delete audio file: ${err}`);
+      } else {
+        console.log(`Deleted audio file: ${filePath}`);
+      }
+    });
+  } catch (error) {
+    console.error(error);
+    throw "An error occurred while searching for YouTube videos.";
+  }
 };
 
-handler.help = ["play"].map(v => v + " <format> <search>");
-handler.tags = ["downloader"];
-handler.command = ['play'];
-handler.register = true;
+handler.help = ["play"].map(v => v + " <query>");
+handler.tags = ['downloader'];
+handler.command = /^play$/i;
+handler.exp = 0;
 
 export default handler;
