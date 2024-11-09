@@ -2,7 +2,7 @@ import axios from 'axios';
 
 let handler = async (m, { conn, command, text, usedPrefix }) => {
   if (!text) {
-    throw `Please provide a search query. Example: ${usedPrefix + command} <query>`;
+    throw `Please provide link . Example: ${usedPrefix + command} <query>`;
   }
   await m.react('⏳');
   try {
@@ -19,13 +19,13 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 
   } catch (error) {
     console.error(error);
-    throw 'An error occurred while searching for the YouTube video or fetching the audio.';
+    throw 'verify it is a link.';
   }
 };
 
-handler.help = ['play'].map(command => command + ' <query>');
+handler.help = ['ytm'].map(command => command + ' <query>');
 handler.tags = ['downloader'];
-handler.command = /^play$/i;
+handler.command = /^ytm$/i;
 handler.exp = 0;
 
 export default handler;
