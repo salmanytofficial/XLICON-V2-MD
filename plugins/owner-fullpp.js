@@ -45,7 +45,7 @@ let handler = async (message, { conn, command, usedPrefix }) => {
         attrs: { to: userJid, type: 'set', xmlns: "w:profile:picture" },
         content: [{ tag: "picture", attrs: { type: "image" }, content: img }]
       });
-      message.reply("Guru Bot Did some magic to your profile picture");
+      message.reply(" profile picture Updated");
     } catch (error) {
       console.log(error);
       message.reply("An error occurred, try again later.");
