@@ -146,6 +146,22 @@ Thanks to all contributors! 🚀
 
 ## `NEW DEPLOYMENT`
 NOW Deploy👇
+
+## `Pannel Supoort`
+```bash
+1. Fork Repository
+2. If already forked then sync fork repository
+3. Then click on code and click download as zip
+4. Then upload script zip file to pannel
+5. Unarchieve zip sile
+6. Open bot folder and move all filea to container by (../)
+7. Now run bot
+8. After 1-2min it show you QR to scan
+9. Scan The QR in Whatsapp Link Device
+10. Bot Connected done now use bot 
+ 
+```
+
 <br>
 ## DEPLOY IN KOYEB    
 [![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/auth/signup)  
@@ -200,9 +216,10 @@ Click On The Link To Donate ME...
 Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 
 ## 🙌 `Bot Developers and Contributors`
-| [![Mzn King](https://github.com/mznking.png)](https://github.com/mznking) | [![Suhail Tech Info](https://github.com/SuhailTechInfo.png)](https://github.com/SuhailTechInfo.) | [![Maher Zubair](https://github.com/Maher-Zubair.png)](https://github.com/Maher-Zubair) | [![VENOX](https://github.com/V-E-N-O-X.png)](https://github.com/V-E-N-O-X) | [![Syntax-king](https://github.com/syntax-king.png)](https://github.com/syntax-king) |
-| -------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
-| **Mzn King**<br>`Contributor`<br>`Bot Development`<br>`Bot Testing` | **Suhail Tech Info**<br>`Contributor`<br>`Feature Testing` |**Maher Zubair**<br>`Contributor`<br>`Bot Testing` | **VENOX**<br>`Menu Designs`<br>`Xlicon Web`<br>`Bot Testing` | **Syntax king**<br>`Contributor`<br>`Bot Testing` |
+| [![Suhail Tech Info](https://github.com/SuhailTechInfo.png)](https://github.com/SuhailTechInfo) | [![Maher Zubair](https://github.com/Maher-Zubair.png)](https://github.com/Maher-Zubair) | [![Syntax-king](https://github.com/syntax-king.png)](https://github.com/syntax-king) |
+| -------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- |
+| **Suhail Tech Info**<br>`Contributor`<br>`Feature Testing` | **Maher Zubair**<br>`Contributor`<br>`Bot Testing` | **Syntax king**<br>`Contributor`<br>`Bot Testing` |
+
 
 ## 📊 `GitHub Stats of Bot Contributors`
 [![Salman Ahmad's GitHub stats](https://github-readme-stats.vercel.app/api?username=salmanytofficial&show_icons=true&theme=radical)](https://github.com/salmanytofficial)
