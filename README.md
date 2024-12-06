@@ -183,7 +183,7 @@ NOW Deploy👇
 `Development , Maintainence , Bot Updates`
 
 ## `Main Dev` 
-<a href="https://github.com/abrahamdw882"><img src="https://i.imgur.com/100UXHy.jpg" width="250" height="250" alt="Abraham Dwamena"/></a>
+<a href="https://github.com/abrahamdw882"><img src="https://avatars.githubusercontent.com/u/120536940?v=4" width="250" height="250" alt="Abraham Dwamena"/></a>
   
 **XLICON-V2** - By `abrahamdw882`
 <br>
