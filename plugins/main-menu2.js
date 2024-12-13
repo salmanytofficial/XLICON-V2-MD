@@ -99,7 +99,7 @@ Content: ${m.quoted.text || "(No Text Content)"}`;
 
 handler.help = ['main'];
 handler.tags = ['group'];
-handler.command = ['test1', 'test2'];
+handler.command = ['menu2', 'hmenu'];
 
 export default handler;
 
