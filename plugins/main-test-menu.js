@@ -63,7 +63,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┃ 🎮  *XP:* ${exp} 
 ╰───────────────⍟
 
-🔗 *_Click here to [View Channel](https://chat.whatsapp.com/YOUR_CHANNEL_LINK)_*
+🔗 *_Click here to [View Channel](https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c)_*
 
 😇 *_If You need help, Just do this, use ${usedPrefix}list or ${usedPrefix}help2. And enjoy!*_ 😇
 `;
@@ -74,7 +74,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.help = ['main'];
 handler.tags = ['group'];
-handler.command = ['menu2', 'help2'];
+handler.command = ['test1', 'test2'];
 
 export default handler;
 
