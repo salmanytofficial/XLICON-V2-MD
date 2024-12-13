@@ -63,7 +63,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┃ 🎮  *XP:* ${exp} 
 ╰───────────────⍟
 
-🔗 *_https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c_*
+🔗  https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c
 
 😇 *_If You need help, Just do this, use ${usedPrefix}list or ${usedPrefix}help2. And enjoy!*_ 😇
 `;
