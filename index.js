@@ -42,7 +42,7 @@ const sendHtml = (res, page) => {
   res.sendFile(path.join(htmlDir, page + ".html"));
 };
 
-app.get('/', (req, res) => sendHtml(res, "guru"));
+app.get('/', (req, res) => sendHtml(res, "xlicon"));
 
 app.listen(port, () => {
   console.log(chalk.green(`Server is running on port ${port}`));
