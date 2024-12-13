@@ -63,13 +63,39 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┃ 🎮  *XP:* ${exp} 
 ╰───────────────⍟
 
-🔗  https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c
+🔗 https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c
 
-😇 *_If You need help, Just do this, use ${usedPrefix}list or ${usedPrefix}help2. And enjoy!*_ 😇
+😇 *If You need help, Just do this, use ${usedPrefix}list or ${usedPrefix}help2. And enjoy!*😇
 `;
 
-    conn.sendMessage(m.chat, { text: str }, { quoted: m });
+    conn.sendMessage(m.chat, { text: str, contextInfo: {
+        externalAdReply: {
+            title: "Adventure Awaits!",
+            body: "Check out the latest updates.",
+            thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
+            sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
+        }
+    }}, { quoted: m });
+
     m.react(done);
+
+    if (m.quoted && m.quoted.isForwarded) {
+        const forwardInfo = m.quoted.forwardingScore > 0 ? `Forwarded ${m.quoted.forwardingScore} times` : "Recently Forwarded";
+        const forwardMessage = `This message was ${forwardInfo}.
+Content: ${m.quoted.text || "(No Text Content)"}`;
+
+        await conn.sendMessage(m.chat, {
+            text: forwardMessage,
+            contextInfo: {
+                externalAdReply: {
+                    title: "Forwarded Message Info",
+                    body: "Learn more about this message.",
+                    thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
+                    sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
+                }
+            }
+        }, { quoted: m });
+    }
 };
 
 handler.help = ['main'];
