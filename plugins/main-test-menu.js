@@ -35,7 +35,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
     let str = `
-🚀 *_Buckle up ${name}, ${greeting}! We're going on an adventure!*_ 🚀
+🚀 *Buckle up ${name}, ${greeting}! We're going on an adventure!* 🚀
 
 🌠 *_Bible quote of the day: ${quote}_* 🌠
 
@@ -63,16 +63,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ┃ 🎮  *XP:* ${exp} 
 ╰───────────────⍟
 
-🔗 https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c
 
 😇 *If You need help, Just do this, use ${usedPrefix}list or ${usedPrefix}help2. And enjoy!*😇
 `;
 
     conn.sendMessage(m.chat, { text: str, contextInfo: {
         externalAdReply: {
-            title: "Adventure Awaits!",
+            title: "Arise!",
             body: "Check out the latest updates.",
-            thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
+            thumbnailUrl: "https://i.ibb.co/FnD8Fgc/f1964352-d5f5-402e-bee4-69cc7c5c1569.jpg ",
             sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
         }
     }}, { quoted: m });
@@ -90,7 +89,7 @@ Content: ${m.quoted.text || "(No Text Content)"}`;
                 externalAdReply: {
                     title: "Forwarded Message Info",
                     body: "Learn more about this message.",
-                    thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
+                    thumbnailUrl: "https://i.ibb.co/FnD8Fgc/f1964352-d5f5-402e-bee4-69cc7c5c1569.jpg ",
                     sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
                 }
             }
