@@ -3,7 +3,7 @@ const handler = async (m, {conn, text}) => {
   try {
     const res = await fetch('https://api.thedogapi.com/v1/images/search');
     const img = await res.json();
-    const caption = `_Dog🐕_`.trim();
+    const caption = `_here is a random Dog🐕_`.trim();
     conn.sendFile(m.chat, img[0].url, 'dog.jpg', caption, m);
   } catch {
     throw '*Error!*';
