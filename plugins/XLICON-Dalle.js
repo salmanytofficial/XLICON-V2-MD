@@ -1,30 +1,44 @@
+import uploadFile from '../lib/uploadFile.js';
+import uploadImage from '../lib/uploadImage.js';
+import 'fs';
+import 'path';
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*Example:* *${usedPrefix + command} a cat flying in the sky*`;
-
-  const prohibited = ['fuck', 'porn', 'pussy', 'hentai', 'pornhub', 'xnxx', 'xvideos', 'vagina', 'horny', 'ass', 'nude', 'nsfw', 'sex', 'blowjob', 'anal', '+18', 'hot', 'xxx'];
-  if (prohibited.some(word => text.toLowerCase().includes(word))) {
-    return m.reply('*⚠️ BOT WON\'T SEND THIS AS IT CONTAINS +18 CONTENT*');
+let handler = async (m) => {
+  let message = m.quoted ? m.quoted : m;
+  let mimetype = (message.msg || message).mimetype || '';
+  
+  if (!mimetype) {
+    throw "✳️ Respond to an image/video";
   }
 
-  try {
-    const apiUrl = `https://bk9.fun/ai/Text2Img?q=${encodeURIComponent(text)}`;
-    const res = await fetch(apiUrl);
+  await m.react('⏳');
+  let mediaBuffer = await message.download();
+  
+  if (mediaBuffer.length > 10485760) {
+    throw "thats too much mb."; 
+  }
 
-    if (!res.ok) throw new Error('Failed to fetch generated image');
-    const imageUrl = await res.text();
-
-    if (!imageUrl) throw new Error('No image URL returned');
-    await conn.sendFile(m.chat, imageUrl, 'generated.jpg', `*🖼️ Generated Image for:* ${text}`, m);
-  } catch (error) {
-    console.error(error);
-    m.reply('⚠️ Sorry, there was an error generating the image. Please try again later.');
+  let isImageOrVideo = /image\/(png|jpe?g|gif)|video\/mp4/.test(mimetype);
+  let uploadedMediaUrl = await (isImageOrVideo ? uploadImage : uploadFile)(mediaBuffer);
+  
+  if (uploadedMediaUrl) {
+    let response = await (await fetch(`https://bk9.fun/ai/Text2Img?url=${uploadedMediaUrl}&q=${m.text`})).json(); 
+    await m.react('✅');
+    
+    const result = {
+      text: response.BK9
+    };
+    
+    await conn.sendMessage(m.chat, result, { 'quoted': m });
+  } else {
+    m.reply(♕ ${mediaBuffer.length} Byte(s) \n♕ (Unknown));
+    await m.react('✅');
   }
 };
 
-handler.help = ['dalle <prompt>', 'imagegen <prompt>'];
-handler.tags = ['ai', 'image', 'generator'];
-handler.command = /^(dalle|imagegen)$/i;
+handler.help = ['dalle']; 
+handler.tags = ['ai']; 
+handler.command = /^(dalle)$/i; 
 
 export default handler;
