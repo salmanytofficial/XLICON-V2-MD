@@ -18,10 +18,11 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 ───────────────
 ✨ ${firstResult.title} ✨
 ───────────────
-🌐 *Link*: [${firstResult.url}](${firstResult.url})  
+🖇️ *Link*: ${firstResult.url} ${firstResult.url}  
 ⏱️ *Duration*: ${firstResult.timestamp}  
 📅 *Published*: ${firstResult.ago}  
 👁️ *Views*: ${firstResult.views}  
+     *MADE WITH LOVE BY XLICON V2*
 ───────────────
 `;
     await conn.sendFile(m.chat, firstResult.thumbnail, 'yts.jpeg', message, m);
