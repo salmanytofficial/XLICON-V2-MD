@@ -7,7 +7,7 @@ let handler = async (m) => {
 	}
 	await m.react('⏳');
 	try {
-		let response = await fetch(`https://bk9.fun/ai/Text2Img?q=${encodeURIComponent(text)}`);
+		let response = await fetch(`https://bk9.fun/ai/aiimg?q=${encodeURIComponent(text)}`);
 		var res = await response.json();
 		await m.react('✅');
 		var image = res.BK9;
