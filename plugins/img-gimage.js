@@ -25,7 +25,8 @@ let handler = async (m) => {
 		}
 	}
 	catch (error) {
-		await m.react('❌');
+     console.log(error);
+		await m.reply(error);
 		throw error;
 	}
 };
