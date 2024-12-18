@@ -1,4 +1,4 @@
-let antilinkdel = false;
+/*let antilinkdel = false;
 
 let handler = async (m, { conn, usedPrefix, command }) => {
   if (command === 'on antilinkdel') {
@@ -31,3 +31,4 @@ handler.admin = true;
 handler.botAdmin = true;
 
 export default handler;
+*/
