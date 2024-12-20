@@ -1,6 +1,7 @@
-# `XLICON-V2-MD DEPLOY ON KOYEB✅ HIGHLY RECOMMENDED THANKS Ｗ  Ｈ Ｉ Ｔ Ｅ ４ ４ ４    ?  ? at it`
+# `XLICON-V2-MD DEPLOY ON KOYEB✅ HIGHLY RECOMMENDED THANKS`
 <br>
 <br>
+# ＷＨＩＴＥ４４４ ? ? at it !
 
 
 
