@@ -8,14 +8,14 @@ import axios from 'axios'
 // Global variables
 global.owner = [
   ['918360234087', 'WHITE', true], 
-  ['923184070915', '𝙎𝘼𝙇𝙈𝘼𝙉 𝘼𝙃𝙈𝘼𝘿 -(𝘼𝙝𝙢𝙢𝙞)', true], 
+  ['260776642930', 'Nipsy -(𝘼𝙝𝙢𝙢𝙞)', true], 
   ['233533763772', 'Abraham Dwamena2', true],
   ['233268374753', 'Abraham Dwamena3.0', true]
 ] 
 
-global.mods = ['923184070915', '233268374753', '923184474176', '233268374753'] 
-global.prems = ['923184070915', '94789481495', '918360234087', '233268374753']
-global.allowed = ['923184070915', '233268374753', '918360234087', '233268374753']
+global.mods = ['260776642930', '233268374753', '923184474176', '233268374753'] 
+global.prems = ['260776642930', '94789481495', '918360234087', '233268374753']
+global.allowed = ['260776642930', '233268374753', '918360234087', '233268374753']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = global.keysZens[Math.floor(global.keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -51,12 +51,12 @@ global.APIKeys = {
 // Sticker WM
 global.botname = 'XLICON-V2'
 global.premium = 'true'
-global.packname = 'XLICON TEAM' 
-global.author = '@XLICON-V2' 
+global.packname = 'Nipsy's' 
+global.author = '@Creation' 
 global.menuvid = 'https://i.ibb.co/FnD8Fgc/f1964352-d5f5-402e-bee4-69cc7c5c1569.jpg'
 global.igfg = '▢✓ Follow Our channel\nhttps://whatsapp.com/channel/0029VaE8GbCDzgTILE7OtC3e\n' 
 global.dygp = 'https://chat.whatsapp.com/BfH0KLkICn2BjmGFMRcGMW'
-global.fgsc = 'https://github.com/salmanytofficial/XLICON-V2-MD' 
+global.fgsc = 'https://github.com/carlyjohnsony/XLICON-V2-MD' 
 global.fgyt = 'https://youtube.com/@s4salmanyt'
 global.fgpyp = 'https://youtube.com/@s4salmanyt'
 global.fglog = 'XLICON.jpg' 
