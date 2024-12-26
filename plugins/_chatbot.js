@@ -21,11 +21,11 @@ export async function before(m, { conn }) {
       return;
     }
 
-    if (!m.msg   || !m.message || m.key.remoteJid !== m.chat || users[m.sender].banned || chats[m.chat].isBanned) {
+    if (!m.msg || !m.message || m.key.remoteJid !== m.chat || users[m.sender].banned || chats[m.chat].isBanned) {
       return;
     }
 
-    if (!m.quoted ||!m.quoted.isBaileys) return
+    if (!m.quoted || !m.quoted.isBaileys) return
 
     if (!chat.chatbot) { 
       return true;
@@ -34,35 +34,21 @@ export async function before(m, { conn }) {
     const msg = encodeURIComponent(m.text);
     console.log(msg)
     
-    const response = await axios.post('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDJC5a882ruaC4XL6ejY1yhgRkN-JNQKg8', {
-        contents: [{
-          parts: [{
-            text: msg
-          }]
-        }]
-      });
+    const response = await axios.get(`https://api.giftedtech.my.id/api/ai/geminiai?apikey=gifted&q=${msg}`);
 
     const data = response.data;
-    if (data.candidates && data.candidates.length > 0) {
-        const candidate = data.candidates[0];
-      const content = candidate.content;
-
-      
-      let reply = content.parts[0].text; 
+    if (data.success) {
+      let reply = data.result;
       if (reply) {
         reply = reply.replace(/Google/gi, 'Abraham And Salman');
-        reply = reply.replace(/a large language model/gi, botname);
+        reply = reply.replace(/a multimodal AI model/gi, botname);
     
-    m.reply(reply);
-        }
-    
-      } else {
-        
-        m.reply("No suitable response from the API.");
-    
+        m.reply(reply);
       }
+    } else {
+      m.reply("No suitable response from the API.");
+    }
   } catch (error) {
     console.log(error);
-    
   }
 }
