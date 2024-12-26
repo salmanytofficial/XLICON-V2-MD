@@ -1,7 +1,6 @@
-import axios from 'axios'
-import * as cheerio from 'cheerio'; 
-
-
+import * as cheerio from 'cheerio';
+import axios from 'axios';
+ 
 
 let handler = async (m, { text }) => {
 	if (!text) throw `✳️ Enter what you want to search for on Wikipedia` 
