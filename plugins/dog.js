@@ -51,9 +51,9 @@ Content: ${m.quoted.text || "(No Text Content)"}`;
   }
 };
 
-handler.help = ['test1'];
+handler.help = ['dog'];
 handler.tags = ['random'];
-handler.command = /^test1$/i;
+handler.command = /^dog$/i;
 handler.fail = null;
 
 export default handler;
