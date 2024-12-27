@@ -8,15 +8,15 @@ let handler = async (m, { conn }) => {
     }
     await m.react('⏳');
     try {
-        let response = await fetch(`https://ironman.koyeb.app/ironman/wallpaper/wpcom?name=${encodeURIComponent(text)}`);
+        let response = await fetch(`https://bk9.fun/pinterest/search?q=${encodeURIComponent(text)}`);
         let res = await response.json();
         await m.react('✅');
         
-        if (res && res.length > 0) {
-            let randomResult = res[Math.floor(Math.random() * res.length)];
+        if (res && res.status && res.BK9.length > 0) {
+            let randomResult = res.BK9[Math.floor(Math.random() * res.BK9.length)];
             await conn.sendMessage(m.chat, {
-                image: { url: randomResult.image },
-                caption: randomResult.title || "No title provided."
+                image: { url: randomResult.images_url },
+                caption: randomResult.grid_title || "No title provided."
             }, { quoted: m });
         } else {
             throw "❌ No image found for the given text.";
