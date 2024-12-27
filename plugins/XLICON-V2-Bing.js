@@ -6,24 +6,26 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     await m.react('🤖');
 
     const prompt = encodeURIComponent(text);
-    let apiurl = `https://gpt4.guruapi.tech/bing?username=defailt&query=${prompt}`;
+    let apiurl = `https://bk9.fun/ai/blackbox?q=${prompt}`;
 
     const result = await fetch(apiurl);
     const response = await result.json();
     
-    if (!response.result) throw 'No result found';
+    if (!response.BK9) throw 'No result found';
 
-    const replyText = response.result;
-    await conn.sendButton(
-      m.chat, 
-      replyText, 
-      author, 
-      'https://techcrunch.com/wp-content/uploads/2023/11/microsoft-copilot-bing.jpg', 
-      [['Script', `${usedPrefix}waifu`]], 
-      null, 
-      [['Fork repo', `https://github.com/salmanytofficial/XLICON-V2-MD`]], 
-      m
-    );
+    const replyText = response.BK9;
+    await conn.relayMessage(m.chat, {
+        requestPaymentMessage: {
+          currencyCodeIso4217: 'INR',
+          amount1000: 99999,
+          requestFrom: m.sender,
+          noteMessage: {
+          extendedTextMessage: {
+          text: replyText,
+          contextInfo: {
+          externalAdReply: {
+          showAdAttribution: true
+          }}}}}}, {});
   } catch (error) {
     console.error(error);
     m.reply('Oops! Something went wrong. We are trying hard to fix it ASAP.');
