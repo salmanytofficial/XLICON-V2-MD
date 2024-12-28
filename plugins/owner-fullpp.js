@@ -1,15 +1,17 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, quoted }) => {
-    if (!quoted || !quoted.isMedia) {
-        throw `*Please reply to an image to set as the profile picture*`;
-    }
+    if (!quoted) throw `*Please reply to an image to set as the profile picture*`;
 
     try {
-        let mime = quoted.mimetype || '';
-        if (!mime.startsWith('image')) throw `*The quoted message must be an image.*`;
+        let q = m.quoted ? m.quoted : m;
+        let mime = (q.msg || q).mimetype || q.mediaType || '';
 
-        let imageBuffer = await quoted.download();
+        if (!/image\/(jpeg|png|webp)/.test(mime)) {
+            throw `*The quoted message must be an image.*`;
+        }
+
+        let imageBuffer = await q.download?.();
         if (!imageBuffer) throw `*Failed to download the quoted image.*`;
 
         await conn.updateProfilePicture(conn.user.jid, { url: imageBuffer });
