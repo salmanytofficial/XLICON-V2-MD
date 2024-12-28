@@ -110,7 +110,9 @@ async function gandu() {
   }
 }
 
-gandu()
+gandu().catch(error => {
+  console.error('Unhandled error in gandu function:', error);
+});
 
 const pairingCode = !!global.pairingNumber || process.argv.includes('--pairing-code')
 const useQr = process.argv.includes('--qr')
