@@ -1,9 +1,8 @@
 import fetch from 'node-fetch'
-import uploadImage from '../lib/uploadImage.js'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text)
-    throw `*This command generates images from text prompts*\n\n*𝙴xample usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} Elon Musk in pink output*`
+    throw `*This command generates images from text prompts*\n\n*Example usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} Elon Musk in pink outfit*`
 
   try {
     m.reply('*Please wait, generating images...*')
@@ -13,8 +12,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     if (response.ok) {
       const imageBuffer = await response.buffer()
-      let imgurl = await uploadImage(imageBuffer)
-      await conn.sendFile(m.chat, imgurl, 'image.jpg', 'Here is your Result', m)
+      await conn.sendFile(m.chat, imageBuffer, 'image.jpg', 'Here is your Result', m)
     } else {
       throw '*Image generation failed*'
     }
