@@ -58,7 +58,7 @@ ${translatedChapterHindi.text}
   }
 };
 
-bibleChapterHandler.help = ['bible [chapter_number|chapter_name]'];
+bibleChapterHandler.help = ['bible chapter_number|chapter_name'];
 bibleChapterHandler.tags = ['religion'];
 bibleChapterHandler.command = ['bible', 'chapter'];
 
