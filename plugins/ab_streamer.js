@@ -1,20 +1,20 @@
 import axios from 'axios';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
-    // Define 'result' and 'author' with static values
-    let result = 'HAVE FUN WATCHING ANIME'; // Replace with your actual static message
-    let author = 'ANIME-WEB'; // Replace with the actual author name or relevant string
+    let result = 'HAVE FUN WATCHING ANIME'; 
+    let author = 'ANIME-WEB'; 
 
-    await conn.sendButton(
-        m.chat,
-        result,
-        author,
-        'https://telegra.ph/file/81199f8c1cdc906cf04d0.jpg',
-        [['GROUPS', `${usedPrefix}groups`]],
-        null,
-        [['STREAM ANIME', 'https://ab-streamer.vercel.app']],
-        m
-    );
+    await conn.sendMessage(m.chat, {
+        text: result,
+        contextInfo: {
+            externalAdReply: {
+                title: "AB TECH ANIME WEBSITE",
+                body: "Powered by AB TECH (XLICON V2)",
+                thumbnailUrl: "https://telegra.ph/file/81199f8c1cdc906cf04d0.jpg",
+                sourceUrl: "https://ab-streamer.vercel.app",
+            }
+        }
+    }, { quoted: m });
 };
 
 handler.help = ['stream'];
