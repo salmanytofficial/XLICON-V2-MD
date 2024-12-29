@@ -8,7 +8,10 @@ let handler = async (m, { conn, text }) => {
     try {
         let imageUrl = text.trim();
         let response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-        let imageBuffer = Buffer.from(response.data, 'binary');
+        let imageBuffer = Buffer.from(response.data);
+
+        if (!imageBuffer) throw `*Failed to download the image.*`;
+
         await conn.updateProfilePicture(conn.user.id, { buffer: imageBuffer });
         m.react('✅');
         m.reply(`*Profile picture updated successfully!*`);
