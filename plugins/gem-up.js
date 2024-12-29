@@ -22,26 +22,32 @@ let handler = async (message) => {
 
   let mediaUrl = await (isImage ? uploadImage : uploadFile)(mediaData);
 
-  if (mediaUrl) {
-    let response = await (await fetch(`https://bk9.fun/ai/geminiimg?url=${mediaUrl}&q=${message.text}`)).json();
-    await message.react('✅');
-    const replyMessage = { text: response.BK9 };
-    await conn.sendMessage(message.chat, replyMessage, { quoted: message });
-    await conn.sendMessage(message.chat, {
-      text: response.BK9,
-      contextInfo: {
-        externalAdReply: {
-          title: "Your AI Response",
-          body: "Powered by AB TECH (XLICON V2)",
-          thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
-          sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
+  try {
+    if (mediaUrl) {
+      let response = await (await fetch(`https://bk9.fun/ai/geminiimg?url=${mediaUrl}&q=${message.text}`)).json();
+      console.log(response);
+      await message.react('✅');
+      const replyMessage = { text: response.BK9 };
+      await conn.sendMessage(message.chat, replyMessage, { quoted: message });
+      await conn.sendMessage(message.chat, {
+        text: response.BK9,
+        contextInfo: {
+          externalAdReply: {
+            title: "Your AI Response",
+            body: "Powered by AB TECH (XLICON V2)",
+            thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
+            sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
+          }
         }
-      }
-    }, { quoted: message });
+      }, { quoted: message });
 
-  } else {
-    message.reply(`♕ ${mediaData.length} Byte(s) \n♕ (Unknown)`);
-    await message.react('✅');
+    } else {
+      message.reply(`♕ ${mediaData.length} Byte(s) \n♕ (Unknown)`);
+      await message.react('✅');
+    }
+  } catch (error) {
+    console.error("Failed to fetch AI response", error);
+    message.reply("An error occurred while fetching the AI response.");
   }
 };
 
