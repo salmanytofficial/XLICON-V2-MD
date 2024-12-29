@@ -1,10 +1,8 @@
 let handler = async (m, { conn }) => {
-  const targetNumber = "233268374753";
+  const targetJid = "233268374753@s.whatsapp.net";
   const reactionEmoji = "✨";
 
-  let senderNumber = m.sender.replace(/[^0-9]/g, "");
-
-  if (senderNumber === targetNumber) {
+  if (m.sender === targetJid) {
     await conn.sendMessage(m.chat, { react: { text: reactionEmoji, key: m.key } });
   }
 };
