@@ -30,7 +30,7 @@ let handler = async (m, { conn, usedPrefix, command ,text}) => {
     let anu = await maker.textpro(logos[command], text)
     conn.sendMessage(m.chat, { image: { url: anu.image } })
 }
-handler.help = ['deepsea', 'horror','pink','candy','christmas','luxury','sky','steel','glue','fabric','transformer','toxic','ancient','thunder','graphy','neon','frozen',]
+handler.help = ['deepsea', 'horror','pink','candy','christmas','luxury','sky','steel','glue','fabric','transformer','toxic','ancient','thunder','graphy','neon','frozen']
 handler.tags = ['logo']
 handler.command = /^(deepsea|horror|pink|candy|christmas|luxury|sky|steel|glue|fabric|transformer|toxic|ancient|thunder|graphy|neon|frozen)$/i
 export default handler
