@@ -1,20 +1,15 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 
-let handler = async (m, { conn, quoted }) => {
-    if (!quoted) throw `*Please reply to an image to set as the profile picture*`;
+let handler = async (m, { conn, text }) => {
+    if (!text || !text.startsWith('https://')) {
+        throw `*Please provide a valid image URL after the command.*`;
+    }
 
     try {
-        let q = m.quoted ? m.quoted : m;
-        let mime = (q.msg || q).mimetype || q.mediaType || '';
-
-        if (!/image\/(jpeg|png|webp)/.test(mime)) {
-            throw `*The quoted message must be an image.*`;
-        }
-
-        let imageBuffer = await q.download?.();
-        if (!imageBuffer) throw `*Failed to download the quoted image.*`;
-
-        await conn.updateProfilePicture(conn.user.jid, { url: imageBuffer });
+        let imageUrl = text.trim();
+        let response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+        let imageBuffer = Buffer.from(response.data, 'binary');
+        await conn.updateProfilePicture(conn.user.id, { buffer: imageBuffer });
         m.react('✅');
         m.reply(`*Profile picture updated successfully!*`);
     } catch (err) {
@@ -23,9 +18,9 @@ let handler = async (m, { conn, quoted }) => {
     }
 };
 
-handler.help = ['setprofilepic'];
+handler.help = ['fullpp'];
 handler.tags = ['owner'];
-handler.command = /^(fullpp|updateprofilepic)$/i;
+handler.command = /^(fullpp)$/i;
 handler.owner = true;
 
 export default handler;
