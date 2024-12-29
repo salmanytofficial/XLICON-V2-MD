@@ -19,7 +19,7 @@ let bibleChapterHandler = async (m, { conn }) => {
     let chapterRes = await fetch(`${BASE_URL}/${chapterInput}`);
     
     if (!chapterRes.ok) {
-      throw new Error(`Unable to fetch the chapter. Please check the input. Example: -bible john 3:16`);
+      throw new Error(`Unable to fetch the chapter at the moment. Please check the input. Example: -bible john 3:16`);
     }
 
     let chapterData = await chapterRes.json();
