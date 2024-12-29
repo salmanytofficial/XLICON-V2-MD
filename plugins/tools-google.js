@@ -7,6 +7,12 @@ const handler = async (m, { conn, command, text, args, usedPrefix }) => {
     conn.gogleit = conn.gogleit ? conn.gogleit : {};
     await conn.reply(m.chat, "🔍 Searching...", m);
 
+    let url = 'https://google.com/search?q=' + encodeURIComponent(text);
+    let search = await googleIt({ query: text });
+    let msg = search.map(({ title, link, snippet}) => {
+        return `*${title}*\n_${link}_\n_${snippet}_`;
+    }).join`\n\n`;
+
     const result = await googleresult(text);
     const infoText = `✦ ──『 *GOOGLE SEARCH* 』── ⚝ \n\n[ ⭐ Reply with the number of the desired search result to get the screenshot of the website ]. \n\n`;
 
