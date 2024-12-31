@@ -7,10 +7,6 @@ export async function before(m, { conn }) {
       return true;
     }
     
-    if (!m.isGroup) {
-      return false;
-    }
-
     const users = global.db.data.users;
     const chats = global.db.data.chats;
 
@@ -22,13 +18,10 @@ export async function before(m, { conn }) {
       return;
     }
 
-    if (!m.msg || !m.message || m.key.remoteJid !== m.chat || users[m.sender].banned || chats[m.chat].isBanned) {
+    if (!m.msg || !m.message || m.key.remoteJid !== m.chat || users[m.sender].banned || (m.isGroup && chats[m.chat].isBanned)) {
       return;
     }
-
-    if (!m.quoted || !m.quoted.isBaileys) return;
-
-    if (!chat.chatbot) { 
+    if (m.isGroup && !chat.chatbot) { 
       return true;
     }
     
