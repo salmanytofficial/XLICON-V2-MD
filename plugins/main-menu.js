@@ -15,13 +15,13 @@ import {
  
  const defaultMenu = {
   before: `
-  「 ${botname} 🎁XMD 」\n
+  ▎▔ ${botname} ⚡ *ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ*  ▰▎\n
   *%ucpn*
  *_Uptime_*: %muptime
  `.trimStart(),
- header: "┌─⦿『 *_%category_* 』⦿",
+ header: "┌─◙『 *_%category_* 』◙",
  body: "┃⬡▸ %cmd %isPremium %islimit",
- footer: "╰─────────────────⦿",
+ footer: "╰─────────────────◙",
  after: "\n%me",
  }
  let handler = async (m, {
@@ -32,7 +32,7 @@ import {
  }) => {
   await conn.sendMessage(m.chat, {
    react: {
- text: "⏳",
+ text: "💠",
  key: m.key,
    }
   })
@@ -196,23 +196,23 @@ import {
   let h = isNaN(ms) ? "--" : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? "--" : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? "--" : Math.floor(ms / 1000) % 60
-  return [ye, " *Years 🗓️*\n", mo, " *Month 🌙*\n", d, " *Days ☀️*\n", h, " *Hours 🕐*\n", m, " *Minute ⏰*\n", s, " *Second ⏱️*"].map(v => v.toString().padStart(2, 0)).join("")
+  return [ye, " *ʏᴇᴀʀs *\n", mo, " *ᴍᴏɴᴛʜ *\n", d, " *ᴅᴀʏs *\n", h, " *ʜᴏᴜʀs*\n", m, " *ᴍɪɴᴜᴛᴇs*\n", s, " *sᴇᴄᴏɴᴅs*"].map(v => v.toString().padStart(2, 0)).join("")
  }
  
  function ucapan() {
   const time = moment.tz("Asia/Kolkata").format("HH")
-  let res = "Good morning ☀️"
+  let res = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ ☀️"
   if (time >= 4) {
-   res = "Good Morning 🌄"
+   res = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 🌄"
   }
   if (time >= 10) {
-   res = "Good Afternoon ☀️"
+   res = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ ☀️"
   }
   if (time >= 15) {
-   res = "Good Afternoon 🌇"
+   res = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 🌇"
   }
   if (time >= 18) {
-   res = "Good Night 🌙"
+   res = "Gᴏᴏᴅ Nɪɢʜᴛ 🌙"
   }
   return res
  }
