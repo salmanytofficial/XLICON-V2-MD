@@ -2,6 +2,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, usedPrefix: _p }) => {
+  try {
     let img = "https://avatars.githubusercontent.com/u/120536940?v=4";
     let forwardMessage = `𝐂𝐚𝐮𝐬𝐞 𝐭𝐡𝐞 𝐰𝐞𝐚𝐤 𝐡𝐚𝐯𝐞 𝐧𝐨 𝐫𝐢𝐠𝐡𝐭𝐬 🫱
 
@@ -19,7 +20,7 @@ https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c`;
       caption: forwardMessage,
       contextInfo: {
         externalAdReply: {
-          title: "↺ |◁   II   ▷|   ♡",
+          title: "↺ |◁ II ▷| ♡",
           body: hash,
           thumbnailUrl: img,
           sourceUrl: url,
