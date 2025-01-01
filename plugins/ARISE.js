@@ -5,6 +5,7 @@ let handler = async (m, { conn }) => {
     const url = "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c";
     const murl = "https://instagram.com/abraham.dwamena.182";
     const hash = global.botname;
+    const audioUrl = "https://cdn.ironman.my.id/q/DDEFR.mp4";
 
     const doc = {
       image: { url: img },
@@ -23,6 +24,7 @@ let handler = async (m, { conn }) => {
     };
 
     await conn.sendMessage(m.chat, doc, { quoted: m });
+    await conn.sendMessage(m.chat, { audio: { url: audioUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
   } catch (err) {
     throw '*Error!*';
   }
