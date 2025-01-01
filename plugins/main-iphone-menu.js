@@ -130,7 +130,6 @@ let str = `
 ╰─────────────────➢
 ┌─☛『 *_group_* 』☚
 ┃❏${usedPrefix}getbio <@tag/reply>  Ⓛ
-┃❏${usedPrefix}getbio <@tag/reply>  Ⓛ
 ┃❏${usedPrefix}animequote
 ┃❏${usedPrefix}Setdesc <text>
 ┃❏${usedPrefix}setname <text>
