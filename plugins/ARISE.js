@@ -41,7 +41,7 @@ https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c`;
   }
 };
 
-handler.customPrefix = /^(Arise)$/i;
+handler.customPrefix = /^(Arise|Ab|bot|test)$/i;
 handler.command = new RegExp();
 
 export default handler;
