@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
   try {
     const img = "https://avatars.githubusercontent.com/u/120536940?v=4";
-    const forwardMessage = `*Cause the weak have no rights 🎇*\n\n_Kindly Join our Channel!_\n> Don't forget to Click here to stay updated:\nhttps://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c`;
+    const forwardMessage = `*Cause the weak have no rights 🎇*\n\n_Kindly Join our Channel!_\n> Don't forget to Click the link below to stay updated:\nhttps://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c`;
     const url = "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c";
     const murl = "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c";
     const hash = global.botname;
