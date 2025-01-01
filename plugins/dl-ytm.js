@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
     const firstResult = results[0];
 
- const message = `
+    const message = `
 ───────────────
 ✨ ${firstResult.title} ✨
 ───────────────
@@ -29,14 +29,18 @@ let handler = async (m, { conn, text, usedPrefix }) => {
     
     await m.react('⏳');
     
-    const downloadUrl = `https://ironman.koyeb.app/ironman/dl/yta?url=${encodeURIComponent(firstResult.url)}`;
-    const title = firstResult.title;
+    const downloadResponse = await axios.get(`https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(firstResult.url)}`);
+    const downloadResult = downloadResponse.data;
+    
+    if (!downloadResult.success) {
+      throw 'Failed to fetch audio';
+    }
 
     await conn.sendMessage(m.chat, {
-      audio: { url: downloadUrl },
+      audio: { url: downloadResult.result.download_url },
       mimetype: 'audio/mpeg',
       ptt: false,
-      fileName: title,
+      fileName: downloadResult.result.title,
     }, { quoted: m });
 
   } catch (error) {
