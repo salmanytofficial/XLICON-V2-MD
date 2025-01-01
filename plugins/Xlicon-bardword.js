@@ -1,4 +1,4 @@
-const badWords = /(gandu|maderchod|bhosdike|bhosda|laud?a|chut?iya|maa ki chut|behenchod|behen ki chut|tatto ke saudagar|machar ki jhant|jhant? ka baal|Rand?i ka aulad|chuchi|booob?ie?s|to?lo?l|idiot|nigga|fuck|sex|dick|bitch|tits|bastard|asshole|a[su,w,yu])/i;
+const badWords = /(gandu|maderchod|bhosdike|bhosda|laud?a|chut?iya|maa ki chut|behenchod|behen ki chut|tatto ke saudagar|machar ki jhant||shit|jhant? ka baal|Rand?i ka aulad|chuchi|booob?ie?s|to?lo?l|idiot|nigga|fuck|sex|dick|bitch|tits|bastard|asshole|a[su,w,yu])/i;
 
 export async function before(m, { isAdmin, isBotAdmin }) {
     if (m.isBaileys && m.fromMe)
