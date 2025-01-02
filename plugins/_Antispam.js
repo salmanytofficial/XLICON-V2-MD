@@ -1,7 +1,7 @@
 //Thanks Chatgpt🤡
 import { performance } from 'perf_hooks';
 
-// This function is used to prevent users from sending too many messages in a chat application or bot.
+// This function is used to prevent users from sending too many messages in chat
 
 export async function before(m) {
     // Get information about users and chats from global data.
