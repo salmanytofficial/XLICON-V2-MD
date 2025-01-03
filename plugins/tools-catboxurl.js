@@ -29,7 +29,14 @@ let handler = async (m) => {
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
 
   if (isTele) {
-    let link = await uploadToCatbox(mediaPath);
+    let link;
+    try {
+      link = await uploadToCatbox(mediaPath);
+      console.log('Catbox response link:', link); 
+    } catch (error) {
+      console.error('Error uploading to Catbox:', error);
+      link = 'Upload failed, please try again';
+    }
 
     const fileSizeMB = (mediaBuffer.length / (1024 * 1024)).toFixed(2);
 
@@ -56,7 +63,9 @@ const uploadToCatbox = async (filePath) => {
     throw new Error('Failed to upload to Catbox');
   }
 
-  return await response.text();
+  const link = await response.text();
+  console.log('Raw Catbox response:', link); 
+  return link.trim();  
 };
 
 handler.help = ['caturl'];
