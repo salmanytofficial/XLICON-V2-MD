@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import fetch from 'node-fetch';
+import FormData from 'form-data';
 
 let handler = async (m) => {
   let q = m.quoted ? m.quoted : m;
