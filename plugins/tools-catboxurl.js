@@ -184,7 +184,7 @@ let handler = async (m, {
   }
 }
 
-handler.command = /^(menu|help|\?)$/i
+handler.command = /^(mymenu|helpi|\?)$/i
 export default handler
 
 function pickRandom(list) {
