@@ -158,7 +158,7 @@ let handler = async (m, {
 
     await conn.sendMessage(m.chat, {
       react: {
-        text: "✅",
+        text: "⏳",
         key: m.key,
       }
     });
