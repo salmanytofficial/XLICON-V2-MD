@@ -4,12 +4,7 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, usedPrefix: _p }) => {
   try {
     let img = "https://avatars.githubusercontent.com/u/120536940?v=4";
-    let forwardMessage = `𝐂𝐚𝐮𝐬𝐞 𝐭𝐡𝐞 𝐰𝐞𝐚𝐤 𝐡𝐚𝐯𝐞 𝐧𝐨 𝐫𝐢𝐠𝐡𝐭𝐬 🫱
-
-_𝙺𝚒𝚗𝚍𝚕𝚢 𝙹𝚘𝚒𝚗 𝚘𝚞𝚛 𝙲𝚑𝚊𝚗𝚗𝚎𝚕!_
-> 𝙳𝚘𝚗𝚝 𝚏𝚘𝚛𝚐𝚎𝚝 𝚝𝚘 𝚌𝚕𝚒𝚌𝚔 𝚝𝚑𝚎 𝚕𝚒𝚗𝚔 🔗 𝚋𝚎𝚕𝚘𝚠🫡:
-
-https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c`;
+    let forwardMessage = `𝐂𝐚𝐮𝐬𝐞 𝐭𝐡𝐞 𝐰𝐞𝐚𝐤 𝐡𝐚𝐯𝐞 𝐧𝐨 𝐫𝐢𝐠𝐡𝐭𝐬 🫱`;
     let url = "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c";
     let murl = "https://instagram.com/abraham.dwamena.182";
     let hash = global.botname;
