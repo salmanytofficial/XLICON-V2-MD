@@ -2,50 +2,29 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   try {
-    
-    const res = await fetch('https://api.thedogapi.com/v1/images/search');
-    const img = await res.json();
-    const caption = `_Dog🐕_`.trim();
+    const response = await fetch('https://api.thedogapi.com/v1/images/search');
+    const data = await response.json();
+    const dogImageUrl = data[0].url;
 
-   
-    conn.sendFile(m.chat, img[0].url, 'dog.jpg', caption, m);
+    const forwardMessage = '🌟Here is a random dog for you!';
+    const img = dogImageUrl;
+    const hash = "*Powered 𝙗𝙮  𝐱𝐯2 𝐌𝐃*";
 
-    
-    const str = "Here's an exciting message!";
-    await conn.sendMessage(m.chat, {
-      text: str,
+    const doc = {
+      image: { url: dogImageUrl },
+      caption: forwardMessage,
       contextInfo: {
         externalAdReply: {
-          title: "Adventure Awaits!",
-          body: "Check out the latest updates.",
-          thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
-          sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
+          title: "❀•°Dog°•❀",
+          body: hash,
+          thumbnailUrl: img,
+          showAdAttribution: true
         }
       }
-    }, { quoted: m });
+    };
 
-    
-    m.react('✅');
+    await conn.sendMessage(m.chat, doc, { quoted: m });
 
-   
-    if (m.quoted && m.quoted.isForwarded) {
-      const forwardInfo = m.quoted.forwardingScore > 0 ? `Forwarded ${m.quoted.forwardingScore} times` : "Recently Forwarded";
-      const forwardMessage = `This message was ${forwardInfo}.
-Content: ${m.quoted.text || "(No Text Content)"}`;
-
-      
-      await conn.sendMessage(m.chat, {
-        text: forwardMessage,
-        contextInfo: {
-          externalAdReply: {
-            title: "Forwarded Message Info",
-            body: "Learn more about this message.",
-            thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
-            sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
-          }
-        }
-      }, { quoted: m });
-    }
   } catch {
     throw '*Error!*';
   }
