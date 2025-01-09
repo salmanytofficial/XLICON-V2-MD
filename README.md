@@ -253,6 +253,7 @@ Misusing the bot may result in a ban from WhatsApp. Use at your own risk.
 - Not For Sale
 - Don't Forget to Give Credits If you are using or Reuploading My Plugins/files
 - Have A Good Day Ahead
+- Bot is for educational purpose and for learning not for spamming thank you
 - Don't Use This Script As Your Bot Base 
 ---
 
