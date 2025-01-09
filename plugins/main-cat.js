@@ -6,7 +6,7 @@ const handler = async (m, { conn, text }) => {
     const img = await res.buffer();
 
     const forwardMessage = '🌟Here is a random cat for you!';
-    const hash = "*Powered 𝙗𝙮  𝐱𝐯2 𝐌𝐃*";
+    const hash = "Powered 𝙗𝙮  𝐱𝐯2 𝐌𝐃";
 
     const doc = {
       image: { url: img },
