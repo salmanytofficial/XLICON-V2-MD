@@ -19,7 +19,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
+if (!(who in global.db.data.users)) throw `_User not found!_`
 let pp = './XLICON.jpg'
 let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
@@ -38,23 +38,21 @@ let quote = quotes[Math.floor(Math.random() * quotes.length)];
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
 
-  ཌ|━━🤖 _BOT STATUS:_🤖━━|ད
-  ⚀------- *IPHONE-MENU* ------⚀
+ㅤㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
 
-┌─𐂅  *MADE BY XLICON*  𐂅
-| ❁✓  *Creator:* XLICON-TEAM
-| 🤖  *Bot Name:* XLICON-V2
-| 💻  *Host:* Linux 🟩
-| 📣  *Prefix:* ${usedPrefix} 
-| 🕓  *Uptime:* ${uptime}
-| 💌  *Database:* ${rtotalreg} of ${totaluser} 
-| 📚  *Total Users:* ${totaluser} 
-╰───────────────▶
+ㅤ┌▬𒀱ꪳ  𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙓𝙇𝙄𝘾𝙊𝙉 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ
+ㅤ| ⚙️  *Bot Name:* XLICON-V2
+ㅤ| 💻  *Host:* Linux 🟩
+ㅤ| 📣  *Prefix:* ${usedPrefix} 
+ㅤ| 🕓  *Uptime:* ${uptime}
+ㅤ| 💌  *Database:* ${rtotalreg} of ${totaluser} 
+ㅤ| 📚  *Total Users:* ${totaluser} 
+ㅤ╰▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬●▶
 
 ┌─☠︎︎「⏰ *_Today's Sauce!_* ⏰」
 | 📆  *Today's Date:* ${date} 
 | ⏲️  *Current Time:* ${wib} 
-╰───────────────▶
+╰▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬●▶
 
 ┌─𐂅「 *👤USER* 」
 | 👾  *User Tag:* ${taguser} 
@@ -65,7 +63,6 @@ let str = `
 | 🎮  *XP:* ${exp} 
 ╰───────────────▶
 
- 
 ┌─☛『 *_Fellowship_* 』☚
 ┃❏${usedPrefix}bible [chapter_number|chapter_name]
 ❏${usedPrefix}quran [surah_number|surah_name]
