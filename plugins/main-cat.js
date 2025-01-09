@@ -20,7 +20,7 @@ const handler = async (m, { conn, text }) => {
         }
       }
     };
-
+    m.react('🐈')
     await conn.sendMessage(m.chat, doc, { quoted: m });
 
   } catch {
