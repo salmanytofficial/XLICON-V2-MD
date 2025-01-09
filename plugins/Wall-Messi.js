@@ -1,41 +1,29 @@
 import axios from 'axios';
-let handler = async (m, { conn, usedPrefix, command }) => {
-  try {
-    let res = (await axios.get(`https://raw.githubusercontent.com/Guru322/api/Guru/BOT-JSON/Messi.json`)).data;
-    let url = await res[Math.floor(res.length * Math.random())];
-    conn.sendFile(m.chat, url, 'error.jpg', `*Messi*`, m);
 
-    const str = "Here's an exciting message!";
-    await conn.sendMessage(m.chat, {
-      text: str,
+const handler = async (m, { conn }) => {
+  try {
+    const response = await axios.get('https://raw.githubusercontent.com/Guru322/api/Guru/BOT-JSON/Messi.json');
+    const messiImages = response.data;
+    const messiImageUrl = messiImages[Math.floor(Math.random() * messiImages.length)];
+
+    const forwardMessage = '*Messi - The Legend!*';
+    const hash = '*Powered 𝙗𝙮 𝐱𝐯2 𝐌𝐃*';
+
+    const doc = {
+      image: { url: messiImageUrl },
+      caption: forwardMessage,
       contextInfo: {
         externalAdReply: {
-          title: "Adventure Awaits!",
-          body: "Check out the latest updates.",
-          thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
-          sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
+          title: "❀•°Messi°•❀",
+          body: hash,
+          thumbnailUrl: messiImageUrl,
+          showAdAttribution: true
         }
       }
-    }, { quoted: m });
+    };
 
-    m.react('✅');
+    await conn.sendMessage(m.chat, doc, { quoted: m });
 
-    if (m.quoted && m.quoted.isForwarded) {
-      const forwardInfo = m.quoted.forwardingScore > 0 ? `Forwarded ${m.quoted.forwardingScore} times` : "Recently Forwarded";
-      const forwardMessage = `This message was ${forwardInfo}.\nContent: ${m.quoted.text || "(No Text Content)"}`;
-
-      await conn.sendMessage(m.chat, {
-        text: forwardMessage,
-        contextInfo: {
-          externalAdReply: {
-            title: "Forwarded Message Info",
-            body: "Learn more about this message.",
-            thumbnailUrl: "https://telegra.ph/file/b1b157e944010efebf1d7.jpg",
-            sourceUrl: "https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c",
-          }
-        }
-      }, { quoted: m });
-    }
   } catch {
     throw '*Error!*';
   }
@@ -44,4 +32,5 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['messi'];
 handler.tags = ['img'];
 handler.command = /^(messi)$/i;
+
 export default handler;
