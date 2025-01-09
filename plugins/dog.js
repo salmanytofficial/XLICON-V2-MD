@@ -8,7 +8,7 @@ const handler = async (m, { conn, text }) => {
 
     const forwardMessage = '🌟Here is a random dog for you!';
     const img = dogImageUrl;
-    const hash = "*Powered 𝙗𝙮  𝐱𝐯2 𝐌𝐃*";
+    const hash = "Powered 𝙗𝙮  𝐱𝐯2 𝐌𝐃";
 
     const doc = {
       image: { url: dogImageUrl },
@@ -22,7 +22,7 @@ const handler = async (m, { conn, text }) => {
         }
       }
     };
-
+    m.react('🦮')
     await conn.sendMessage(m.chat, doc, { quoted: m });
 
   } catch {
