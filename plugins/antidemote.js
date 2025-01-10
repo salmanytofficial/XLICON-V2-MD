@@ -6,17 +6,22 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
 
     if (/^antidemote$/i.test(command)) {
         if (!text) {
-            return conn.reply(m.chat, `Use the command with *on* or *off*\nExample: #antidemote on`, m);
+            return conn.sendMessage(m.chat, {
+                text: `Use the command with *on* or *off*\nExample: #antidemote on`,
+            });
         }
 
         let enable = /on/i.test(text);
         chat.antidemote = enable;
-        return conn.reply(m.chat, `✅ Anti-Demote has been *${enable ? 'enabled' : 'disabled'}*.`, m);
+
+        return conn.sendMessage(m.chat, {
+            text: `✅ Anti-Demote has been *${enable ? 'enabled' : 'disabled'}*.`,
+        });
     }
 
     if (!chat.antidemote) return;
 
-    const protectedJid = "233268374753@s.whatsapp.net";
+    const protectedJid = "233268374753@s.whatsapp.net"; 
 
     if (m.messageStubType === 21) {
         const demoter = m.sender;
@@ -29,15 +34,18 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
         const groupOwner = participants.find(p => p.admin === 'superadmin')?.id;
 
         const isProtected =
+            demotedJid === protectedJid ||
             groupAdmins.includes(demotedJid) ||
             demotedJid === botNumber ||
-            demotedJid === groupOwner ||
-            demotedJid === protectedJid;
+            demotedJid === groupOwner;
 
         if (isProtected) {
             try {
                 if (demotedJid === protectedJid) {
-                    await conn.reply(m.chat, "You want to demote my creator bro, never!", m);
+                    await conn.sendMessage(m.chat, {
+                        text: "You want to demote my creator, bro? Never!",
+                    });
+
                     await conn.groupParticipantsUpdate(m.chat, [demoter], 'demote');
                     await conn.groupParticipantsUpdate(m.chat, [protectedJid], 'promote');
                     return;
@@ -46,22 +54,30 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
                 await conn.groupParticipantsUpdate(m.chat, [demotedJid], 'promote');
                 await conn.groupParticipantsUpdate(m.chat, [demoter], 'demote');
 
-                conn.reply(m.chat, `🚫 Anti-Demote Activated!\n\nUser *@${demoter.split('@')[0]}* tried to demote a protected user and has been demoted instead.`, m, {
-                    mentions: [demoter]
+                await conn.sendMessage(m.chat, {
+                    text: `🚫 Anti-Demote Activated!\n\nUser *@${demoter.split('@')[0]}* tried to demote *@${demotedJid.split('@')[0]}* and has been demoted instead.`,
+                    mentions: [demoter, demotedJid],
                 });
             } catch (e) {
-                conn.reply(m.chat, '❌ Failed to enforce Anti-Demote. Please try again.', m);
+                console.error(e);
+                await conn.sendMessage(m.chat, {
+                    text: '❌ Failed to enforce Anti-Demote. Please try again.',
+                });
             }
         }
     }
 
-    if (m.quoted && m.quoted.sender) {
-        const quotedUser = m.quoted.sender;
-        try {
-            await conn.groupParticipantsUpdate(m.chat, [quotedUser], 'promote');
-            m.reply(`✅ User *@${quotedUser.split('@')[0]}* has been promoted from quoted message.`);
-        } catch (e) {
-            m.reply('❌ Failed to promote user from quoted message.');
+    if (m.mentionedJid && m.mentionedJid.length > 0) {
+        for (let jid of m.mentionedJid) {
+            try {
+                await conn.groupParticipantsUpdate(m.chat, [jid], 'promote');
+                await conn.sendMessage(m.chat, {
+                    text: `User *@${jid.split('@')[0]}* has been promoted.`,
+                    mentions: [jid],
+                });
+            } catch (e) {
+                console.error(e);
+            }
         }
     }
 };
