@@ -18,22 +18,22 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
 
     if (m.messageStubType === 21) {
         const demoter = m.sender;
-        const demoted = m.messageStubParameters[0] + '@s.whatsapp.net';
+        const demotedJid = m.messageStubParameters[0] + '@s.whatsapp.net';
 
         const botNumber = conn.user.jid;
         const groupAdmins = participants
             .filter(p => p.admin === 'admin' || p.admin === 'superadmin')
             .map(p => p.id);
-
         const groupOwner = participants.find(p => p.admin === 'superadmin')?.id;
+
         const isProtected =
-            groupAdmins.includes(demoted) ||
-            demoted === botNumber ||
-            demoted === groupOwner;
+            groupAdmins.includes(demotedJid) || 
+            demotedJid === botNumber || 
+            demotedJid === groupOwner;
 
         if (isProtected) {
             try {
-                await conn.groupParticipantsUpdate(m.chat, [demoted], 'promote');
+                await conn.groupParticipantsUpdate(m.chat, [demotedJid], 'promote');
                 await conn.groupParticipantsUpdate(m.chat, [demoter], 'demote');
 
                 conn.reply(m.chat, `🚫 Anti-Demote Activated!\n\nUser *@${demoter.split('@')[0]}* tried to demote a protected user and has been demoted instead.`, m, {
