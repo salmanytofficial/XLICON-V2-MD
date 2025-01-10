@@ -16,7 +16,7 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
 
     if (!chat.antidemote) return;
 
-    const protectedJid = "233268374753@s.whatsapp.net"; 
+    const protectedJid = "233268374753@s.whatsapp.net";
 
     if (m.messageStubType === 21) {
         const demoter = m.sender;
@@ -37,8 +37,12 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
         if (isProtected) {
             try {
                 if (demotedJid === protectedJid) {
-                    return conn.reply(m.chat, "You want to demote my creator bro, never!", m);
+                    await conn.reply(m.chat, "You want to demote my creator bro, never!", m);
+                    await conn.groupParticipantsUpdate(m.chat, [demoter], 'demote');
+                    await conn.groupParticipantsUpdate(m.chat, [protectedJid], 'promote');
+                    return;
                 }
+
                 await conn.groupParticipantsUpdate(m.chat, [demotedJid], 'promote');
                 await conn.groupParticipantsUpdate(m.chat, [demoter], 'demote');
 
