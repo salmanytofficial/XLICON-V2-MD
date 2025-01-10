@@ -38,95 +38,97 @@ let quote = quotes[Math.floor(Math.random() * quotes.length)];
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
 
-ㅤㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
+ㅤㅤㅤㅤㅤㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
 
-𝚝𝚑𝚒𝚜 𝚖𝚎𝚗𝚞 𝚒𝚜 𝚌𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝚞𝚗𝚍𝚎𝚛 𝚖𝚊𝚒𝚗𝚝𝚎𝚗𝚊𝚗𝚌𝚎, 𝚌𝚑𝚎𝚌𝚔 𝚒𝚗 𝚕𝚊𝚝𝚎𝚛
+ㅤ┌─𒀱ꪳ  𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙓𝙇𝙄𝘾𝙊𝙉 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ
+ㅤ| ⚙️  *ʙᴏᴛ*       XLICON-V2
+ㅤ| 💻  *ʜᴏsᴛ*      Linux 
+ㅤ|     *ᴘʀᴇғɪx*    ${usedPrefix} 
+ㅤ|     *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
+ㅤ|     *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
+ㅤ|     *ᴜsᴇʀs*     ${totaluser} 
+ㅤ┗─══─━══─| ✠ |─══━─══─┛
 
-ㅤ┌▬𒀱ꪳ  𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙓𝙇𝙄𝘾𝙊𝙉 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ
-ㅤ| ⚙️  *Bot Name:* XLICON-V2
-ㅤ| 💻  *Host:* Linux 🟩
-ㅤ| 📣  *Prefix:* ${usedPrefix} 
-ㅤ| 🕓  *Uptime:* ${uptime}
-ㅤ| 💌  *Database:* ${rtotalreg} of ${totaluser} 
-ㅤ| 📚  *Total Users:* ${totaluser} 
-ㅤ╰▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬●▶
+ㅤ┌─𒀱ꪳ  𝙋𝙧𝙚𝙨𝙚𝙣𝙩
+ㅤ|    *ᴅᴀᴛᴇ* ${date} 
+ㅤ|    *ᴛɪᴍᴇ* ${wib} 
+  ┗─══─━══─| ✠ |─══━─══─┛
 
-┌─☠︎︎「⏰ *_Today's Sauce!_* ⏰」
-| 📆  *Today's Date:* ${date} 
-| ⏲️  *Current Time:* ${wib} 
-╰▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬●▶
+ㅤ┌─𒀱ꪳ  𝙐𝙨𝙚𝙧 
+ㅤ| 👾  *ɴᴀᴍᴇ*  ${taguser} 
+ㅤ| 💎  *ɢᴇᴍs* -ɪɴғɪɴɪᴛᴇ
+ㅤ| 🏆  *ʀᴀɴᴋ* ${role}
+ㅤ| 🎮  *ᴇxᴘ* ${exp} 
+ㅤ┗─══─━══─| ✠ |─══━─══─┛
 
-┌─𐂅「 *👤USER* 」
-| 👾  *User Tag:* ${taguser} 
-| 😇  *Name:* ${name} 
-| ✰  *Master Mind:* AB - TECH
-| 💎  *Diamonds:* -9999
-| 🏆  *Rank:* ${role}
-| 🎮  *XP:* ${exp} 
-╰───────────────▶
+ㅤㅤㅤㅤㅤㅤ✥---------------✥---------------✥
 
-┌─☛『 *_Fellowship_* 』☚
-┃❏${usedPrefix}bible [chapter_number|chapter_name]
-❏${usedPrefix}quran [surah_number|surah_name]
-╰─────────────────➢
-┌─☛『 *_AI_* 』☚
-┃❏${usedPrefix}bingimg2
-┃❏${usedPrefix}chatgpt
-┃❏${usedPrefix}aisearch
-┃❏${usedPrefix}toanime
-┃❏${usedPrefix}gitagpt
-┃❏${usedPrefix}chat
-┃❏${usedPrefix}blackbox
-┃❏${usedPrefix}bingimg <query>
-┃❏${usedPrefix}tocartoon
-┃❏${usedPrefix}dalle
-╰─────────────────➢
-┌─☛『 *_image_* 』☚
-┃❏${usedPrefix}blackpink
-╰─────────────────➢
-┌─☛『 *_tools_* 』☚
-┃❏${usedPrefix}gemini <text>
-┃❏${usedPrefix}nowa
-┃❏${usedPrefix}qr <text>
-┃❏${usedPrefix}qrcode <text>
-┃❏${usedPrefix}weather ${usedPrefix}<place>
-┃❏${usedPrefix}shortlink <longLink>
-┃❏${usedPrefix}bitly <longlink>
-┃❏${usedPrefix}dehaze
-┃❏${usedPrefix}recolor
-┃❏${usedPrefix}hdr
-┃❏${usedPrefix}get
-┃❏${usedPrefix}length <amount>
-┃❏${usedPrefix}tinyurl <link>
-┃❏${usedPrefix}shorten <link>
-┃❏${usedPrefix}tempmail
-┃❏${usedPrefix}shazam
-┃❏${usedPrefix}cal <equation>
-┃❏${usedPrefix}.carbon <code>
-┃❏${usedPrefix}define <word>
-┃❏${usedPrefix}element
-┃❏${usedPrefix}itunes
-┃❏${usedPrefix}lyrics
-┃❏${usedPrefix}imdb
-┃❏${usedPrefix}course
-┃❏${usedPrefix}randomcourse
-┃❏${usedPrefix}readmore <text1>|<text2>
-┃❏${usedPrefix}readvo
-┃❏${usedPrefix}removebg
-┃❏${usedPrefix}ss <url>
-┃❏${usedPrefix}ssf <url>
-┃❏${usedPrefix}style <key> <text>
-┃❏${usedPrefix}subreddit
-┃❏${usedPrefix}telesticker  Ⓛ
-┃❏${usedPrefix}tourl
-┃❏${usedPrefix}translate <lang> <text>
-┃❏${usedPrefix}tts <lang> <task>
-┃❏${usedPrefix}wa
-┃❏${usedPrefix}wikipedia
-┃❏${usedPrefix}true
-┃❏${usedPrefix}findmusic
-┃❏${usedPrefix}githubstalk <query>
-╰─────────────────➢
+ㅤ┌─𒀱ꪳ  𝙍𝙚𝙡𝙞𝙜𝙞𝙤𝙪𝙨
+ㅤ┃❏ㅤ${usedPrefix}ʙɪʙʟᴇ [ ᴄʜ_ɴᴜᴍ|ᴄʜ_ɴᴀᴍᴇ]
+ㅤ┃❏ㅤ${usedPrefix}ǫᴜʀᴀɴ [sᴜʀᴀʜ_ɴᴜᴍ|sᴜʀᴀʜ_ɴᴀᴍᴇ]
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙄𝙣𝙩𝙚𝙡𝙡𝙞𝙜𝙚𝙣𝙘𝙚
+ㅤ┃❏ㅤ${usedPrefix}ʙɪɴɢɪᴍɢ2
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴀᴛɢᴘᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴀɪsᴇᴀʀᴄʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴀɴɪᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪᴛᴀɢᴘᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʙʟᴀᴄᴋʙᴏx
+ㅤ┃❏ㅤ${usedPrefix}ʙɪɴɢɪᴍɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴄᴀʀᴛᴏᴏɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴀʟʟ ᴇ
+  ┗─══━━━━✥◈✥━━━━══┛
+  
+ㅤ┌─𒀱ꪳ  𝙄𝙢𝙖𝙜𝙚
+ㅤ┃❏${usedPrefix}ʙʟᴀᴄᴋᴘɪɴᴋ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙏𝙤𝙤𝙡𝙨
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴍɪɴɪ
+ㅤ┃❏ㅤ${usedPrefix}ɴᴏᴡᴀ
+ㅤ┃❏ㅤ${usedPrefix}ǫʀ
+ㅤ┃❏ㅤ${usedPrefix}ǫʀᴄᴏᴅᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴇᴀᴛʜᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sʜᴏʀᴛʟɪɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}ʙɪᴛʟʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʜᴀᴢᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴄᴏʟᴏʀ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴅʀ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴇɴɢᴛʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴛɪɴʏᴜʀʟ
+ㅤ┃❏ㅤ${usedPrefix}sʜᴏʀᴛᴇɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴇᴍᴘᴍᴀɪʟ
+ㅤ┃❏ㅤ${usedPrefix}sʜᴀᴢᴀᴍ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴀʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴀʀʙᴏɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇғɪɴᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴇʟᴇᴍᴇɴᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɪᴛᴜɴᴇs
+ㅤ┃❏ㅤ${usedPrefix}ʟʏʀɪᴄs
+ㅤ┃❏ㅤ${usedPrefix}ɪᴍᴅʙ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴏᴜʀsᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴀɴᴅᴏᴍᴄᴏᴜʀsᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴀᴅᴍᴏʀᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴀᴅᴠᴏ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴍᴏᴠᴇʙɢ
+ㅤ┃❏ㅤ${usedPrefix}ss
+ㅤ┃❏ㅤ${usedPrefix}ssғ
+ㅤ┃❏ㅤ${usedPrefix}sᴛʏʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴜʙʀᴇᴅᴅɪᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴇʟᴇsᴛɪᴄᴋᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴜʀʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴛʀᴀɴsʟᴀᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛs
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴡɪᴋɪᴘᴇᴅɪᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴛʀᴜᴇ
+ㅤ┃❏ㅤ${usedPrefix}ғɪɴᴅᴍᴜsɪᴄ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪᴛʜᴜʙsᴛᴀʟᴋ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
 ┌─☛『 *_group_* 』☚
 ┃❏${usedPrefix}getbio <@tag/reply>  Ⓛ
 ┃❏${usedPrefix}animequote
