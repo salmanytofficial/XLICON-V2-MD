@@ -3,7 +3,6 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
 
     let chat = global.db.data.chats[m.chat];
     if (!chat) chat = global.db.data.chats[m.chat] = {};
-
     if (/^antidemote$/i.test(command)) {
         if (!text) {
             return conn.reply(m.chat, `Use the command with *on* or *off*\nExample: #antidemote on`, m);
@@ -13,9 +12,7 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
         chat.antidemote = enable;
         return conn.reply(m.chat, `✅ Anti-Demote has been *${enable ? 'enabled' : 'disabled'}*.`, m);
     }
-
     if (!chat.antidemote) return;
-
     if (m.messageStubType === 21) {
         const demoter = m.sender;
         const demotedJid = m.messageStubParameters[0] + '@s.whatsapp.net';
@@ -42,6 +39,15 @@ let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
             } catch (e) {
                 conn.reply(m.chat, '❌ Failed to enforce Anti-Demote.', m);
             }
+        }
+    }
+    if (m.quoted && m.quoted.sender) {
+        const quotedUser = m.quoted.sender;
+        try {
+            await conn.groupParticipantsUpdate(m.chat, [quotedUser], 'promote');
+            m.reply(`✅ User *@${quotedUser.split('@')[0]}* has been promoted from quoted message.`);
+        } catch (e) {
+            m.reply('❌ Failed to promote user from quoted message.');
         }
     }
 };
