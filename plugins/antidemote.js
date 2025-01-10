@@ -1,8 +1,20 @@
-let handler = async (m, { conn, participants, isBotAdmin }) => {
+let handler = async (m, { conn, participants, isBotAdmin, text, command }) => {
     if (!m.isGroup || !isBotAdmin) return;
 
     let chat = global.db.data.chats[m.chat];
-    if (!chat || !chat.antidemote) return;
+    if (!chat) chat = global.db.data.chats[m.chat] = {};
+
+    if (/^antidemote$/i.test(command)) {
+        if (!text) {
+            return conn.reply(m.chat, `Use the command with *on* or *off*\nExample: #antidemote on`, m);
+        }
+
+        let enable = /on/i.test(text);
+        chat.antidemote = enable;
+        return conn.reply(m.chat, `✅ Anti-Demote has been *${enable ? 'enabled' : 'disabled'}*.`, m);
+    }
+
+    if (!chat.antidemote) return;
 
     if (m.messageStubType === 21) {
         const demoter = m.sender;
@@ -13,7 +25,11 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
             .filter(p => p.admin === 'admin' || p.admin === 'superadmin')
             .map(p => p.id);
 
-        const isProtected = groupAdmins.includes(demoted) || demoted === botNumber;
+        const groupOwner = participants.find(p => p.admin === 'superadmin')?.id;
+        const isProtected =
+            groupAdmins.includes(demoted) ||
+            demoted === botNumber ||
+            demoted === groupOwner;
 
         if (isProtected) {
             try {
@@ -37,7 +53,5 @@ handler.command = /^antidemote$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;
-
-handler.before = handler;
 
 export default handler;
