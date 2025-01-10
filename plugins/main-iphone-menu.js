@@ -129,125 +129,124 @@ let str = `
 ㅤ┃❏ㅤ${usedPrefix}ɢɪᴛʜᴜʙsᴛᴀʟᴋ
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
-┌─☛『 *_group_* 』☚
-┃❏${usedPrefix}getbio <@tag/reply>  Ⓛ
-┃❏${usedPrefix}animequote
-┃❏${usedPrefix}Setdesc <text>
-┃❏${usedPrefix}setname <text>
-┃❏${usedPrefix}add
-┃❏${usedPrefix}delete
-┃❏${usedPrefix}delwarn @user
-┃❏${usedPrefix}demote (@tag)
-┃❏${usedPrefix}infogp
-┃❏${usedPrefix}hidetag
-┃❏${usedPrefix}invite <917xxx>
-┃❏${usedPrefix}kick @user
-┃❏${usedPrefix}link
-┃❏${usedPrefix}poll question|option|option
-┃❏${usedPrefix}profile
-┃❏${usedPrefix}promote
-┃❏${usedPrefix}resetlink
-┃❏${usedPrefix}setbye <text>
-┃❏${usedPrefix}group ${usedPrefix}open/close*
-┃❏${usedPrefix}setwelcome <text>
-┃❏${usedPrefix}simulate <event> @user
-┃❏${usedPrefix}staff
-┃❏${usedPrefix}tagall
-┃❏${usedPrefix}totag
-┃❏${usedPrefix}warn @user
-┃❏${usedPrefix}warns
-╰─────────────────➢
-┌─☛『 *_anime_* 』☚
-┃❏${usedPrefix}anime
-┃❏${usedPrefix}akira
-┃❏${usedPrefix}akiyama
-┃❏${usedPrefix}anna
-┃❏${usedPrefix}asuna
-┃❏${usedPrefix}ayuzawa
-┃❏${usedPrefix}boruto
-┃❏${usedPrefix}chiho
-┃❏${usedPrefix}chitoge
-┃❏${usedPrefix}deidara
-┃❏${usedPrefix}erza
-┃❏${usedPrefix}elaina
-┃❏${usedPrefix}eba
-┃❏${usedPrefix}emilia
-┃❏${usedPrefix}hestia
-┃❏${usedPrefix}hinata
-┃❏${usedPrefix}inori
-┃❏${usedPrefix}isuzu
-┃❏${usedPrefix}itachi
-┃❏${usedPrefix}itori
-┃❏${usedPrefix}kaga
-┃❏${usedPrefix}kagura
-┃❏${usedPrefix}kaori
-┃❏${usedPrefix}keneki
-┃❏${usedPrefix}kotori
-┃❏${usedPrefix}kurumi
-┃❏${usedPrefix}madara
-┃❏${usedPrefix}mikasa
-┃❏${usedPrefix}miku
-┃❏${usedPrefix}minato
-┃❏${usedPrefix}naruto
-┃❏${usedPrefix}nezuko
-┃❏${usedPrefix}sagiri
-┃❏${usedPrefix}sasuke
-┃❏${usedPrefix}sakura
-┃❏${usedPrefix}akira
-┃❏${usedPrefix}amv  Ⓛ
-┃❏${usedPrefix}waifu
-┃❏${usedPrefix}neko
-┃❏${usedPrefix}zerotwo
-┃❏${usedPrefix}loli
-┃❏${usedPrefix}jjanime  Ⓛ
-┃❏${usedPrefix}pokedex <pokemon>
-┃❏${usedPrefix}trace
-╰─────────────────➢
-┌─☛『 *_img_* 』☚
-┃❏${usedPrefix}messi
-┃❏${usedPrefix}cristianoronaldo
-┃❏${usedPrefix}cr7
-┃❏${usedPrefix}ppcouple
-┃❏${usedPrefix}ppcp
-┃❏${usedPrefix}pinterest
-╰─────────────────➢
-┌─☛『 *_owner_* 』☚
-┃❏${usedPrefix}leavegc
-┃❏${usedPrefix}out
-┃❏${usedPrefix}deletechat
-┃❏${usedPrefix}pin
-┃❏${usedPrefix}unpin
-┃❏${usedPrefix}deletechat
-┃❏${usedPrefix}addprem <@tag>
-┃❏${usedPrefix}addowner @user
-┃❏${usedPrefix}allow <@tag>
-┃❏${usedPrefix}HEROKU
-┃❏${usedPrefix}ban @user
-┃❏${usedPrefix}banchat
-┃❏${usedPrefix}tx
-┃❏${usedPrefix}broadcastgroup <text>
-┃❏${usedPrefix}bcgc <text>
-┃❏${usedPrefix}cleartmp
-┃❏${usedPrefix}delexpired
-┃❏${usedPrefix}delprem @user
-┃❏${usedPrefix}removeowner @user
-┃❏${usedPrefix}setppbotfull
-┃❏${usedPrefix}getplugin <name file>
-┃❏${usedPrefix}getfile <name file>
-┃❏${usedPrefix}join <chat.whatsapp.com> <dias>
-┃❏${usedPrefix}reset <54xxx>
-┃❏${usedPrefix}resetprefix
-┃❏${usedPrefix}restart
-┃❏${usedPrefix}.setprefix
-┃❏${usedPrefix}.setprefix [symbol]
-┃❏${usedPrefix}unban @user
-┃❏${usedPrefix}unbanchat
-┃❏${usedPrefix}update
-┃❏${usedPrefix}update now
-┃❏${usedPrefix}config
-┃❏${usedPrefix}listban
-┃❏${usedPrefix}deleteplugin <name>
-╰─────────────────➢
+ㅤ┌─𒀱ꪳ  𝙂𝙧𝙤𝙪𝙥𝘾𝙝𝙖𝙩
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴛʙɪᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴀɴɪᴍᴇǫᴜᴏᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴅᴇsᴄ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛɴᴀᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴅᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴇᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴡᴀʀɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇᴍᴏᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴғᴏɢᴘ
+ㅤ┃❏ㅤ${usedPrefix}ʜɪᴅᴇᴛᴀɢ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴᴠɪᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴋɪᴄᴋ
+ㅤ┃❏ㅤ${usedPrefix}ʟɪɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴏʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʀᴏғɪʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʀᴏᴍᴏᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇsᴇᴛʟɪɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛʙʏᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɢʀᴏᴜᴘ ᴏᴘᴇɴ/ᴄʟᴏsᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴡᴇʟᴄᴏᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}sɪᴍᴜʟᴀᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴛᴀғғ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴀɢᴀʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴛᴀɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀʀɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀʀɴs
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘼𝙣𝙞𝙢𝙚
+ㅤ┃❏ㅤ${usedPrefix}ᴀɴɪᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴋɪʀᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴋɪʏᴀᴍᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀɴɴᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀsᴜɴᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀʏᴜᴢᴀᴍᴀ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴏʀᴜᴛᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜɪʜᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜɪᴛᴏɢᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇɪᴅᴀʀᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴇʀᴢᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴇʟᴀɪɴᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴇʙᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴇᴍɪʟɪᴀ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴇsᴛɪᴀ
+ㅤ┃❏ㅤ${usedPrefix}ʜɪɴᴀᴛᴀ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴᴏʀɪ
+ㅤ┃❏ㅤ${usedPrefix}ɪsᴜᴢᴜ
+ㅤ┃❏ㅤ${usedPrefix}ɪᴛᴀᴄʜɪ
+ㅤ┃❏ㅤ${usedPrefix}ɪᴛᴏʀɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴀɢᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴀɢᴜʀᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴀᴏʀɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴇɴᴇᴋɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴏᴛᴏʀɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴋᴜʀᴜᴍɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴀᴅᴀʀᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴍɪᴋᴀsᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴍɪᴋᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴍɪɴᴀᴛᴏ
+ㅤ┃❏ㅤ${usedPrefix}ɴᴀʀᴜᴛᴏ
+ㅤ┃❏ㅤ${usedPrefix}ɴᴇᴢᴜᴋᴏ
+ㅤ┃❏ㅤ${usedPrefix}sᴀɢɪʀɪ
+ㅤ┃❏ㅤ${usedPrefix}sᴀsᴜᴋᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴀᴋᴜʀᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴍᴠ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀɪғᴜ
+ㅤ┃❏ㅤ${usedPrefix}ɴᴇᴋᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴢᴇʀᴏᴛᴡᴏ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴏʟɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴊᴊᴀɴɪᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴏᴋᴇᴅᴇx
+ㅤ┃❏ㅤ${usedPrefix}ᴛʀᴀᴄᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙋𝙞𝙘
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴇssɪ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀ7
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴘᴄᴏᴜᴘʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴘᴄᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴘɪɴᴛᴇʀᴇsᴛ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙊𝙬𝙣𝙚𝙧
+ㅤ┃❏ㅤ${usedPrefix}ʟᴇᴀᴠᴇɢᴄ
+ㅤ┃❏ㅤ${usedPrefix}ᴏᴜᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴇᴛᴇᴄʜᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴘɪɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴜɴᴘɪɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴅᴅᴘʀᴇᴍ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴅᴅᴏᴡɴᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ᴀʟʟᴏᴡ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴇʀᴏᴋᴜ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴀɴ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴀɴᴄʜᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴛx
+ㅤ┃❏ㅤ${usedPrefix}ʙʀᴏᴀᴅᴄᴀsᴛɢʀᴏᴜᴘ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴄɢᴄ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʟᴇᴀʀᴛᴍᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴇxᴘɪʀᴇᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴘʀᴇᴍ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴍᴏᴠᴇᴏᴡɴᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴘᴘʙᴏᴛғᴜʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴛᴘʟᴜɢɪɴ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴛғɪʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴊᴏɪɴ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇsᴇᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇsᴇᴛᴘʀᴇғɪx
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇsᴛᴀʀᴛ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴘʀᴇғɪx
+ㅤ┃❏ㅤ${usedPrefix}ᴜɴʙᴀɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴜɴʙᴀɴᴄʜᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴜᴘᴅᴀᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴜᴘᴅᴀᴛᴇ ɴᴏᴡ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴏɴғɪɢ
+ㅤ┃❏ㅤ${usedPrefix}ʟɪsᴛʙᴀɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴇᴛᴇᴘʟᴜɢɪɴ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
 ┌─☛『 *_fun_* 』☚
 ┃❏${usedPrefix}afk <reason>
 ┃❏${usedPrefix}tomp3
