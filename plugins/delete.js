@@ -6,7 +6,16 @@ let handler = async (m, { conn, isAdmin, isBotAdmin, command, args }) => {
     let chat = global.db.data.chats[m.chat];
     if (!chat) chat = global.db.data.chats[m.chat] = {};
 
-    let switchs = /on$/i.test(command);
+    if (!args || !args[0]) {
+        return m.reply('Please specify "on" or "off". Example: #antilinkdel on');
+    }
+
+    let option = args[0].toLowerCase();
+    if (option !== 'on' && option !== 'off') {
+        return m.reply('Invalid option. Use "on" or "off". Example: #antilinkdel on');
+    }
+
+    let switchs = option === 'on';
     chat.antilink = switchs;
 
     m.reply(`Anti-link deletion has been *${switchs ? 'enabled' : 'disabled'}*`);
@@ -34,7 +43,7 @@ handler.before = async (m, { conn, isAdmin, isBotAdmin }) => {
 
 handler.help = ['antilinkdel'];
 handler.tags = ['group'];
-handler.command = /^antilinkdel\s*(on|off)?$/i;
+handler.command = /^antilinkdel$/i; 
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;
