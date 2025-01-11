@@ -47,21 +47,21 @@ let str = `
 ㅤ|     *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
 ㅤ|     *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
 ㅤ|     *ᴜsᴇʀs*     ${totaluser} 
-ㅤ┗─══─━══─| ✠ |─══━─══─┛
+ㅤ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙋𝙧𝙚𝙨𝙚𝙣𝙩
 ㅤ|    *ᴅᴀᴛᴇ* ${date} 
 ㅤ|    *ᴛɪᴍᴇ* ${wib} 
-  ┗─══─━══─| ✠ |─══━─══─┛
+  ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙐𝙨𝙚𝙧 
 ㅤ| 👾  *ɴᴀᴍᴇ*  ${taguser} 
 ㅤ| 💎  *ɢᴇᴍs* -ɪɴғɪɴɪᴛᴇ
 ㅤ| 🏆  *ʀᴀɴᴋ* ${role}
 ㅤ| 🎮  *ᴇxᴘ* ${exp} 
-ㅤ┗─══─━══─| ✠ |─══━─══─┛
+ㅤ┗─══━━━━✥◈✥━━━━══┛
 
-ㅤㅤㅤㅤㅤㅤ✥---------------✥---------------✥
+ㅤㅤㅤㅤㅤ ㅤㅤ  ㅤ𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
 
 ㅤ┌─𒀱ꪳ  𝙍𝙚𝙡𝙞𝙜𝙞𝙤𝙪𝙨
 ㅤ┃❏ㅤ${usedPrefix}ʙɪʙʟᴇ [ ᴄʜ_ɴᴜᴍ|ᴄʜ_ɴᴀᴍᴇ]
@@ -247,61 +247,63 @@ let str = `
 ㅤ┃❏ㅤ${usedPrefix}ʟɪsᴛʙᴀɴ
 ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴇᴛᴇᴘʟᴜɢɪɴ
 ㅤ┗─══━━━━✥◈✥━━━━══┛
-┌─☛『 *_fun_* 』☚
-┃❏${usedPrefix}afk <reason>
-┃❏${usedPrefix}tomp3
-┃❏${usedPrefix}toav
-┃❏${usedPrefix}toxicity
-┃❏${usedPrefix}bot
-┃❏${usedPrefix}character @tag
-┃❏${usedPrefix}dare
-┃❏${usedPrefix}flirt
-┃❏${usedPrefix}gay @user
-┃❏${usedPrefix}joke
-┃❏${usedPrefix}pickupline
-┃❏${usedPrefix}question
-┃❏${usedPrefix}shayari
-┃❏${usedPrefix}ship
-┃❏${usedPrefix}yomamajoke
-┃❏${usedPrefix}truth
-┃❏${usedPrefix}waste @user
-┃❏${usedPrefix}perv
-┃❏${usedPrefix}handsome
-┃❏${usedPrefix}hot
-┃❏${usedPrefix}sexy
-┃❏${usedPrefix}ugly
-┃❏${usedPrefix}cute
-┃❏${usedPrefix}playboy
-┃❏${usedPrefix}playgirl
-┃❏${usedPrefix}beautiful
-┃❏${usedPrefix}lesbian
-┃❏${usedPrefix}whore
-┃❏${usedPrefix}motherfucker
-┃❏${usedPrefix}sucker
-┃❏${usedPrefix}horny
-┃❏${usedPrefix}foolish
-┃❏${usedPrefix}nibba
-┃❏${usedPrefix}nibbi
-┃❏${usedPrefix}bitch
-┃❏${usedPrefix}waifu
-┃❏${usedPrefix}crackhead
-┃❏${usedPrefix}rascal
-┃❏${usedPrefix}idiot
-┃❏${usedPrefix}girlyboy
-┃❏${usedPrefix}tomboy
-┃❏${usedPrefix}gigachad
-┃❏${usedPrefix}mf
-┃❏${usedPrefix}introvert
-┃❏${usedPrefix}extrovert
-┃❏${usedPrefix}sigma
-┃❏${usedPrefix}psycho
-┃❏${usedPrefix}brainless
-┃❏${usedPrefix}useless
-┃❏${usedPrefix}singer
-┃❏${usedPrefix}image
-┃❏${usedPrefix}meme
-┃❏${usedPrefix}quote
-╰─────────────────➢
+
+ㅤ┌─𒀱ꪳ  𝙁𝙪𝙣
+ㅤ┃❏ㅤ${usedPrefix}ᴀғᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴍᴘ3
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴀᴠ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏxɪᴄɪᴛʏ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴏᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴀʀᴀᴄᴛᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴀʀᴇ
+ㅤ┃❏ㅤ${usedPrefix}ғʟɪʀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴀʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴊᴏᴋᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘɪᴄᴋᴜᴘʟɪɴᴇ
+ㅤ┃❏ㅤ${usedPrefix}ǫᴜᴇsᴛɪᴏɴ
+ㅤ┃❏ㅤ${usedPrefix}sʜᴀʏᴀʀɪ
+ㅤ┃❏ㅤ${usedPrefix}sʜɪᴘ
+ㅤ┃❏ㅤ${usedPrefix}ʏᴏᴍᴀᴍᴀᴊᴏᴋᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴛʀᴜᴛʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀsᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴇʀᴠ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴀɴᴅsᴏᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴏᴛ
+ㅤ┃❏ㅤ${usedPrefix}sᴇxʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴜɢʟʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴜᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏʙᴏʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏɢɪʀʟ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴇᴀᴜᴛʏғᴜʟ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴇsʙɪᴀɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴡʜᴏʀᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴏᴛʜᴇʀғᴜᴄᴋᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sᴜᴄᴋᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴏʀɴʏ
+ㅤ┃❏ㅤ${usedPrefix}ғᴏᴏʟɪsʜ
+ㅤ┃❏ㅤ${usedPrefix}ɴɪʙʙᴀ
+ㅤ┃❏ㅤ${usedPrefix}ɴɪʙʙɪ
+ㅤ┃❏ㅤ${usedPrefix}ʙɪᴛᴄʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀɪғᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀᴀᴄᴋʜᴇᴀᴅ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴀsᴄᴀʟ
+ㅤ┃❏ㅤ${usedPrefix}ɪᴅɪᴏᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪʀʟʏʙᴏʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴍʙᴏʏ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪɢᴀᴄʜᴀᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴍғ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴᴛʀᴏᴠᴇʀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴇxᴛʀᴏᴠᴇʀᴛ
+ㅤ┃❏ㅤ${usedPrefix}sɪɢᴍᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴘsʏᴄʜᴏ
+ㅤ┃❏ㅤ${usedPrefix}ʙʀᴀɪɴʟᴇss
+ㅤ┃❏ㅤ${usedPrefix}ᴜsᴇʟᴇss
+ㅤ┃❏ㅤ${usedPrefix}sɪɴɢᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ɪᴍᴀɢᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴇᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}ǫᴜᴏᴛᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
 ┌─☛『 *_reaction_* 』☚
 ┃❏${usedPrefix}bully @tag
 ┃❏${usedPrefix}cuddle @tag
