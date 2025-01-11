@@ -41,12 +41,12 @@ let str = `
 ㅤㅤㅤㅤㅤㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
 
 ㅤ┌─𒀱ꪳ  𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙓𝙇𝙄𝘾𝙊𝙉 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ
-ㅤ| ⚙️  *ʙᴏᴛ*       XLICON-V2
-ㅤ| 💻  *ʜᴏsᴛ*      Linux 
-ㅤ|     *ᴘʀᴇғɪx*    ${usedPrefix} 
-ㅤ|     *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
-ㅤ|     *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
-ㅤ|     *ᴜsᴇʀs*     ${totaluser} 
+ㅤ| ⚙️  *ʙᴏᴛ*       𝗫𝗹𝗶𝗰𝗼𝗻𝗩2
+ㅤ| 💻  *ʜᴏsᴛ*      𝗟𝗶𝗻𝘂𝘅
+ㅤ|      *ᴘʀᴇғɪx*    ${usedPrefix} 
+ㅤ|      *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
+ㅤ|      *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
+ㅤ|      *ᴜsᴇʀs*     ${totaluser} 
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙋𝙧𝙚𝙨𝙚𝙣𝙩
