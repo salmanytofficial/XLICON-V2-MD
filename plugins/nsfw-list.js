@@ -7,13 +7,7 @@ m.react(rwait)
     let nsfwCommands = ['xnxx', 'xvid',  'genshin', 'swimsuit', 'schoolswimsuit', 'white', 'barefoot', 'touhou', 'gamecg', 'hololive', 'uncensored', 'sunglasses', 'glasses', 'weapon', 'shirtlift', 'chain', 'fingering', 'flatchest', 'torncloth', 'bondage', 'demon', 'wet', 'pantypull', 'headdress', 'headphone', 'tie', 'anusview', 'shorts', 'stockings', 'topless', 'beach', 'bunnygirl', 'bunnyear', 'idol', 'vampire', 'gun', 'maid', 'bra', 'nobra', 'bikini', 'whitehair', 'blonde', 'pinkhair', 'bed', 'ponytail', 'nude', 'dress', 'underwear', 'foxgirl', 'uniform', 'skirt', 'sex', 'sex2', 'sex3', 'breast', 'twintail', 'spreadpussy', 'tears', 'seethrough', 'breasthold', 'drunk', 'fateseries', 'spreadlegs', 'openshirt', 'headband', 'food', 'close', 'tree', 'nipples', 'erectnipples', 'horns', 'greenhair', 'wolfgirl', 'catgirl'];
   
     let message = `
-  *NSFW Commands Menu* 
-  
-  Here is the list of available commands for NSFW content. Use the prefix "${usedPrefix}" followed by the command name:
-  
-  ${nsfwCommands.map(command => `${usedPrefix}${command}`).join('\n')}
-  
-  Note: These commands are only for those who are 18+.
+  *_404_*  𝙊𝙤𝙥𝙨 *_!_* 𝙉𝙤𝙩𝙝𝙞𝙣𝙜 𝙩𝙤 𝙎𝙚𝙚 𝙃𝙚𝙧𝙚 _*!*_
   `;
   
     console.log("Sending message...");
