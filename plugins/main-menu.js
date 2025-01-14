@@ -15,13 +15,14 @@ import fetch from "node-fetch"
 
 const defaultMenu = {
   before: `
-  ▎▔ ${botname} ⚡ *ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ*  ▰▎\n
+  
+          ${botname} ᪣ *ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ*  \n\n
   *%ucpn*
- *_Uptime_*: %muptime
+  𝙍𝙐𝙉𝙏𝙄𝙈𝙀 : %muptime
  `.trimStart(),
-  header: "┌─◙『 *_%category_* 』◙",
-  body: "┃⬡▸ %cmd %isPremium %islimit",
-  footer: "╰─────────────────◙",
+  header: "  ┌─ム *_%category_* ",
+  body: "  ┃ ᪣  %cmd %isPremium %islimit",
+  footer: "  ≪━─━─━─━─◈─━─━─━─━≫",
   after: "\n%me",
 }
 
