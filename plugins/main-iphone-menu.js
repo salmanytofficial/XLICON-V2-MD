@@ -38,30 +38,31 @@ let quote = quotes[Math.floor(Math.random() * quotes.length)];
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
 
-ㅤㅤㅤㅤㅤㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
+ㅤㅤㅤㅤㅤ   ㅤ𒅒 𝗜𝗠𝗘𝗡𝗨 ᳄ 𝗜𝗚𝗚𝗔 
 
 ㅤ┌─𒀱ꪳ  𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙓𝙇𝙄𝘾𝙊𝙉 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ
-ㅤ| ⚙️  *ʙᴏᴛ*       𝗫𝗹𝗶𝗰𝗼𝗻𝗩2
-ㅤ| 💻  *ʜᴏsᴛ*      𝗟𝗶𝗻𝘂𝘅
-ㅤ|      *ᴘʀᴇғɪx*    ${usedPrefix} 
-ㅤ|      *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
-ㅤ|      *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
-ㅤ|      *ᴜsᴇʀs*     ${totaluser} 
+ㅤ┃ ⚙️  *ʙᴏᴛ*       𝗫𝗹𝗶𝗰𝗼𝗻𝗩2
+ㅤ┃ 💻  *ʜᴏsᴛ*      𝗟𝗶𝗻𝘂𝘅
+ㅤ┃      *ᴘʀᴇғɪx*    ${usedPrefix} 
+ㅤ┃      *ʀᴜɴᴛɪᴍᴇ*   ${uptime}
+ㅤ┃      *ᴅᴀᴛᴀʙᴀsᴇ*  ${rtotalreg} of ${totaluser} 
+ㅤ┃      *ᴜsᴇʀs*     ${totaluser} 
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙋𝙧𝙚𝙨𝙚𝙣𝙩
-ㅤ|    *ᴅᴀᴛᴇ* ${date} 
-ㅤ|    *ᴛɪᴍᴇ* ${wib} 
+ㅤ┃    *ᴅᴀᴛᴇ* ${date} 
+ㅤ┃    *ᴛɪᴍᴇ* ${wib} 
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙐𝙨𝙚𝙧 
-ㅤ|     *ɴᴀᴍᴇ*   ${taguser} 
-ㅤ|     *ɢᴇᴍs*   -ɪɴғɪɴɪᴛᴇ
-ㅤ|     *ʀᴀɴᴋ*   ${role}
-ㅤ|     *ᴇxᴘ*    ${exp} 
+ㅤ┃     *ɴᴀᴍᴇ*   ${taguser} 
+ㅤ┃     *ɴᴀᴍᴇ*   ${username}
+ㅤ┃     *ɢᴇᴍs*   -ɪɴғɪɴɪᴛᴇ
+ㅤ┃     *ʀᴀɴᴋ*   ${role}
+ㅤ┃     *ᴇxᴘ*    ${exp} 
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
-ㅤㅤㅤㅤㅤ ㅤㅤ  ㅤ𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
+ㅤㅤㅤㅤㅤ ㅤㅤ     ㅤ𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
 
 ㅤ┌─𒀱ꪳ  𝙍𝙚𝙡𝙞𝙜𝙞𝙤𝙪𝙨
 ㅤ┃❏ㅤ${usedPrefix}ʙɪʙʟᴇ [ ᴄʜ_ɴᴜᴍ|ᴄʜ_ɴᴀᴍᴇ]
@@ -82,7 +83,7 @@ let str = `
   ┗─══━━━━✥◈✥━━━━══┛
   
 ㅤ┌─𒀱ꪳ  𝙄𝙢𝙖𝙜𝙚
-ㅤ┃❏${usedPrefix}ʙʟᴀᴄᴋᴘɪɴᴋ
+ㅤ┃❏ ${usedPrefix}ʙʟᴀᴄᴋᴘɪɴᴋ
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
 ㅤ┌─𒀱ꪳ  𝙏𝙤𝙤𝙡𝙨
@@ -304,253 +305,277 @@ let str = `
 ㅤ┃❏ㅤ${usedPrefix}ǫᴜᴏᴛᴇ
 ㅤ┗─══━━━━✥◈✥━━━━══┛
 
-┌─☛『 *_reaction_* 』☚
-┃❏${usedPrefix}bully @tag
-┃❏${usedPrefix}cuddle @tag
-┃❏${usedPrefix}cry @tag
-┃❏${usedPrefix}hug @tag
-┃❏${usedPrefix}awoo @tag
-┃❏${usedPrefix}kiss @tag
-┃❏${usedPrefix}lick @tag
-┃❏${usedPrefix}pat @tag
-┃❏${usedPrefix}smug @tag
-┃❏${usedPrefix}bonk @tag
-┃❏${usedPrefix}yeet @tag
-┃❏${usedPrefix}blush @tag
-┃❏${usedPrefix}smile @tag
-┃❏${usedPrefix}wave @tag
-┃❏${usedPrefix}highfive @tag
-┃❏${usedPrefix}handhold @tag
-┃❏${usedPrefix}nom @tag
-┃❏${usedPrefix}bite @tag
-┃❏${usedPrefix}glomp @tag
-┃❏${usedPrefix}slap @tag
-┃❏${usedPrefix}kill @tag
-┃❏${usedPrefix}happy @tag
-┃❏${usedPrefix}wink @tag
-┃❏${usedPrefix}poke @tag
-┃❏${usedPrefix}dance @tag
-┃❏${usedPrefix}cringe @tag
-╰─────────────────➢
-┌─☛『 *_utility_* 』☚
-┃❏${usedPrefix}bmi
-┃❏${usedPrefix}crypto
-┃❏${usedPrefix}currency
-┃❏${usedPrefix}countdown
-┃❏${usedPrefix}prayertime
-┃❏${usedPrefix}convert
-╰─────────────────➢
-┌─☛『 *_main_* 』☚
-┃❏${usedPrefix}channel
-┃❏${usedPrefix}database
-┃❏${usedPrefix}user
-┃❏${usedPrefix}gpguru
-┃❏${usedPrefix}alive
-┃❏${usedPrefix}blocklist
-┃❏${usedPrefix}info
-┃❏${usedPrefix}owner
-┃❏${usedPrefix}totalfeature
-┃❏${usedPrefix}hack
-┃❏${usedPrefix}list
-┃❏${usedPrefix}botmenu
-┃❏${usedPrefix}ownermenu
-┃❏${usedPrefix}groupmenu
-┃❏${usedPrefix}dlmenu
-┃❏${usedPrefix}downloadermenu
-┃❏${usedPrefix}economymenu
-┃❏${usedPrefix}funmenu
-┃❏${usedPrefix}gamemenu
-┃❏${usedPrefix}stickermenu
-┃❏${usedPrefix}nsfwmenu
-┃❏${usedPrefix}logomenu
-┃❏${usedPrefix}toolmenu
-┃❏${usedPrefix}animemenu2
-┃❏${usedPrefix}animemenu
-┃❏${usedPrefix}listprem
-┃❏${usedPrefix}logomenu2
-┃❏${usedPrefix}ping
-┃❏${usedPrefix}ping2
-┃❏${usedPrefix}runtime
-┃❏${usedPrefix}script
-┃❏${usedPrefix}server
-┃❏${usedPrefix}system
-┃❏${usedPrefix}blocklist
-┃❏${usedPrefix}setprivacy
-┃❏${usedPrefix}allmenu
-╰─────────────────➢
-┌─☛『 *_cmd_* 』☚
-┃❏${usedPrefix}delcmd <text>
-┃❏${usedPrefix}listcmd
-┃❏${usedPrefix}setcmd <txt>
-╰─────────────────➢
-┌─☛『 *_information_* 』☚
-┃❏${usedPrefix}cninfo
-┃❏${usedPrefix}fact
-╰─────────────────➢
-┌─☛『 *_finance_* 』☚
-┃❏${usedPrefix}crypto
-╰─────────────────➢
-┌─☛『 *_cryptocurrency_* 』☚
-┃❏${usedPrefix}crypto
-╰─────────────────➢
-┌─☛『 *_time_* 』☚
-┃❏${usedPrefix}countdown
-╰─────────────────➢
-┌─☛『 *_downloader_* 』☚
-┃❏${usedPrefix}facebook <url>
-┃❏${usedPrefix}gdrive 🅟
-┃❏${usedPrefix}gitclone <url>
-┃❏${usedPrefix}igstalk
-┃❏${usedPrefix}instagram
-┃❏${usedPrefix}mediafire <url>
-┃❏${usedPrefix}mega
-┃❏${usedPrefix}modapk
-┃❏${usedPrefix}play <query>
-┃❏${usedPrefix}play2 <text>
-┃❏${usedPrefix}playvid <text>
-┃❏${usedPrefix}play3  Ⓛ
-┃❏${usedPrefix}tiktok <url>
-┃❏${usedPrefix}tiktokstalk
-┃❏${usedPrefix}twitter <url>
-┃❏${usedPrefix}ytmp3 <url>
-┃❏${usedPrefix}ytsearch
-┃❏${usedPrefix}ytmp4 <yt-link>
-┃❏${usedPrefix}wallpaper <query>
-┃❏${usedPrefix}play  Ⓛ
-┃❏${usedPrefix}play  Ⓛ
-╰─────────────────➢
-┌─☛『 *_premium_* 』☚
-┃❏${usedPrefix}gdrive 🅟
-┃❏${usedPrefix}mediafire <url>
-╰─────────────────➢
-┌─☛『 *_economy_* 』☚
-┃❏${usedPrefix}addgold <@user>
-┃❏${usedPrefix}addxp <@user>
-┃❏${usedPrefix}bank
-┃❏${usedPrefix}buych
-┃❏${usedPrefix}cock-fight <amount>
-┃❏${usedPrefix}buy
-┃❏${usedPrefix}buyall
-┃❏${usedPrefix}daily
-┃❏${usedPrefix}deposit
-┃❏${usedPrefix}gamble <amount> <color(red/black)>
-┃❏${usedPrefix}give credit [amount] [@tag]
-┃❏${usedPrefix}levelup
-┃❏${usedPrefix}rank
-┃❏${usedPrefix}rob
-┃❏${usedPrefix}roulette <amount> <color(red/black)>
-┃❏${usedPrefix}wallet
-┃❏${usedPrefix}withdraw
-┃❏${usedPrefix}work
-╰─────────────────➢
-┌─❖『 *_core_* 』❖
-┃❏${usedPrefix}leaderboard
-╰─────────────────➢
-┌─☛『 *_game_* 』☚
-┃❏${usedPrefix}slot <amount>
-┃❏${usedPrefix}chess [from to]
-┃❏${usedPrefix}chess delete
-┃❏${usedPrefix}chess join
-┃❏${usedPrefix}chess start
-┃❏${usedPrefix}delttt
-┃❏${usedPrefix}guessflag
-┃❏${usedPrefix}Maths <modes>
-┃❏${usedPrefix}ppt <rock/paper/scissors>
-┃❏${usedPrefix}tictactoe <tag number>
-╰─────────────────➢
-┌─☛『 *_config_* 』☚
-┃❏${usedPrefix}enable <option>
-┃❏${usedPrefix}disable <option>
-╰─────────────────➢
-┌─☛『 *_internet_* 』☚
-┃❏${usedPrefix}google <search>
-┃❏${usedPrefix}s <search>
-╰─────────────────➢
-┌─☛『 *_maker_* 』☚
-┃❏${usedPrefix}blur
-┃❏${usedPrefix}difuminar2
-┃❏${usedPrefix}hornycard
-┃❏${usedPrefix}hornylicense
-┃❏${usedPrefix}gfx1
-┃❏${usedPrefix}gfx2
-┃❏${usedPrefix}gfx3
-┃❏${usedPrefix}gfx4
-┃❏${usedPrefix}gfx5
-┃❏${usedPrefix}gfx6
-┃❏${usedPrefix}gfx7
-┃❏${usedPrefix}gfx8
-┃❏${usedPrefix}gfx9
-┃❏${usedPrefix}gfx10
-┃❏${usedPrefix}gfx11
-┃❏${usedPrefix}gfx12
-┃❏${usedPrefix}simpcard
-┃❏${usedPrefix}itssostupid
-┃❏${usedPrefix}iss
-┃❏${usedPrefix}stupid
-┃❏${usedPrefix}tweet <comment>
-┃❏${usedPrefix}lolicon
-┃❏${usedPrefix}quozio
-┃❏${usedPrefix}qmkr
-┃❏${usedPrefix}ytcomment <comment>
-╰─────────────────➢
-┌─☛『 *_nsfw_* 』☚
-┃❏${usedPrefix}nsfw
-╰─────────────────❖
-┌─☛『 *_advanced_* 』☚
-┃❏$
-╰─────────────────➢
-┌─☛『 *_plugin_*  』☚
-┃❏${usedPrefix}plugins
-┃❏${usedPrefix}install <Gist URL>
-╰─────────────────➢
-┌─☛『 *_rg_* 』☚
-┃❏${usedPrefix}reg <name.age>
-┃❏${usedPrefix}mysn
-┃❏${usedPrefix}unreg <Num Serie>
-╰─────────────────➢
-┌─☛『 *_sticker_* 』☚
-┃❏${usedPrefix}emojimix <emoji+emoji>
-┃❏${usedPrefix}getsticker
-┃❏${usedPrefix}smaker
-┃❏${usedPrefix}stickerwithmeme (caption|reply media)
-┃❏${usedPrefix}swmeme <url>
-┃❏${usedPrefix}swm(caption|reply media)
-┃❏${usedPrefix}sfull
-┃❏${usedPrefix}toimg <sticker>
-┃❏${usedPrefix}tovid
-┃❏${usedPrefix}trigger <@user>
-┃❏${usedPrefix}ttp
-┃❏${usedPrefix}ttp2
-┃❏${usedPrefix}ttp3
-┃❏${usedPrefix}ttp4
-┃❏${usedPrefix}ttp5
-┃❏${usedPrefix}attp
-┃❏${usedPrefix}attp2
-┃❏${usedPrefix}attp3
-┃❏${usedPrefix}take <name>|<author>
-╰─────────────────➢
-┌─↘☛『 *_audio_* 』☚
-┃❏${usedPrefix}bass [vn]
-┃❏${usedPrefix}blown [vn]
-┃❏${usedPrefix}deep [vn]
-┃❏${usedPrefix}earrape [vn]
-┃❏${usedPrefix}fast [vn]
-┃❏${usedPrefix}fat [vn]
-┃❏${usedPrefix}nightcore [vn]
-┃❏${usedPrefix}reverse [vn]
-┃❏${usedPrefix}robot [vn]
-┃❏${usedPrefix}slow [vn]
-┃❏${usedPrefix}smooth [vn]
-┃❏${usedPrefix}tupai [vn]
-╰─────────────────➢
-┌─☛『 *_news_* 』☚
-┃❏${usedPrefix}news
-┃❏${usedPrefix}technews
-╰─────────────────➢
-┌─➢『 *_conversion_* 』❖
-┃❏${usedPrefix}convert
-╰─────────────────➢
-XLICON-𝙼𝙳-𝚅𝟸 𝙱𝚈 AB AND SALMAN`
+ㅤ┌─𒀱ꪳ  𝘼𝙘𝙩𝙞𝙤𝙣𝙨
+ㅤ┃❏ㅤ${usedPrefix}ʙᴜʟʟʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴜᴅᴅʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀʏ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴜɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴡᴏᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴋɪss
+ㅤ┃❏ㅤ${usedPrefix}ʟɪᴄᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}sᴍᴜɢ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴏɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}ʏᴇᴇᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʙʟᴜsʜ
+ㅤ┃❏ㅤ${usedPrefix}sᴍɪʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀᴠᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʜɪɢʜғɪᴠᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴀɴᴅʜᴏʟᴅ
+ㅤ┃❏ㅤ${usedPrefix}ɴᴏᴍ
+ㅤ┃❏ㅤ${usedPrefix}ʙɪᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɢʟᴏᴍᴘ
+ㅤ┃❏ㅤ${usedPrefix}sʟᴀᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴋɪʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴀᴘᴘʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴡɪɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴘᴏᴋᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴀɴᴄᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀɪɴɢᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙐𝙩𝙞𝙡𝙞𝙩𝙞𝙚𝙨
+ㅤ┃❏ㅤ${usedPrefix}bmi
+ㅤ┃❏ㅤ${usedPrefix}crypto
+ㅤ┃❏ㅤ${usedPrefix}currency
+ㅤ┃❏ㅤ${usedPrefix}countdown
+ㅤ┃❏ㅤ${usedPrefix}prayertime
+ㅤ┃❏ㅤ${usedPrefix}convert
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙈𝙖𝙞𝙣
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴀɴɴᴇʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴀᴛᴀʙᴀsᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴜsᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴘɢᴜʀᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴀʟɪᴠᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʙʟᴏᴄᴋʟɪsᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴғᴏ
+ㅤ┃❏ㅤ${usedPrefix}ᴏᴡɴᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴛᴀʟғᴇᴀᴛᴜʀᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʜᴀᴄᴋ
+ㅤ┃❏ㅤ${usedPrefix}ʟɪsᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴏᴛᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴏᴡɴᴇʀᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ɢʀᴏᴜᴘᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴅʟᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴇᴄᴏɴᴏᴍʏᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ғᴜɴᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴀᴍᴇᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}sᴛɪᴄᴋᴇʀᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ɴsғᴡᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴏɢᴏᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴏʟᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ᴀɴɪᴍᴇᴍᴇɴᴜ2
+ㅤ┃❏ㅤ${usedPrefix}ᴀɴɪᴍᴇᴍᴇɴᴜ
+ㅤ┃❏ㅤ${usedPrefix}ʟɪsᴛᴘʀᴇᴍ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴏɢᴏᴍᴇɴᴜ2
+ㅤ┃❏ㅤ${usedPrefix}ᴘɪɴɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴘɪɴɢ2
+ㅤ┃❏ㅤ${usedPrefix}ʀᴜɴᴛɪᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴄʀɪᴘᴛ
+ㅤ┃❏ㅤ${usedPrefix}sᴇʀᴠᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sʏsᴛᴇᴍ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴏᴄᴋʟɪsᴛ
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴘʀɪᴠᴀᴄʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴀʟʟᴍᴇɴᴜ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙈𝘿
+ㅤ┃❏ㅤ${usedPrefix}sᴇᴛᴄᴍᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴄᴍᴅ
+ㅤ┃❏ㅤ${usedPrefix}ʟɪsᴛᴄᴍᴅ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙄𝙣𝙛𝙤
+ㅤ┃❏ㅤ${usedPrefix}ᴄɴɪɴғᴏ
+ㅤ┃❏ㅤ${usedPrefix}ғᴀᴄᴛ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙁𝙞𝙣𝙖𝙣𝙘𝙚
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀʏᴘᴛᴏ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙧𝙮𝙥𝙩𝙤𝙘𝙪𝙧𝙧𝙚𝙣𝙘𝙮
+ㅤ┃❏ㅤ${usedPrefix}ᴄʀʏᴘᴛᴏ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙏𝙞𝙢𝙚
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴏᴜɴᴛᴅᴏᴡɴ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧𝙨
+ㅤ┃❏ㅤ${usedPrefix}ғᴀᴄᴇʙᴏᴏᴋ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪᴛᴄʟᴏɴᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɪɢsᴛᴀʟᴋ
+ㅤ┃❏ㅤ${usedPrefix}ɪɴsᴛᴀɢʀᴀᴍ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴇɢᴀ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴏᴅᴀᴘᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏ2
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏ3
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴀʏᴠɪᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴛɪᴋᴛᴏᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴛɪᴋᴛᴏᴋsᴛᴀʟᴋ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴡɪᴛᴛᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ʏᴛᴍᴘ3
+ㅤ┃❏ㅤ${usedPrefix}ʏᴛsᴇᴀʀᴄʜ
+ㅤ┃❏ㅤ${usedPrefix}ʏᴛᴍᴘ4
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴀʟʟᴘᴀᴘᴇʀ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙋𝙧𝙚𝙢𝙞𝙪𝙢
+ㅤ┃❏ㅤ${usedPrefix}ɢᴅʀɪᴠᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴇᴅɪᴀғɪʀᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙀𝙘𝙤𝙣𝙤𝙢𝙮
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴅᴅɢᴏʟᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴅᴅxᴘ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴀɴᴋ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴜʏᴄʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴏᴄᴋғɪɢʜᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴜʏ
+ㅤ┃❏ㅤ${usedPrefix}ʙᴜʏᴀʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴀɪʟʏ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇᴘᴏsɪᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴀᴍʙʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ɢɪᴠᴇ ᴄʀᴇᴅɪᴛ
+ㅤ┃❏ㅤ${usedPrefix}ʟᴇᴠᴇʟᴜᴘ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴀɴᴋ═━━━━✥◈✥━━━━══┛
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙤𝙧𝙚
+ㅤ┃❏ㅤ${usedPrefix}ʀᴏʙ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴏᴜʟʟᴇᴛᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴡʟʟᴇᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴡɪᴛʜᴅʀᴀᴡ
+ㅤ┃❏ㅤ${usedPrefix}ᴡᴏʀᴋ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙤𝙧𝙚
+ㅤ┃❏ㅤ${usedPrefix}ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙂𝙖𝙢𝙚𝙨
+ㅤ┃❏ㅤ${usedPrefix}sʟᴏᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴇss
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴇss ᴊᴏɪɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴇss sᴛᴀʀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ᴄʜᴇss ᴅᴇʟᴇᴛᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇʟᴛᴛᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɢᴜᴇssғʟᴀɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴍᴀᴛʜs
+ㅤ┃❏ㅤ${usedPrefix}ʀᴘs
+ㅤ┃❏ㅤ${usedPrefix}ᴛɪᴄᴛᴀᴄᴛᴏᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙤𝙣𝙛𝙞𝙜
+ㅤ┃❏ㅤ${usedPrefix}ᴇɴᴀʙʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}ᴅɪsᴀʙʟᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙄𝙣𝙩𝙚𝙧𝙣𝙚𝙩
+ㅤ┃❏ㅤ${usedPrefix}ɢᴏᴏɢʟᴇ
+ㅤ┃❏ㅤ${usedPrefix}s
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ 𝙈𝙖𝙠𝙚𝙧
+ㅤ┃❏ㅤ${usedPrefix}blur
+ㅤ┃❏ㅤ${usedPrefix}difuminar2
+ㅤ┃❏ㅤ${usedPrefix}hornycard
+ㅤ┃❏ㅤ${usedPrefix}hornylicense
+ㅤ┃❏ㅤ${usedPrefix}gfx1
+ㅤ┃❏ㅤ${usedPrefix}gfx2
+ㅤ┃❏ㅤ${usedPrefix}gfx3
+ㅤ┃❏ㅤ${usedPrefix}gfx4
+ㅤ┃❏ㅤ${usedPrefix}gfx5
+ㅤ┃❏ㅤ${usedPrefix}gfx6
+ㅤ┃❏ㅤ${usedPrefix}gfx7
+ㅤ┃❏ㅤ${usedPrefix}gfx8
+ㅤ┃❏ㅤ${usedPrefix}gfx9
+ㅤ┃❏ㅤ${usedPrefix}gfx10
+ㅤ┃❏ㅤ${usedPrefix}gfx11
+ㅤ┃❏ㅤ${usedPrefix}gfx12
+ㅤ┃❏ㅤ${usedPrefix}simpcard
+ㅤ┃❏ㅤ${usedPrefix}itssostupid
+ㅤ┃❏ㅤ${usedPrefix}iss
+ㅤ┃❏ㅤ${usedPrefix}stupid
+ㅤ┃❏ㅤ${usedPrefix}tweet <comment>
+ㅤ┃❏ㅤ${usedPrefix}lolicon
+ㅤ┃❏ㅤ${usedPrefix}quozio
+ㅤ┃❏ㅤ${usedPrefix}qmkr
+ㅤ┃❏${usedPrefix}ytcomment <comment>
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙉𝙨𝙛𝙬
+ㅤ┃❏ㅤ${usedPrefix}ɴsғᴡ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙏𝙚𝙧𝙢𝙞𝙣𝙖𝙡
+ㅤ┃❏ㅤ$
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙋𝙡𝙪𝙜𝙞𝙣𝙨
+ㅤ┃❏ㅤ${usedPrefix}ᴘʟᴜɢɪɴs
+ㅤ┃❏ㅤ${usedPrefix}ɪɴsᴛᴀʟʟ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙍𝙚𝙜𝙞𝙨𝙩𝙚𝙧𝙖𝙩𝙞𝙤𝙣
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴍʏsɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴜɴʀᴇɢ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙎𝙩𝙞𝙘𝙠𝙚𝙧
+ㅤ┃❏ㅤ${usedPrefix}ᴇᴍᴏᴊɪᴍɪx
+ㅤ┃❏ㅤ${usedPrefix}ɢᴇᴛsᴛɪᴄᴋᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sᴍᴀᴋᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}sᴛɪᴄᴋᴇʀᴡɪᴛʜᴍᴇᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴡᴍᴇᴍᴇ
+ㅤ┃❏ㅤ${usedPrefix}sᴡᴍ
+ㅤ┃❏ㅤ${usedPrefix}sғᴜʟʟ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏɪᴍɢ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴏᴠɪᴅ
+ㅤ┃❏ㅤ${usedPrefix}ᴛʀɪɢɢᴇʀ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛᴘ2
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛᴘ3
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛᴘ4
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴛᴘ5
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴛᴛᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴛᴛᴘ2
+ㅤ┃❏ㅤ${usedPrefix}ᴀᴛᴛᴘ3
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴀᴋᴇ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘼𝙪𝙙𝙞𝙤
+ㅤ┃❏ㅤ${usedPrefix}ʙᴀss
+ㅤ┃❏ㅤ${usedPrefix}ʙʟᴏᴡɴ
+ㅤ┃❏ㅤ${usedPrefix}ᴅᴇᴇᴘ
+ㅤ┃❏ㅤ${usedPrefix}ᴇᴀʀʀᴀᴘᴇ
+ㅤ┃❏ㅤ${usedPrefix}ғᴀsᴛ
+ㅤ┃❏ㅤ${usedPrefix}ғᴀᴛ
+ㅤ┃❏ㅤ${usedPrefix}ɴɪɢʜᴛᴄᴏʀᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴇᴠᴇʀsᴇ
+ㅤ┃❏ㅤ${usedPrefix}ʀᴏʙᴏᴛ
+ㅤ┃❏ㅤ${usedPrefix}sʟᴏᴡ
+ㅤ┃❏ㅤ${usedPrefix}sᴍᴏᴏᴛʜ
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴜᴘᴀɪ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝙉𝙚𝙬𝙨
+ㅤ┃❏ㅤ${usedPrefix}ɴᴇᴡs
+ㅤ┃❏ㅤ${usedPrefix}ᴛᴇᴄʜɴᴇᴡs
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤ┌─𒀱ꪳ  𝘾𝙤𝙣𝙫𝙚𝙧𝙨𝙞𝙤𝙣
+ㅤ┃❏ㅤ${usedPrefix}ᴄᴏɴᴠᴇʀᴛ
+ㅤ┗─══━━━━✥◈✥━━━━══┛
+
+ㅤㅤ*ᴄᴏ-ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴡʜɪᴛᴇ444_ʏᴛ*
+
+`
 
 
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt)
