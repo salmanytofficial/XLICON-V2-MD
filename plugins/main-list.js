@@ -5,6 +5,10 @@ let handler = async (m, { conn, usedPrefix, command}) => {
       let pp = './XLICON.jpg'
       let more = String.fromCharCode(8206);
       let readMore = more.repeat(850); 
+      let hash = global.botname || 'Xlicon Bot';
+      let img = './XLICON.jpg'; 
+      let url = 'https://github.com/abrahamdw882'; 
+      let murl = 'https://Instagram.com/abraham.dwamena.182';
     
       let lkr;
       switch (command) {
@@ -363,8 +367,31 @@ break;
         default:
           lkr = `Invalid command. Type ${usedPrefix}list to see available options.`;
       }
-    
-      conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, { mentions: [who] });
+
+      const messageObject = {
+    caption: lkr,
+    image: { url: pp },
+    contextInfo: {
+      mentionedJid: [m.sender],
+      isForwarded: true,
+      forwardingScore: 999,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363230794474148@newsletter',
+        newsletterName: global.author || 'Xlicon News',
+        serverMessageId: -1
+      },
+      externalAdReply: {
+        title: "↺ |◁   II   ▷|   ♡",
+        body: hash,
+        thumbnailUrl: img,
+        sourceUrl: url,
+        mediaType: 2,
+        mediaUrl: murl,
+        showAdAttribution: true
+      }
+    }
+  };
+      await conn.sendFile(m.chat, pp, 'perfil.jpg', lkr, m, false, messageObject);
     
       let done = '👍';
       m.react(done);
