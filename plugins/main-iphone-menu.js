@@ -605,7 +605,7 @@ let str = `
     }
   };
     
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt, messageObject)
+   await conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt, messageObject)
     m.react(done)
 
 }
