@@ -60,14 +60,14 @@ let handler = async (m, { conn }) => {
     let { stargazers_count, forks, owner, created_at, html_url } = repo_Data.data;
 
     let infobt = `
-🔰 *I'm XLICON-V2.* *A WhatsApp chuddy buddy bot with rich features* *Created By SALMAN AMAD and Abraham Dwamena*. 🔰
+🔰 *I'm XLICON-V2.* *A WhatsApp chuddy buddy bot with rich features* *Created By SALMAN  Abraham* . 🔰
 
 *❲❒❳ Stars:* ${stargazers_count} Stars ⭐
 *❲❒❳ Forks:* ${forks} Forks 🍴
-*❲❒❳ Author:* *Salman Ahmad* 😎
+*❲❒❳ Author:* *XLICON TEAM* 😎
 *❲❒❳ Create:* ${created_at} 
 *❲❒❳ Repo:* ${html_url}
-*❲❒❳ Scan:* https://replit.com/@S4SalmanYt/XLICON-V2-PAIRING
+*❲❒❳ Scan:* https://express-pairing-code2.onrender.com/
 *❲❒❳ Visit For Tutorial:* www.youtube.com/@s4salmanyt
 
 🔰 *Created ʙʏ XLICON TEAM* 🔰
