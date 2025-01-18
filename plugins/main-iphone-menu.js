@@ -541,8 +541,6 @@ let str = `
     m.react('✅');
 };
 
-
-}
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = ['menu1', 'imenu'] 
