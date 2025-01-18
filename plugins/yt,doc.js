@@ -1,25 +1,29 @@
-import { youtubedl, youtubedlv2, youtubedlv3 } from '@bochilteam/scraper'
-import fetch from 'node-fetch'
-let handler = async (m, { conn, args }) => {
-if (!args[0]) throw '*ENTER THE LINK OF A YOUTUBE VIDEO*'
-await m.reply(`*_Please wait downloading your video document_*`)
-try {
-let qu = args[1] || '360'
-let q = qu + 'p'
-let v = args[0]
-const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v)).catch(async _ => await youtubedlv3(v))
-const dl_url = await yt.video[q].download()
-const ttl = await yt.title
-await await conn.sendMessage(m.chat, { document: { url: dl_url }, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: m})
-} catch {
-try {
-let lolhuman = await fetch(`https://api.lolhuman.xyz/api/ytvideo2?apikey=85faf717d0545d14074659ad&url=${args[0]}`)    
-let lolh = await lolhuman.json()
-let n = lolh.result.title || 'error'
-let n2 = lolh.result.link
-await conn.sendMessage(m.chat, { document: { url: n2 }, mimetype: 'video/mp4', fileName: n + `.mp4`}, {quoted: m})
-} catch {
-await conn.reply(m.chat, '*404 ERROR*', m)}
-}}
-handler.command = /^ytmp4doc|ytvdoc|vdoc|ytmp4.2|ytv.2$/i
-export default handler
+import { downloadContentFromMessage } from '@whiskeysockets/baileys';
+
+var handler = async (m, { conn }) => {
+    if (!m.quoted || !/viewOnce/.test(m.quoted.mtype)) {
+        throw 'Its Not a ViewOnce Message';
+    }
+    
+    try {
+        let mtype = Object.keys(m.quoted.message)[0];
+        let stream = await downloadContentFromMessage(m.quoted.message[mtype], mtype.replace('Message', ''));
+        let buffer = Buffer.concat([]);
+        
+        for await (const chunk of stream) {
+            buffer = Buffer.concat([buffer, chunk]);
+        }
+        
+        let caption = m.quoted.message[mtype].caption || '';
+        await conn.sendMessage(conn.user.id, { [mtype.replace(/Message/, '')]: buffer, caption }, { quoted: m });
+    } catch (error) {
+        console.error(error);
+        throw 'Failed to process the view-once message.';
+    }
+};
+
+handler.help = ['read2'];
+handler.tags = ['tools'];
+handler.command = ['readviewonce2','read2','readvo2'];
+
+export default handler;
