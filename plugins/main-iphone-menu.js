@@ -536,21 +536,6 @@ let str = `
 ㅤ © 𝘊𝘰 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺 𝗪𝗛𝗜𝗧𝗘444_𝗬𝗧
 
 `
-
-const messageObject = {
-        caption: str,
-        image: { url: pp },
-        contextInfo: {
-            mentionedJid: [m.sender],
-            isForwarded: true,
-            forwardingScore: 999,
-            forwardedNewsletterMessageInfo: {
-                newsletterJid: '120363230794474148@newsletter',
-                newsletterName: global.author || 'Xlicon News',
-                serverMessageId: -1
-            },
-        }
-    };
     
   conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt)
     m.react('✅');
