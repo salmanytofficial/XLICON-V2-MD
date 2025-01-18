@@ -47,7 +47,7 @@ ${translatedChapterHindi.text}
         externalAdReply: {
           title: "The Holy Bible",
           body: `Chapter: ${chapterData.reference}`,
-          thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg", 
+          thumbnailUrl: "https://th.bing.com/th/id/R.95031b4b6f4e83a8b15b4310ed1b5f0d?rik=%2byvWX6sVPZB7yg&pid=ImgRaw&r=0", 
           sourceUrl: "https://bible-api.com", 
         }
       }
