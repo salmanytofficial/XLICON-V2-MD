@@ -537,23 +537,25 @@ let str = `
 
 `
 
- const messageObject = {
-    caption: lkr,
-    image: { url: pp },
-    contextInfo: {
-      mentionedJid: [m.sender],
-      isForwarded: true,
-      forwardingScore: 999,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363230794474148@newsletter',
-        newsletterName: global.author || 'Xlicon News',
-        serverMessageId: -1
-      },
-    }
-  };
+const messageObject = {
+        caption: str,
+        image: { url: pp },
+        contextInfo: {
+            mentionedJid: [m.sender],
+            isForwarded: true,
+            forwardingScore: 999,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363230794474148@newsletter',
+                newsletterName: global.author || 'Xlicon News',
+                serverMessageId: -1
+            },
+        }
+    };
     
-  await conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt,messageObject)
-    m.react(done)
+  await conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, '✅', messageObject);
+    m.react('✅');
+};
+
 
 }
 handler.help = ['main']
