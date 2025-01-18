@@ -552,7 +552,7 @@ const messageObject = {
         }
     };
     
-  conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, '✅', messageObject);
+  conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt)
     m.react('✅');
 };
 
