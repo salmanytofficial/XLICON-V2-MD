@@ -34,6 +34,10 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let greeting = ucapan()
 let quote = quotes[Math.floor(Math.random() * quotes.length)];
+let hash = global.botname || 'Xlicon Bot';
+let img = './XLICON.jpg'; 
+let url = 'https://github.com/abrahamdw882'; 
+let murl = 'https://Instagram.com/abraham.dwamena.182';
 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
@@ -577,8 +581,31 @@ let str = `
 
 `
 
-
-    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt)
+ const messageObject = {
+    caption: lkr,
+    image: { url: pp },
+    contextInfo: {
+      mentionedJid: [m.sender],
+      isForwarded: true,
+      forwardingScore: 999,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363230794474148@newsletter',
+        newsletterName: global.author || 'Xlicon News',
+        serverMessageId: -1
+      },
+      externalAdReply: {
+        title: "↺ |◁   II   ▷|   ♡",
+        body: hash,
+        thumbnailUrl: img,
+        sourceUrl: url,
+        mediaType: 2,
+        mediaUrl: murl,
+        showAdAttribution: true
+      }
+    }
+  };
+    
+    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt, messageObject)
     m.react(done)
 
 }
