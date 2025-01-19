@@ -47,4 +47,5 @@ handler.help = ['google', 'googlef'].map(v => v + ' <search term>');
 handler.tags = ['study'];
 handler.command = /^googlef?$/i;
 handler.register = false;
-export default handler; is this code having syntax error
+export default handler; 
+//fuck i was asking :) 
