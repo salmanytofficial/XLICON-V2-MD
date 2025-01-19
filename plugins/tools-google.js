@@ -1,89 +1,50 @@
-import fetch from "node-fetch";
-import googleIt from "google-it";
+import google from 'google-it';
+import axios from 'axios';
 
-const handler = async (m, { conn, command, text, args, usedPrefix }) => {
-    if (!text) throw `Provide a text to search. Example: *${usedPrefix + command}* Xlicon-v2 bot`;
+let handler = async (m, { conn, command, args, usedPrefix }) => {
+  const fetch = (await import('node-fetch')).default;
+  const text = args.join` `;
+  if (!text) return m.reply(`[ ⭐ what are you searching for  ]. \n\n hey ${usedPrefix + command} cats`);
+  m.react("⌛");
 
-    conn.gogleit = conn.gogleit ? conn.gogleit : {};
-    await conn.reply(m.chat, "🔍 Searching...", m);
+  try {
+    const res = await fetch(`https://api.example.com/search/googlesearch?query=${encodeURIComponent(text)}`);
+    const data = await res.json();
 
-    let url = 'https://google.com/search?q=' + encodeURIComponent(text);
-    let search = await googleIt({ query: text });
-    let msg = search.map(({ title, link, snippet}) => {
-        return `*${title}*\n_${link}_\n_${snippet}_`;
-    }).join`\n\n`;
+    if (data.status && data.data && data.data.length > 0) {
+      let resultText = `🔍 *✦ ──『 *GOOGLE SEARCH* 』── ⚝ \n\n Results for:* ${text}\n\n`;
+      for (let result of data.data.slice(0, 5)) { 
+        resultText += `*${result.title}*\n_${result.url}_\n_${result.description}_\nWebsite Link: _${result.website}_\n\n─────────────────\n\n`;
+      }
 
-    const result = await googleresult(text);
-    const infoText = `✦ ──『 *GOOGLE SEARCH* 』── ⚝ \n\n[ ⭐ Reply with the number of the desired search result to get the screenshot of the website ]. \n\n`;
-
-    const orderedLinks = result.allLinks.map((link, index) => {
-        const sectionNumber = index + 1;
-        const { title } = link;
-        return `*${sectionNumber}.* ${title}`;
-    });
-
-    const orderedLinksText = orderedLinks.join("\n\n");
-    const fullText = `${infoText}\n\n${orderedLinksText}`;
-
-    const { key } = await conn.reply(m.chat, fullText, m);
-
-    conn.gogleit[m.sender] = {
-        result,
-        key,
-        timeout: setTimeout(() => {
-            conn.sendMessage(m.chat, { delete: key });
-            delete conn.gogleit[m.sender];
-        }, 150 * 1000),
-    };
-};
-
-handler.before = async (m, { conn }) => {
-    conn.gogleit = conn.gogleit ? conn.gogleit : {};
-    if (!conn.gogleit[m.sender]) return;
-
-    const { result, key, timeout } = conn.gogleit[m.sender];
-
-    if (!m.quoted || m.quoted.id !== key.id || !m.text) return;
-    const choice = m.text.trim();
-    const inputNumber = Number(choice);
-
-    if (inputNumber >= 1 && inputNumber <= result.allLinks.length) {
-        const selectedUrl = result.allLinks[inputNumber - 1].url;
-        
-        try {
-            const response = await fetch(`https://api.apiflash.com/v1/urltoimage?access_key=7eea5c14db5041ecb528f68062a7ab5d&wait_until=page_loaded&url=${selectedUrl}`);
-            const buffer = await response.buffer();
-
-            await conn.sendFile(m.chat, buffer, "google.jpg", "Here is your result!", m);
-        } catch (error) {
-            console.error("Error fetching screenshot:", error);
-            m.reply("⛔ An error occurred while taking a screenshot.");
-        }
-
-    } else {
-        m.reply("Invalid number. Please select a number between 1 and " + result.allLinks.length);
+      const screenshot = `https://image.thum.io/get/fullpage/https://google.com/search?q=${encodeURIComponent(text)}`;
+      conn.sendFile(m.chat, screenshot, 'result.png', resultText, m, false);
+      m.react("✅");
+      handler.limit = 1;
     }
-};
-
-handler.help = ["google"];
-handler.tags = ["utility"];
-handler.command = /^(google)$/i;
-handler.limit = true;
-export default handler;
-
-async function googleresult(query) {
+  } catch (error) {
     try {
-        const res = await googleIt({ query });
-        if (!res.length) return { allLinks: [] };
-
-        const allLinks = res.map(item => ({
-            title: item.title,
-            url: item.link,
-        }));
-        
-        return { allLinks };
-
-    } catch (error) {
-        return { allLinks: [], error: "Error: " + error.message };
+      const url = 'https://google.com/search?q=' + encodeURIComponent(text);
+      google({ query: text }).then(results => {
+        let resultText = `🔍 *Search Results for:* ${text}\n\n*${url}*\n\n`;
+        for (let g of results.slice(0, 5)) { 
+          resultText += `_${g.title}_\n_${g.link}_\n_${g.snippet}_\nWebsite Link: _${g.link}_\n\n─────────────────\n\n`;
+        }
+        const screenshot = `https://image.thum.io/get/fullpage/${url}`;
+        conn.sendFile(m.chat, screenshot, 'error.png', resultText, m, false);
+      });
+      m.react("✅");
+      handler.limit = 1;
+    } catch (e) {
+      handler.limit = 0;
+      console.error(e);
+      m.react("❌");
     }
-}
+  }
+};
+
+handler.help = ['google', 'googlef'].map(v => v + ' <search term>');
+handler.tags = ['study'];
+handler.command = /^googlef?$/i;
+handler.register = false;
+export default handler; is this code having syntax error
