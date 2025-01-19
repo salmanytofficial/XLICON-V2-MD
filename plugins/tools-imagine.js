@@ -1,37 +1,26 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `*This command generates images from text prompts*\n\n*𝙴xample usage*\n*◉ ${usedPrefix + command} Beautiful anime girl*\n*◉ ${usedPrefix + command} Elon Musk in pink output*`;
+  if (!text) throw `*This command generates images from text prompts*\n\n*Example usage:*\n◉ ${usedPrefix + command} Beautiful anime girl\n◉ ${usedPrefix + command} Elon Musk in pink outfit`;
 
   try {
-    let imsg = conn.sendMessage(m.chat, {text: 'please wait , while i do some magic'}, { quoted: m });
+    await conn.sendMessage(m.chat, { text: 'Please wait, while I do some magic...' }, { quoted: m });
 
-    const endpoint = `https://vihangayt.me/tools/lexicaart?q=${encodeURIComponent(text)}`;
+    const endpoint = `https://api.giftedtech.web.id/api/ai/sd?apikey=gifted&prompt=${encodeURIComponent(text)}`;
     const response = await fetch(endpoint);
-    const dataa = await response.json();
 
-    let data = dataa.data;
-    let randomDataIndex = Math.floor(Math.random() * data.length);
-    let randomData = data[randomDataIndex];
-    let images = randomData.images;
-    let randomImageIndex = Math.floor(Math.random() * images.length);
-    let img = images[randomImageIndex].url;
-    
-    
-    if (response.ok) {
-      
-      await conn.sendFile(m.chat, img, 'image.png', null, fcon);
+    if (!response.ok) throw '*Image generation failed. Please try again later.*';
 
+    const imageUrl = endpoint;
 
-    } else {
-      throw '*Image generation failed*';
-    }
-  } catch {
+    await conn.sendFile(m.chat, imageUrl, 'image.png', null, m);
+  } catch (error) {
+    console.error(error);
     throw '*Oops! Something went wrong while generating images. Please try again later.*';
   }
 };
 
-handler.help = ['dalle'];
+handler.help = ['imagine'];
 handler.tags = ['AI'];
 handler.command = ['imagine'];
 export default handler;
