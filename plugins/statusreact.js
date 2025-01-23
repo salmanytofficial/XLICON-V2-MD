@@ -1,6 +1,11 @@
-async function reactToStatus(m, conn) {
-  if (process.env.statusview && m.key.remoteJid === 'status@broadcast') {
-    await conn.readMessages([m.key])
-    await conn.react(m.key, '👍')
+let handler = m => m;
+handler.all = async function (m) { 
+  const targetJid = "status@broadcast";  
+  const reactionEmoji = "✨";  
+
+  if (m.key.remoteJid === targetJid) { 
+    await m.react(reactionEmoji);  
   }
-}
+};
+
+export default handler;
