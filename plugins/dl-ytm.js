@@ -37,7 +37,6 @@ let handler = async (m, { conn, text, usedPrefix }) => {
       caption: forwardMessage,
       jpegThumbnail: await fetch(abrahamImageUrl).then(res => res.buffer()),
       contextInfo: {
-        mentionedJid: [m.sender],
         isForwarded: true,
         forwardingScore: 999,
         forwardedNewsletterMessageInfo: {
@@ -47,7 +46,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
         },
         externalAdReply: {
           title: "↺ |◁   II   ▷|   ♡",
-          body: global.botname,
+          body: forwardMessage,
           thumbnailUrl: abrahamImageUrl,
           sourceUrl: 'https://github.com/abrahamdw882',
           mediaType: 2,
