@@ -48,7 +48,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
           title: "↺ |◁   II   ▷|   ♡",
           body: forwardMessage,
           thumbnailUrl: abrahamImageUrl,
-          sourceUrl: 'https://github.com/abrahamdw882',
+          sourceUrl: 'https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c',
           mediaType: 2,
           mediaUrl: 'https://Instagram.com/abraham.dwamena.182',
           showAdAttribution: true,
