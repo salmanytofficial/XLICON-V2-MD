@@ -64,7 +64,6 @@ let handler = async (m, { conn, text, usedPrefix }) => {
       fileName: title,
 
       contextInfo: {
-        mentionedJid: [m.sender],
         externalAdReply: {
           title: title,
           body: message, 
