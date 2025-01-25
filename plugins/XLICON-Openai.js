@@ -2,16 +2,23 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`;
+    throw `Please provide some text or quote a message to get a response.\n\nUsage:\n${usedPrefix}${command} <your-text>`;
   }
 
   if (!text && m.quoted && m.quoted.text) {
     text = m.quoted.text;
   }
+  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner']; 
+  const forbiddenCommands = baseForbiddenCommands.map(cmd => `${usedPrefix}${cmd}`);
+  const isForbidden = forbiddenCommands.some(cmd => text.includes(cmd));
+
+  if (isForbidden) {
+    throw `Your input contains a restricted command. Please avoid using commands like ${forbiddenCommands.join(', ')} in AI interactions.`;
+  }
 
   try {
-    m.react(rwait); 
-    
+    m.react(rwait);
+
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
 
@@ -26,7 +33,6 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API');
       }
 
-      
       await conn.sendMessage(m.chat, {
         text: result,
         contextInfo: {
@@ -49,13 +55,12 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let data = await response.json();
       let result = data.completion;
 
-      
       await conn.sendMessage(m.chat, {
         text: result,
         contextInfo: {
           externalAdReply: {
             title: "Fallback AI Response",
-            body: "Powered by AB TECH (XLICON V2)I",
+            body: "Powered by AB TECH (XLICON V2)",
             thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
             sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
           }
