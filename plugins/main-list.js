@@ -15,7 +15,9 @@ let handler = async (m, { conn, usedPrefix, command}) => {
         case 'list':
 lkr = "*Get excited, here are your options:*\n\n" +
 "🤖 *" + usedPrefix + "botmenu* - The Bot's secret control panel. What's your command, oh great one?\n\n" +
-"👑 *" + usedPrefix + "ownermenu* - The sacred scroll only for the chosen one. Yep, that's you, Boss!\n\n" +    
+"🐱‍🏍 *" + usedPrefix + "logomenu2* - The Bot's logomenu. logomenu a nice menu, oh great right?\n\n" +      
+"👑 *" + usedPrefix + "ownermenu* - The sacred scroll only for the chosen one. Yep, that's you, Boss!\n\n" +  
+"😉 *" + usedPrefix + "animemenu* - all ur favs are packed her , oh great right hehe?\n\n" + 
 "🧑‍🤝‍🧑 *" + usedPrefix + "groupmenu* - Group shenanigans central! Unite, chat, conquer!\n\n" +  
 "📥 *" + usedPrefix + "dlmenu* - 'DL' stands for 'Delicious Loot'. Come grab your goodies!\n\n" +   
 "🎉 *" + usedPrefix + "funmenu* - The bot's party hat. Games, jokes and instant ROFLs. Let's get this party started!\n\n" +   
