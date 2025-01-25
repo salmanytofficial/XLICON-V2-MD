@@ -372,7 +372,6 @@ break;
     caption: lkr,
     image: { url: pp },
     contextInfo: {
-      mentionedJid: [m.sender],
       isForwarded: true,
       forwardingScore: 999,
       forwardedNewsletterMessageInfo: {
