@@ -3,12 +3,12 @@ let handler = async m => m.reply(`
 
 
 
-⎯꯭̽ *GROUPS*⎯꯭̽.
+⎯꯭̽ *GROUPS AND CHANNEL*⎯꯭̽.
 ─━━━✧✿✧━━━─
 
 Group1:
 _____________________
-https://chat.whatsapp.com/KIdMzyvnjju4GIuJhATpm4
+https://whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c
 _______________________
 
 Group2:
