@@ -58,7 +58,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['logo1', 'logos', 'ab logo', 'logi']
+handler.command = ['logomenu2', 'logos', 'ab logo', 'logi']
 
 export default handler
 
