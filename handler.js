@@ -494,7 +494,6 @@ export async function handler(chatUpdate) {
     if (process.env.autoRead) await conn.readMessages([m.key])
     if (process.env.statusview && m.key.remoteJid === 'status@broadcast')
       await conn.readMessages([m.key])
-    await conn.readMessages([m.key])
   }
 }
 
