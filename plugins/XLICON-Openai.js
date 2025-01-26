@@ -23,7 +23,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   const containsSpecialChars = /[><=;|&%]/.test(text); 
 
   if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
-    throw `Your input contains a restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
+    throw `Your input contains the AB TECH most hated restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
   }
 
   try {
