@@ -8,8 +8,9 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && m.quoted && m.quoted.text) {
     text = m.quoted.text;
   }
-  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner']; 
-  const forbiddenCommands = baseForbiddenCommands.map(cmd => `${usedPrefix}${cmd}`);
+  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
+  const prefixes = [usedPrefix, '$', '=>', '>'];
+  const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
   const isForbidden = forbiddenCommands.some(cmd => text.includes(cmd));
 
   if (isForbidden) {
@@ -17,7 +18,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   }
 
   try {
-    m.react(rwait);
+    m.react(rwait); 
 
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
