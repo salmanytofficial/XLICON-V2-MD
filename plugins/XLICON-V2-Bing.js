@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     if (!response.BK9) throw 'No result found';
 
     const replyText = response.BK9;
-    const markdownText = `*Here are the results:*\n\n- _${replyText}_`;
+    const markdownText = `*Response:*\n\n- _${replyText}_`;
 
     await conn.relayMessage(m.chat, {
       requestPaymentMessage: {
