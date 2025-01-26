@@ -1,21 +1,8 @@
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
-    if (!text) throw 'uhm.. what do you want to say?';
-
-    const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
-    const prefixes = [usedPrefix, '$', '=>', '>', 'm'];
-    const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
-    const shellCommands = ['rm', 'ls', 'cat', 'mkdir', 'chmod', 'curl', 'wget', 'sudo'];
-    const containsForbiddenCommand = forbiddenCommands.some(cmd => text.includes(cmd));
-    const containsShellCommand = shellCommands.some(cmd => text.includes(cmd));
-    const containsSpecialChars = /[><=;|&%]/.test(text); 
-
-    
-    if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
-      throw `Your input contains a restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
-    }
+    if (!text) throw `Please provide some text to get a response.\n\nUsage:\n${usedPrefix}${command} <your-text>`;
 
     await m.react('🤖'); 
 
@@ -28,24 +15,17 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     if (!response.BK9) throw 'No result found';
 
     const replyText = response.BK9;
-    await conn.relayMessage(m.chat, {
-      requestPaymentMessage: {
-        currencyCodeIso4217: 'INR',
-        amount1000: 99999,
-        requestFrom: m.sender,
-        noteMessage: {
-          extendedTextMessage: {
-            text: replyText,
-            contextInfo: {
-              externalAdReply: {
-                showAdAttribution: true
-              }
-            }
-          }
+    await conn.sendMessage(m.chat, {
+      text: `*HERE:*\n\n- _${replyText}_`,
+      contextInfo: {
+        externalAdReply: {
+          title: "AI Response",
+          body: "Powered by AB TECH",
+          thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
+          sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
         }
       }
-    }, {}); 
-
+    }, { quoted: m });
   } catch (error) {
     console.error(error);
     m.reply('Oops! Something went wrong. We are trying hard to fix it ASAP.');
