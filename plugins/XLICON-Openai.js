@@ -27,7 +27,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
     const result = data.data;
 
     await conn.sendMessage(m.chat, {
-      text: `*Here:*\n\n- _${result}_`,
+      text: `*Response:*\n\n- _${result}_`,
       contextInfo: {
         externalAdReply: {
           title: "Your AI Response",
