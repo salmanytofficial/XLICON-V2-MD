@@ -9,17 +9,6 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
     text = m.quoted.text;
   }
 
-  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
-  const prefixes = [usedPrefix, '$', '=>', '>', 'm'];
-  const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
-  const shellCommands = ['rm', 'ls', 'cat', 'mkdir', 'chmod', 'curl', 'wget', 'sudo'];
-  const containsForbiddenCommand = forbiddenCommands.some(cmd => text.includes(cmd));
-  const containsShellCommand = shellCommands.some(cmd => text.includes(cmd) && !text.startsWith("What is"));
-  const containsSpecialChars = /[><=;|&%]/.test(text); 
-  if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
-    throw `Your input contains restricted or dangerous commands. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc.`;
-  }
-
   try {
     m.react(rwait);
 
@@ -36,17 +25,8 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       if (!result) {
         throw new Error('No valid JSON response from the first API');
       }
-
-      const containsForbiddenResponse = forbiddenCommands.some(cmd => result.includes(cmd));
-      const containsShellCommandInResponse = shellCommands.some(cmd => result.includes(cmd));
-      const containsSpecialCharsInResponse = /[><=;|&%]/.test(result);
-
-      if (containsForbiddenResponse || containsShellCommandInResponse || containsSpecialCharsInResponse) {
-        throw new Error('AI response contains forbidden or dangerous command!');
-      }
-
       await conn.sendMessage(m.chat, {
-        text: result,
+        text: `*You see:*\n\n- _${result}_`,
         contextInfo: {
           externalAdReply: {
             title: "Your AI Response",
@@ -67,16 +47,8 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let data = await response.json();
       let result = data.completion;
 
-      const containsForbiddenFallback = forbiddenCommands.some(cmd => result.includes(cmd));
-      const containsShellCommandInFallback = shellCommands.some(cmd => result.includes(cmd));
-      const containsSpecialCharsInFallback = /[><=;|&%]/.test(result); 
-
-      if (containsForbiddenFallback || containsShellCommandInFallback || containsSpecialCharsInFallback) {
-        throw new Error('AI response contains forbidden or dangerous command!');
-      }
-
       await conn.sendMessage(m.chat, {
-        text: result,
+        text: `*You see:*\n\n- _${result}_`,
         contextInfo: {
           externalAdReply: {
             title: "Fallback AI Response",
