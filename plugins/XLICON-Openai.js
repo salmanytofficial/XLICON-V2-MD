@@ -8,17 +8,26 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && m.quoted && m.quoted.text) {
     text = m.quoted.text;
   }
-  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
-  const prefixes = [usedPrefix, '$', '=>', '>'];
-  const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
-  const isForbidden = forbiddenCommands.some(cmd => text.includes(cmd));
 
-  if (isForbidden) {
-    throw `Your input contains a restricted command. Please avoid using commands like ${forbiddenCommands.join(', ')} in AI interactions.`;
+  const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
+
+  const prefixes = [usedPrefix, '$', '=>', '>', 'm'];
+
+  const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
+
+
+  const shellCommands = ['rm', 'ls', 'cat', 'mkdir', 'chmod', 'curl', 'wget', 'sudo'];
+
+  const containsForbiddenCommand = forbiddenCommands.some(cmd => text.includes(cmd));
+  const containsShellCommand = shellCommands.some(cmd => text.includes(cmd));
+  const containsSpecialChars = /[><=;|&%]/.test(text); 
+
+  if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
+    throw `Your input contains a restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
   }
 
   try {
-    m.react(rwait); 
+    m.react(rwait);
 
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
@@ -33,6 +42,13 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       if (!result) {
         throw new Error('No valid JSON response from the first API');
       }
+      const containsForbiddenResponse = forbiddenCommands.some(cmd => result.includes(cmd));
+      const containsShellCommandInResponse = shellCommands.some(cmd => result.includes(cmd));
+      const containsSpecialCharsInResponse = /[><=;|&%]/.test(result); 
+
+      if (containsForbiddenResponse || containsShellCommandInResponse || containsSpecialCharsInResponse) {
+        throw new Error('AI response contains forbidden or dangerous command!');
+      }
 
       await conn.sendMessage(m.chat, {
         text: result,
@@ -46,7 +62,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         }
       }, { quoted: m });
 
-      m.react(done); 
+      m.react(done);
     } catch (error) {
       console.error('Error from the first API:', error);
 
@@ -55,6 +71,14 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let response = await fetch(guru2);
       let data = await response.json();
       let result = data.completion;
+
+      const containsForbiddenFallback = forbiddenCommands.some(cmd => result.includes(cmd));
+      const containsShellCommandInFallback = shellCommands.some(cmd => result.includes(cmd));
+      const containsSpecialCharsInFallback = /[><=;|&%]/.test(result); 
+
+      if (containsForbiddenFallback || containsShellCommandInFallback || containsSpecialCharsInFallback) {
+        throw new Error('AI response contains forbidden or dangerous command!');
+      }
 
       await conn.sendMessage(m.chat, {
         text: result,
