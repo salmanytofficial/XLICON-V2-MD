@@ -13,8 +13,10 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     const containsShellCommand = shellCommands.some(cmd => text.includes(cmd));
     const containsSpecialChars = /[><=;|&%]/.test(text);
 
-    if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
-      throw `Your input contains a restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
+    const ownerNum = ["233268374753"]; 
+
+    if ((containsForbiddenCommand || containsShellCommand || containsSpecialChars) && !ownerNum.includes(m.sender)) {
+      throw `Your input contains a restricted command or dangerous characters. Only the bot owner(s) can use these commands.`;
     }
 
     m.react('🤖');
