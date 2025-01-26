@@ -14,7 +14,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
   const shellCommands = ['rm', 'ls', 'cat', 'mkdir', 'chmod', 'curl', 'wget', 'sudo'];
   const containsForbiddenCommand = forbiddenCommands.some(cmd => text.includes(cmd));
-  const containsShellCommand = shellCommands.some(cmd => text.includes(cmd));
+  const containsShellCommand = shellCommands.some(cmd => text.includes(cmd) && !text.startsWith("What is"));
   const containsSpecialChars = /[><=;|&%]/.test(text); 
   if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
     throw `Your input contains restricted or dangerous commands. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc.`;
