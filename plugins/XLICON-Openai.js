@@ -26,7 +26,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
         throw new Error('No valid JSON response from the first API');
       }
       await conn.sendMessage(m.chat, {
-        text: `*You see:*\n\n- _${result}_`,
+        text: `*Here:*\n\n- _${result}_`,
         contextInfo: {
           externalAdReply: {
             title: "Your AI Response",
@@ -48,7 +48,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let result = data.completion;
 
       await conn.sendMessage(m.chat, {
-        text: `*You see:*\n\n- _${result}_`,
+        text: `*Here:*\n\n- _${result}_`,
         contextInfo: {
           externalAdReply: {
             title: "Fallback AI Response",
