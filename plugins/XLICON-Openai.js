@@ -10,20 +10,14 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   }
 
   const baseForbiddenCommands = ['promote', 'demote', 'kick', 'ban', 'addowner', 'removeowner'];
-
   const prefixes = [usedPrefix, '$', '=>', '>', 'm'];
-
   const forbiddenCommands = prefixes.flatMap(prefix => baseForbiddenCommands.map(cmd => `${prefix}${cmd}`));
-
-
   const shellCommands = ['rm', 'ls', 'cat', 'mkdir', 'chmod', 'curl', 'wget', 'sudo'];
-
   const containsForbiddenCommand = forbiddenCommands.some(cmd => text.includes(cmd));
   const containsShellCommand = shellCommands.some(cmd => text.includes(cmd));
   const containsSpecialChars = /[><=;|&%]/.test(text); 
-
   if (containsForbiddenCommand || containsShellCommand || containsSpecialChars) {
-    throw `Your input contains the AB TECH most hated restricted command or dangerous characters. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc., in AI interactions.`;
+    throw `Your input contains restricted or dangerous commands. Please avoid using commands like ${forbiddenCommands.join(', ')}, or dangerous shell commands like rm, ls, etc.`;
   }
 
   try {
@@ -42,9 +36,10 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       if (!result) {
         throw new Error('No valid JSON response from the first API');
       }
+
       const containsForbiddenResponse = forbiddenCommands.some(cmd => result.includes(cmd));
       const containsShellCommandInResponse = shellCommands.some(cmd => result.includes(cmd));
-      const containsSpecialCharsInResponse = /[><=;|&%]/.test(result); 
+      const containsSpecialCharsInResponse = /[><=;|&%]/.test(result);
 
       if (containsForbiddenResponse || containsShellCommandInResponse || containsSpecialCharsInResponse) {
         throw new Error('AI response contains forbidden or dangerous command!');
