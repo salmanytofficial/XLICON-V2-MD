@@ -1,5 +1,4 @@
-import fetch from 'node-fetch';
-
+ import fetch from 'node-fetch';
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
     throw `Please provide some text or quote a message to get a response.\n\nUsage:\n${usedPrefix}${command} <your-text>`;
@@ -10,60 +9,39 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   }
 
   try {
-    m.react(rwait);
+    if (typeof m.react === "function") m.react(rwait);
 
     conn.sendPresenceUpdate('composing', m.chat);
+
     const prompt = encodeURIComponent(text);
+    const apiKey = 'nikka';
+    const apiUrl = `https://nikka-api.us.kg/ai/groq?q=${prompt}&apiKey=${apiKey}`;
 
-    const guru1 = `https://api.gurusensei.workers.dev/llama?prompt=${prompt}`;
+    const response = await fetch(apiUrl);
+    const data = await response.json();
 
-    try {
-      let response = await fetch(guru1);
-      let data = await response.json();
-      let result = data.response.response;
-
-      if (!result) {
-        throw new Error('No valid JSON response from the first API');
-      }
-      await conn.sendMessage(m.chat, {
-        text: `*Here:*\n\n- _${result}_`,
-        contextInfo: {
-          externalAdReply: {
-            title: "Your AI Response",
-            body: "Powered by AB TECH (XLICON V2)",
-            thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
-            sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
-          }
-        }
-      }, { quoted: m });
-
-      m.react(done);
-    } catch (error) {
-      console.error('Error from the first API:', error);
-
-      const guru2 = `https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`;
-
-      let response = await fetch(guru2);
-      let data = await response.json();
-      let result = data.completion;
-
-      await conn.sendMessage(m.chat, {
-        text: `*Here:*\n\n- _${result}_`,
-        contextInfo: {
-          externalAdReply: {
-            title: "Fallback AI Response",
-            body: "Powered by AB TECH (XLICON V2)",
-            thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
-            sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
-          }
-        }
-      }, { quoted: m });
-
-      m.react(done); 
+    if (!data || !data.data) {
+      throw new Error('Invalid response from the API');
     }
+
+    const result = data.data;
+
+    await conn.sendMessage(m.chat, {
+      text: `*Here:*\n\n- _${result}_`,
+      contextInfo: {
+        externalAdReply: {
+          title: "Your AI Response",
+          body: "Powered by AB TECH (XLICON V2)",
+          thumbnailUrl: "https://telegra.ph/file/403a47e628ef49dee27a3.jpg",
+          sourceUrl: "https://github.com/salmanytofficial/XLICON-V2-MD",
+        }
+      }
+    }, { quoted: m });
+
+    if (typeof m.react === "function") m.react(done);
   } catch (error) {
     console.error('Error:', error);
-    throw `*ERROR*`;
+    throw `*ERROR: Unable to fetch response*`;
   }
 };
 
