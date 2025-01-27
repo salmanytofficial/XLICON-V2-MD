@@ -19,14 +19,27 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
     const forwardMessage = `*✨ ${firstResult.title} ✨*\n───────────────\n🖇️ *Link*: ${firstResult.url}  \n⏱️ *Duration*: ${firstResult.timestamp}  \n📅 *Published*: ${firstResult.ago}  \n👁️ *Views*: ${firstResult.views}  \n     *MADE WITH LOVE BY XLICON V2*`;
 
-    const downloadResponse = await axios.get(`https://dark-shan-yt.koyeb.app/download/ytmp3?url=${encodeURIComponent(firstResult.url)}`, { timeout: 10000 });
-    const downloadResult = downloadResponse.data;
+    let musicUrl;
+    try {
+      const downloadResponse = await axios.get(`https://dark-shan-yt.koyeb.app/download/ytmp3?url=${encodeURIComponent(firstResult.url)}`, { timeout: 10000 });
+      const downloadResult = downloadResponse.data;
 
-    if (!downloadResult.status || !downloadResult.data?.download || !downloadResult.data?.title) {
-      throw 'Failed to fetch audio or invalid response from the server';
+      if (!downloadResult.status || !downloadResult.data?.download || !downloadResult.data?.title) {
+        throw 'Primary API failed';
+      }
+
+      musicUrl = downloadResult.data.download;
+    } catch (primaryError) {
+      const fallbackResponse = await axios.get(`https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(firstResult.url)}`, { timeout: 10000 });
+      const fallbackResult = fallbackResponse.data;
+
+      if (!fallbackResult.success || !fallbackResult.result?.download_url) {
+        throw 'Both APIs failed to fetch audio.';
+      }
+
+      musicUrl = fallbackResult.result.download_url;
     }
 
-    const musicUrl = downloadResult.data.download;
     const abrahamResponse = await fetch('https://api.github.com/users/abrahamdw882');
     const abrahamData = await abrahamResponse.json();
     const abrahamImageUrl = abrahamData.avatar_url || '';
