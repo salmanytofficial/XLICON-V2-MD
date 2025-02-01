@@ -172,7 +172,7 @@ NOW Deploy👇
 <br>
 ## DEPLOY IN KOYEB  
 
-[![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/services/new?service_type=web&step=review&type=git&repository=github.com%2Fsalmanytofficial%2FXLICON-V2-MD&instance_type=free&regions=fra)
+[![Deploy on Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://xlicon-v2-deploy-sigma.vercel.app/)
 <br>
 <p> AFTER CLICKING ON THE KOYEB BUTTON KINDLY CLICK ON VARIABLE AND ADD THE NECESSARY VARIABLE</p>
 
