@@ -21,7 +21,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     }
 
     let replyText = data.data.response.split("</think>").pop().trim();
-    let markdownText = `*DeepSeek AI Response:*\n\n- _${replyText}_`;
+    let markdownText = `*RESULTS:*\n\n*DeepSeek AI Response:*\n\n- _${replyText}_`;
 
     await conn.sendMessage(m.chat, { text: markdownText }, { quoted: m });
     await m.react('✅');
