@@ -11,13 +11,13 @@ let handler = async (_0x522480, {
     },
     'message': {
       'contactMessage': {
-        'displayName': "XLICON-V2",
-        'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'XLICON-V2'\nitem1.TEL;waid=" + _0x522480.sender.split('@')[0x0] + ':' + _0x522480.sender.split('@')[0x0] + "\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+        'displayName': "xʟɪᴄᴏɴ ᴠ.  ɪɪ",
+        'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'xʟɪᴄᴏɴ_Vɪɪ'\nitem1.TEL;waid=" + _0x522480.sender.split('@')[0x0] + ':' + _0x522480.sender.split('@')[0x0] + "\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
       }
     }
   };
   let _0x40c367 = await _0x56505d.sendMessage(_0x522480.chat, {
-    'text': 'Pinging...'
+    'text': 'ᴄᴏɴɴᴇᴄᴛɪɴɢ...'
   }, {
     'quoted': _0x9edb5f
   });
@@ -29,7 +29,7 @@ let handler = async (_0x522480, {
         'key': _0x40c367.key,
         'type': 0xe,
         'editedMessage': {
-          'conversation': "yeah lets go ! Latency: " + _0x34dddc + " ms"
+          'conversation': "*" + _0x34dddc + " ᴍs* \n`xʟɪᴄᴏɴ ᴍᴅ`"
         }
       }
     }, {});
