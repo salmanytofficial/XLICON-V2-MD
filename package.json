@@ -46,6 +46,7 @@
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.4.0",
         "baileys-pro": "^0.0.2",
+        "cfonts": "^3.3.0",
         "chalk": "^5.1.0",
         "cheerio": "^1.0.0-rc.12",
         "dotenv": "^16.1.4",
