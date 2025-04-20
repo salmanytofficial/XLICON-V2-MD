@@ -1,4 +1,9 @@
-let bot = global.db.data.settings[this.user.jid] || {};
+let bot = {};
+try {
+  bot = global.db.data.settings[conn.user.id] || {};
+} catch (e) {
+  console.error("Failed to access bot settings:", e);
+}
 
 async function handleStatusReaction(m, conn) {
   if (m.key.remoteJid === "status@broadcast" && !m.fromMe) {
@@ -21,8 +26,6 @@ async function handleStatusReaction(m, conn) {
   }
 }
 
-if (process.env.STATUSVIEW && process.env.STATUSVIEW.toLowerCase() === "true") {
-  await handleStatusReaction(m, conn);
-} else if (bot.statusview) {
+if (process.env.STATUSVIEW?.toLowerCase() === "true" || bot.statusview) {
   await handleStatusReaction(m, conn);
 }
