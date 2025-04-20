@@ -4,8 +4,7 @@ module.exports = {
       name: 'XLICON-BOT',
       script: 'index.js',
       interpreter: 'node',
-      interpreter_args: '--experimental-modules',
-      watch: false,  // Disabilita watch
+      watch: false,  // Disable watch
       ignore_watch: ['node_modules'],
     },
   ],
