@@ -385,7 +385,7 @@ async function connectionUpdate(update) {
 
     await conn.sendMessage(jid, { text: msg, mentions: [jid] }, { quoted: null })
     
-    conn.logger.info(chalk.yellow('\n🚩 R. E. A. D. Y'))
+    conn.logger.info(chalk.yellow('\n🚩 R E A D Y'))
   }
 
   if (connection == 'close') {
