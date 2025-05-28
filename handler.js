@@ -8,9 +8,8 @@ import fetch from 'node-fetch'
 import Pino from 'pino'
 
 /**
- * @type {import("baileys-pro")}
+ * @type {import("@whiskeysockets/baileys")}
  */
-
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms =>
   isNumber(ms) &&
@@ -26,7 +25,7 @@ const delay = ms =>
  * @param {import("@whiskeysockets/baileys").BaileysEventMap<unknown>["messages.upsert"]} groupsUpdate
  */
 const { getAggregateVotesInPollMessage, makeInMemoryStore } = await (
-  await import('baileys-pro')
+  await import('@whiskeysockets/baileys')
 ).default
 const store = makeInMemoryStore({
   logger: Pino().child({
